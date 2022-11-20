@@ -1,0 +1,5 @@
+Background Images Standard:
+-div has to have the background-image class set, and 
+-background-repeat should be set to no-repeat
+-background-position should be set to center
+-background-size should be set to cover
