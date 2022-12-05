@@ -1,0 +1,8 @@
+@mixin make-container($padding-x: $container-padding-x) {
+    max-width: 912px;
+}
+
+// Usage
+.banner-container {
+    @include make-container();
+}
