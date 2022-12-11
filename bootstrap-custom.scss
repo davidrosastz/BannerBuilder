@@ -1,0 +1,32 @@
+@import "bootstrap-5.0.2/scss/functions";
+@import "bootstrap-5.0.2/scss/variables";
+@import "bootstrap-5.0.2/scss/utilities";
+
+$utilities: (
+  "w": (property: width,
+    class: w,
+    responsive: true,
+    values: (10: 10%,
+    ))
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  xxxl: 1400px
+);
+
+$grid-breakpoints: (
+xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+xxl: 1400px,
+xxxl: 1400px,
+);
+
+@import "bootstrap-5.0.2/scss/bootstrap.scss";
