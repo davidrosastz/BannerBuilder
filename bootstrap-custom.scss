@@ -1,8 +1,10 @@
 @import "bootstrap-5.0.2/scss/functions";
 @import "bootstrap-5.0.2/scss/variables";
 @import "bootstrap-5.0.2/scss/utilities";
+@import "bootstrap-5.0.2/scss/mixins";
 
 $taaze-main-color: #e3007f;
+$taaze-white-color: white;
 
 $utilities: (
   "w": (property: width,
@@ -31,4 +33,19 @@ $grid-breakpoints: (
   xxxl: 1400px,
 );
 
+@mixin outline-button($color: $taaze-main-color) {
+  .btn-outline-taaze-pink {
+    border-color: $taaze-main-color;
+    background-color: $taaze-white-color;
+    color: $taaze-main-color;
+
+    &:hover {
+      background-color: $taaze-main-color;
+      color: #fff;
+    }
+  }
+}
+
+
 @import "bootstrap-5.0.2/scss/bootstrap.scss";
+@include outline-button;
