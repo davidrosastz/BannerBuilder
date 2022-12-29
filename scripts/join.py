@@ -15,7 +15,7 @@ file_paths = glob.glob(pattern)
 file_contents = []
 for file_path in file_paths:
   if 'combined' not in file_path:
-    with open(file_path, 'r') as f:
+    with open(file_path, 'r', encoding='utf-8') as f:
         file_contents.append(f.read())
 
 # Extract the contents of the <body> element from each file
