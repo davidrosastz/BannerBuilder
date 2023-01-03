@@ -14,7 +14,7 @@ file_paths = glob.glob(pattern)
 # Read the contents of each file and store it in a list
 file_contents = []
 for file_path in file_paths:
-  if 'combined' not in file_path:
+  if 'index' not in file_path:
     with open(file_path, 'r', encoding='utf-8') as f:
         file_contents.append(f.read())
 
