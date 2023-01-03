@@ -2,6 +2,19 @@ import re
 import glob
 from pathlib import Path
 
+def sort_key(filename):
+    if not re.search(r'/([^/]+)$', filename):
+      return 99 
+
+    # Extract the number from the last child of the file path
+    last_child = re.search(r'/([^/]+)$', filename).group(1)
+
+    if not re.search(r'^\d+', last_child):
+      return 99
+
+    number = int(re.search(r'^\d+', last_child).group())
+    return number
+
 current_path = Path(__file__).resolve()
 project_directory = current_path.parent.absolute().parent.absolute()
 
@@ -10,6 +23,7 @@ pattern = f'{project_directory}/*.html'
 
 # Fetch all HTML files in the specified directory
 file_paths = glob.glob(pattern)
+file_paths = sorted(file_paths, key=sort_key)
 
 # Read the contents of each file and store it in a list
 file_contents = []
