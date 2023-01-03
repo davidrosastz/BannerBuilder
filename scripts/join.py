@@ -14,7 +14,7 @@ file_paths = glob.glob(pattern)
 # Read the contents of each file and store it in a list
 file_contents = []
 for file_path in file_paths:
-  if 'index' not in file_path:
+  if 'index' not in file_path and 'menu' not in file_path:
     with open(file_path, 'r', encoding='utf-8') as f:
         file_contents.append(f.read())
 
@@ -49,3 +49,17 @@ combined_html = f"""
 # Write the combined HTML string to a new file
 with open(f'index.html', 'w', encoding='utf-8') as f:
     f.write(combined_html)
+
+with open('menu.html', 'w', encoding='utf-8') as f:
+    f.write('<html>\n')
+    f.write('<body>\n')
+    f.write('<ul>\n')
+    
+    # Add a list item for each HTML file
+    for html_file in file_paths:
+        html_file = Path(html_file).name
+        f.write(f'<li><a href="{html_file}">{html_file}</a></li>\n')
+    
+    f.write('</ul>\n')
+    f.write('</body>\n')
+    f.write('</html>\n')
