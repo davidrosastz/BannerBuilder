@@ -4,10 +4,9 @@ from pathlib import Path
 
 current_path = Path(__file__).resolve()
 project_directory = current_path.parent.absolute().parent.absolute()
-destination_directory = 'interfaces'
 
 # Wildcard pattern to match HTML files
-pattern = f'{project_directory}/{destination_directory}/*.html'
+pattern = f'{project_directory}/*.html'
 
 # Fetch all HTML files in the specified directory
 file_paths = glob.glob(pattern)
@@ -48,5 +47,5 @@ combined_html = f"""
 """
 
 # Write the combined HTML string to a new file
-with open(f'{destination_directory}/combined.html', 'w', encoding='utf-8') as f:
+with open(f'index.html', 'w', encoding='utf-8') as f:
     f.write(combined_html)
