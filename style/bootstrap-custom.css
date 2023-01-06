@@ -12943,9 +12943,6 @@ center/margins arent good on LG screens */
 
 .footer-link:hover {
   color: #e3007f;
-  font-family: 'Noto Sans TC', sans-serif;
-  font-size: 14px;
-  margin: 0px;
   text-decoration: underline;
 }
 
