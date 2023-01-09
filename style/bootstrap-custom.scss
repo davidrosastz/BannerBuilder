@@ -1,7 +1,7 @@
-@import "bootstrap-5.0.2/scss/functions";
-@import "bootstrap-5.0.2/scss/variables";
-@import "bootstrap-5.0.2/scss/utilities";
-@import "bootstrap-5.0.2/scss/mixins";
+@import "../bootstrap-5.0.2/scss/functions";
+@import "../bootstrap-5.0.2/scss/variables";
+@import "../bootstrap-5.0.2/scss/utilities";
+@import "../bootstrap-5.0.2/scss/mixins";
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
@@ -38,7 +38,8 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px,
   xxl: 1320px,
-  xxxl: 1400px
+  xxxl: 1400px,
+  tz: 1200px
 );
 
 $grid-breakpoints: (
@@ -49,6 +50,7 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1400px,
   xxxl: 1400px,
+  tz: 1200px
 );
 
 @mixin outline-button($color: $taaze-main-color) {
@@ -112,6 +114,6 @@ $grid-breakpoints: (
 }
 
 
-@import "bootstrap-5.0.2/scss/bootstrap.scss";
+@import "../bootstrap-5.0.2/scss/bootstrap.scss";
 @include outline-button;
 @include nav-link;
