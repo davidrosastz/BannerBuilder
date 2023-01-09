@@ -1,0 +1,25 @@
+// || COLOR VARIABLES
+// Brand colors
+$taaze-main-color: #e3007f;
+$taaze-white-color: white;
+
+// Grey Scale
+$taaze-black-color: #000000;
+$taaze-grey1-color: #535353;
+$taaze-grey2-color: #757575;
+$taaze-grey3-color: #BDBDBD;
+$taaze-grey4-color: #E7E7E7;
+$taaze-grey5-color: #F2F2F2;
+
+// || TYPOGRAPHY VARIABLES
+// Font family
+$taaze-ff-nav: 'Noto Sans TC', sans-serif;
+$taaze-fs-nav: 14px;
+
+// || SPACING VARIABLES
+$default-y-padding: 32px;
+
+.default-y-padding {
+  padding-top: $default-y-padding;
+  padding-bottom: $default-y-padding;
+}
