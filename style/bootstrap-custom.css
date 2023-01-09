@@ -4828,8 +4828,8 @@ fieldset:disabled .btn {
 }
 
 .navbar-brand {
-  /*   padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem; */
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
@@ -5162,7 +5162,7 @@ fieldset:disabled .btn {
 
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
-  border-color: rgba(0, 0, 0, 0.1);
+  /*   border-color: rgba(0, 0, 0, 0.1); */
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -5534,8 +5534,6 @@ fieldset:disabled .btn {
   padding: 0 0;
   margin-bottom: 1rem;
   list-style: none;
-  column-gap: 16px;
-  /* added */
 }
 
 .breadcrumb-item+.breadcrumb-item {
@@ -7348,6 +7346,9 @@ fieldset:disabled .btn {
   flex-grow: 1;
   padding: 1rem 1rem;
   overflow-y: auto;
+
+  /* added*/
+  margin-top: 8px;
 }
 
 .offcanvas-start {
@@ -7361,6 +7362,7 @@ fieldset:disabled .btn {
 .offcanvas-end {
   top: 0;
   right: 0;
+
   width: 400px;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateX(100%);
@@ -12872,6 +12874,9 @@ clean up code for footer.html(add components instead of hardcoding*/
 
 
 /* manually added */
+
+/* || NAV */
+
 .nav-sec-button {
   color: #535353;
   font-family: 'Noto Sans TC', sans-serif;
@@ -12885,10 +12890,12 @@ clean up code for footer.html(add components instead of hardcoding*/
   text-decoration: underline;
 }
 
+
+
 .nav-prim-button {
   background-color: #535353;
   border-radius: 6px;
-  color: #FFFF;
+  color: #F0E9E9;
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 14px;
   min-height: 46px;
@@ -12898,10 +12905,12 @@ clean up code for footer.html(add components instead of hardcoding*/
 
 .nav-prim-button:hover {
   background-color: #e3007f;
-  color: #FFF;
+  color: #F0E9E9;
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 14px;
 }
+
+
 
 .navbar-nav {
   column-gap: 48px;
@@ -12912,11 +12921,66 @@ clean up code for footer.html(add components instead of hardcoding*/
   color: #535353;
 }
 
+/* OFFCANVAS */
+
+.offcanvas-section {
+  gap: 100px;
+}
+
+.offcanvas-line {
+  height: 1px;
+  background-color: #BDBDBD;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.nav-sec-offcanvas-button {
+  color: #535353;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: -12px;
+}
+
+.nav-sec-offcanvas-button:hover {
+  color: #e3007f;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  text-decoration: underline;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: -12px;
+}
+
+.nav-prim-offcanvas-button {
+  background-color: #535353;
+  border-radius: 6px;
+  color: #F0E9E9;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  min-height: 46px;
+  min-width: 100px;
+  line-height: 2.2;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.nav-prim-offcanvas-button:hover {
+  background-color: #e3007f;
+  color: #FFF;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
 
 
 /* todo
 word wrapping need to be fixed
 center/margins arent good on LG screens */
+
+/* || FOOTER */
 
 .footer-wrapper {
   display: flex;
@@ -12987,5 +13051,17 @@ center/margins arent good on LG screens */
 
   .nav {
     padding-top: 34px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offcanvas-end {
+    width: 198px
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .offcanvas-end {
+    width: 150px
   }
 }
