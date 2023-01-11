@@ -6180,6 +6180,7 @@ textarea.form-control-lg {
 .offcanvas-end {
   top: 0;
   right: 0;
+
   width: 400px;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateX(100%);
@@ -10703,6 +10704,16 @@ textarea.form-control-lg {
   color: #fff;
 }
 
+/*# sourceMappingURL=bootstrap-custom.css.map 
+
+TODO: map color variables????
+clean up code for footer.html(add components instead of hardcoding*/
+
+
+/* manually added */
+
+/* || NAV */
+
 .nav-sec-button {
   color: #535353;
   font-family: "Noto Sans TC", sans-serif;
@@ -10713,4 +10724,180 @@ textarea.form-control-lg {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 14px;
   text-decoration: underline;
-}/*# sourceMappingURL=bootstrap-custom.css.map */
+}
+
+
+
+.nav-prim-button {
+  background-color: #535353;
+  border-radius: 6px;
+  color: #F0E9E9;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  min-height: 46px;
+  min-width: 100px;
+  line-height: 2.2;
+}
+
+.nav-prim-button:hover {
+  background-color: #e3007f;
+  color: #F0E9E9;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+}
+
+
+
+.navbar-nav {
+  column-gap: 48px;
+  align-items: center;
+}
+
+.navbar-toggler {
+  color: #535353;
+}
+
+/* OFFCANVAS */
+
+.offcanvas-section {
+  gap: 100px;
+}
+
+.offcanvas-line {
+  height: 1px;
+  background-color: #BDBDBD;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.nav-sec-offcanvas-button {
+  color: #535353;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: -12px;
+}
+
+.nav-sec-offcanvas-button:hover {
+  color: #e3007f;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  text-decoration: underline;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: -12px;
+}
+
+.nav-prim-offcanvas-button {
+  background-color: #535353;
+  border-radius: 6px;
+  color: #F0E9E9;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  min-height: 46px;
+  min-width: 100px;
+  line-height: 2.2;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.nav-prim-offcanvas-button:hover {
+  background-color: #e3007f;
+  color: #FFF;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+
+/* todo
+word wrapping need to be fixed
+center/margins arent good on LG screens */
+
+/* || FOOTER */
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  /*   width: auto; */
+  max-width: 1200px;
+  padding-top: 32px;
+  padding-bottom: 48px;
+  padding-left: 64px;
+  padding-right: 64px;
+  align-items: flex-start;
+  margin: auto;
+  row-gap: 12px;
+}
+
+.footer-link {
+  color: #535353;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  text-decoration: none;
+
+}
+
+.footer-link:hover {
+  color: #e3007f;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  text-decoration: underline;
+}
+
+.footer-row {
+  gap: 16px;
+  display: flex;
+  align-items: flex-end;
+  height: auto;
+}
+
+.footer-ul {
+  display: flex;
+  list-style: none;
+  column-gap: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-wrapper {
+    width: auto;
+    margin-left: 48px;
+    margin-right: 48px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .footer-wrapper {
+    width: auto;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .navbar-brand-pic {
+    height: 21px
+  }
+
+  .nav {
+    padding-top: 34px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offcanvas-end {
+    width: 198px
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .offcanvas-end {
+    width: 150px
+  }
+}
