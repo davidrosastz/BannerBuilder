@@ -12989,3 +12989,17 @@ center/margins arent good on LG screens */
     padding-top: 34px;
   }
 }
+
+.gridpic img,
+.gridpic {
+  transform: scale(1);
+}
+
+.gridpic:hover img,
+.gridpic:hover {
+  transform: scale(0.95);
+}
+
+.gridpic {
+  transition: transform 0.1s ease-in-out;
+}
