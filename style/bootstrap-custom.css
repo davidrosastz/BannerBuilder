@@ -4830,6 +4830,7 @@ fieldset:disabled .btn {
 .navbar-brand {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
+  margin-right: 1rem;
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
@@ -5162,7 +5163,7 @@ fieldset:disabled .btn {
 
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
-  /*   border-color: rgba(0, 0, 0, 0.1); */
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -7346,9 +7347,6 @@ fieldset:disabled .btn {
   flex-grow: 1;
   padding: 1rem 1rem;
   overflow-y: auto;
-
-  /* added*/
-  margin-top: 8px;
 }
 
 .offcanvas-start {
