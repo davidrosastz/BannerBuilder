@@ -24,16 +24,10 @@ $taaze-grey5-color: #F2F2F2;
 $taaze-ff-nav: 'Noto Sans TC', sans-serif;
 $taaze-fs-nav: 14px;
 
-$new-breakpoints: (
-    1200: 1200px
-);
-
-$new-container-max-widths: (
-  1200: 1200px
-);
-
-$grid-breakpoints: map-merge($grid-breakpoints, $new-breakpoints);
-$container-max-widths: map-merge($container-max-widths, $new-container-max-widths);
+.container-1200 {
+  @include make-container();
+  max-width: 1200px;
+}
 
 $utilities: (
   "w": (property: width,
