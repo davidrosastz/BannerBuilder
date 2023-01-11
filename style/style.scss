@@ -1,7 +1,8 @@
 // || COLOR VARIABLES
 // Brand colors
-$taaze-main-color: #e3007f;
+$taaze-main-color: #FF057D;
 $taaze-white-color: white;
+$taaze-text-grey-color: #535353;
 
 // Grey Scale
 $taaze-black-color: #000000;
@@ -22,4 +23,8 @@ $default-y-padding: 32px;
 .default-y-padding {
   padding-top: $default-y-padding;
   padding-bottom: $default-y-padding;
+}
+
+.default-text-color {
+  color: $taaze-text-grey-color;
 }
