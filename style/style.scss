@@ -31,6 +31,15 @@ $padding-48: 48px;
   color: $taaze-text-grey-color;
 }
 
+.more-button {
+  padding: 4px;
+  width: 86px;
+  height: 46px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #FF057D;
+}
+
 @mixin tz-container-y-padding {
   padding-top: $padding-32;
   padding-bottom: $padding-32;
