@@ -2,15 +2,6 @@
   color: #535353;
 }
 
-.more-button {
-  padding: 4px;
-  width: 86px;
-  height: 46px;
-  font-weight: bold;
-  font-size: 16px;
-  color: #FF057D;
-}
-
 @media only screen and (min-width: 768px) {
   .tz-container-padding {
     padding-top: 32px;

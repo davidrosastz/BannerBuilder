@@ -8,7 +8,7 @@
 
 // || COLOR VARIABLES
 // Brand colors
-$taaze-main-color: #e3007f;
+$taaze-main-color: #FF057D;
 $taaze-white-color: white;
 
 // Grey Scale
@@ -23,11 +23,6 @@ $taaze-grey5-color: #F2F2F2;
 // Font family
 $taaze-ff-nav: 'Noto Sans TC', sans-serif;
 $taaze-fs-nav: 14px;
-
-.container-1200 {
-  @include make-container();
-  max-width: 1200px;
-}
 
 $utilities: (
   "w": (property: width,
@@ -84,6 +79,27 @@ $utilities: (
   }
 }
 
+.container-1200 {
+  @include make-container();
+  max-width: 1200px;
+}
+
+.tz-more-button {
+  @extend .d-flex;
+  @extend .align-items-center;
+  @extend .justify-content-center;
+  @extend .btn;
+  @extend .btn-outline-taaze-pink;
+  @extend .btn-sm;
+
+  color: $taaze-main-color;
+  padding: 4px;
+  width: 86px;
+  height: 46px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
 // todo
 .navbar-nav {
   column-gap: 48px;
@@ -96,6 +112,7 @@ $utilities: (
 .footer{
   max-width: 1200px
 }
+
 
 @import "../bootstrap-5.0.2/scss/bootstrap.scss";
 @include outline-button;
