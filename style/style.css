@@ -2,6 +2,12 @@
   color: #535353;
 }
 
+.tz-footer-link {
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 768px) {
   .tz-container-padding {
     padding-top: 32px;

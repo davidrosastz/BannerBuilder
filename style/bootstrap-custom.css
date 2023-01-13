@@ -11951,38 +11951,7 @@ fieldset:disabled .tz-more-button {
   text-decoration: underline;
 }
 
-.footer-row {
-  gap: 16px;
-  display: flex;
-  align-items: flex-end;
-  height: auto;
-}
-
-.footer-ul {
-  display: flex;
-  list-style: none;
-  column-gap: 16px;
-}
-
-@media screen and (max-width: 768px) {
-  .footer-wrapper {
-    width: auto;
-    margin-left: 48px;
-    margin-right: 48px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-
 @media screen and (max-width: 414px) {
-  .footer-wrapper {
-    width: auto;
-    margin-left: 24px;
-    margin-right: 24px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .navbar-brand-pic {
     height: 21px
   }
