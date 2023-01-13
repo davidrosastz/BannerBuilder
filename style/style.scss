@@ -1,9 +1,7 @@
 // || COLOR VARIABLES
-// Brand colors
-$taaze-main-color: #e3007f;
+$taaze-main-color: #FF057D;
 $taaze-white-color: white;
-
-// Grey Scale
+$taaze-text-grey-color: #535353;
 $taaze-black-color: #000000;
 $taaze-grey1-color: #535353;
 $taaze-grey2-color: #757575;
@@ -11,15 +9,60 @@ $taaze-grey3-color: #BDBDBD;
 $taaze-grey4-color: #E7E7E7;
 $taaze-grey5-color: #F2F2F2;
 
+// || MEDIA QUERY VARIABLES
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
 // || TYPOGRAPHY VARIABLES
-// Font family
 $taaze-ff-nav: 'Noto Sans TC', sans-serif;
 $taaze-fs-nav: 14px;
 
 // || SPACING VARIABLES
-$default-y-padding: 32px;
+$padding-0: 0px;
+$padding-24: 24px;
+$padding-32: 32px;
+$padding-48: 48px;
 
-.default-y-padding {
-  padding-top: $default-y-padding;
-  padding-bottom: $default-y-padding;
+.default-text-color {
+  color: $taaze-text-grey-color;
+}
+
+.tz-footer-link {
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+
+}
+
+@mixin tz-container-y-padding {
+  padding-top: $padding-32;
+  padding-bottom: $padding-32;
+}
+
+@media only screen and (min-width: $md) {
+  .tz-container-padding {
+    @include tz-container-y-padding();
+    padding-left: $padding-0;
+    padding-right: $padding-0;
+  }
+}
+
+@media only screen and (max-width: $md) and (min-width: $sm) {
+  .tz-container-padding {
+    @include tz-container-y-padding();
+    padding-left: $padding-48;
+    padding-right: $padding-48;
+  }
+}
+
+@media only screen and (max-width: $sm) {
+  .tz-container-padding {
+    @include tz-container-y-padding();
+    padding-left: $padding-24;
+    padding-right: $padding-24;
+  }
 }

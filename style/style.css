@@ -1,4 +1,34 @@
-.default-y-padding {
-  padding-top: 32px;
-  padding-bottom: 32px;
+.default-text-color {
+  color: #535353;
+}
+
+.tz-footer-link {
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .tz-container-padding {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  .tz-container-padding {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .tz-container-padding {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */
