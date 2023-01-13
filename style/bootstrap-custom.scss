@@ -1,14 +1,14 @@
-@import "bootstrap-5.0.2/scss/functions";
-@import "bootstrap-5.0.2/scss/variables";
-@import "bootstrap-5.0.2/scss/utilities";
-@import "bootstrap-5.0.2/scss/mixins";
+@import "../bootstrap-5.0.2/scss/functions";
+@import "../bootstrap-5.0.2/scss/variables";
+@import "../bootstrap-5.0.2/scss/utilities";
+@import "../bootstrap-5.0.2/scss/mixins";
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
 
 // || COLOR VARIABLES
 // Brand colors
-$taaze-main-color: #e3007f;
+$taaze-main-color: #FF057D;
 $taaze-white-color: white;
 
 // Grey Scale
@@ -30,25 +30,6 @@ $utilities: (
     responsive: true,
     values: (10: 10%,
     ))
-);
-
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px,
-  xxxl: 1400px
-);
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px,
-  xxxl: 1400px,
 );
 
 @mixin outline-button($color: $taaze-main-color) {
@@ -98,6 +79,27 @@ $grid-breakpoints: (
   }
 }
 
+.container-1200 {
+  @include make-container();
+  max-width: 1200px;
+}
+
+.tz-more-button {
+  @extend .d-flex;
+  @extend .align-items-center;
+  @extend .justify-content-center;
+  @extend .btn;
+  @extend .btn-outline-taaze-pink;
+  @extend .btn-sm;
+
+  color: $taaze-main-color;
+  padding: 4px;
+  width: 86px;
+  height: 46px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
 // todo
 .navbar-nav {
   column-gap: 48px;
@@ -112,6 +114,6 @@ $grid-breakpoints: (
 }
 
 
-@import "bootstrap-5.0.2/scss/bootstrap.scss";
+@import "../bootstrap-5.0.2/scss/bootstrap.scss";
 @include outline-button;
 @include nav-link;
