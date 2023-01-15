@@ -49,6 +49,10 @@ $padding-48: 48px;
     padding-left: $padding-0;
     padding-right: $padding-0;
   }
+
+  .free-banner-text-spacing {
+    margin-left: 30px;
+  }
 }
 
 @media only screen and (max-width: $md) and (min-width: $sm) {
@@ -57,6 +61,11 @@ $padding-48: 48px;
     padding-left: $padding-48;
     padding-right: $padding-48;
   }
+
+  .free-banner-text-spacing {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (max-width: $sm) {
@@ -64,5 +73,10 @@ $padding-48: 48px;
     @include tz-container-y-padding();
     padding-left: $padding-24;
     padding-right: $padding-24;
+  }
+
+  .free-banner-text-spacing {
+    margin-left: 0px;
+    margin-top: 30px;
   }
 }
