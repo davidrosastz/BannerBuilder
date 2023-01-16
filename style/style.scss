@@ -38,6 +38,11 @@ $padding-48: 48px;
 
 }
 
+@mixin vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
 @mixin tz-container-y-padding {
   padding-top: $padding-32;
   padding-bottom: $padding-32;
@@ -49,6 +54,14 @@ $padding-48: 48px;
     padding-left: $padding-0;
     padding-right: $padding-0;
   }
+
+  .tz-right-text-spacing {
+    margin-left: 30px;
+  }
+
+  .tz-book-description-left-title-spacing {
+    @include vertical-text();
+  }
 }
 
 @media only screen and (max-width: $md) and (min-width: $sm) {
@@ -56,6 +69,14 @@ $padding-48: 48px;
     @include tz-container-y-padding();
     padding-left: $padding-48;
     padding-right: $padding-48;
+  }
+
+  .tz-right-text-spacing {
+    margin-left: 30px;
+  }
+
+  .tz-book-description-left-title-spacing {
+    @include vertical-text();
   }
 }
 
@@ -65,4 +86,10 @@ $padding-48: 48px;
     padding-left: $padding-24;
     padding-right: $padding-24;
   }
+
+  .tz-right-text-spacing {
+    margin-left: 0px;
+  }
+
+  .tz-book-description-left-title-spacing {}
 }
