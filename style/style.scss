@@ -55,7 +55,7 @@ $padding-48: 48px;
     padding-right: $padding-0;
   }
 
-  .free-banner-text-spacing {
+  .tz-free-description-text-spacing {
     margin-left: 30px;
   }
 
@@ -86,9 +86,8 @@ $padding-48: 48px;
     padding-right: $padding-48;
   }
 
-  .free-banner-text-spacing {
+  .free-description-text-spacing {
     margin-left: 0px;
-    margin-top: 30px;
   }
 
   .tz-free-description-image-dimensions {
@@ -109,6 +108,11 @@ $padding-48: 48px;
     margin-left: 25px;
     margin-right: 30px;
   }
+
+  .tz-free-description-title-spacing {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: $sm) {
@@ -118,9 +122,8 @@ $padding-48: 48px;
     padding-right: $padding-24;
   }
 
-  .free-banner-text-spacing {
+  .free-description-text-spacing {
     margin-left: 0px;
-    margin-top: 30px;
   }
 
   .tz-free-description-image-dimensions {
@@ -139,6 +142,15 @@ $padding-48: 48px;
     margin-left: 0px;
     margin-right: 0px;
   }
+
+  .tz-free-description-title-spacing {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.tz-free-description-title-spacing {
+  margin-bottom: 30px;
 }
 
 .tz-book-description-image-dimensions {
