@@ -23,6 +23,10 @@
         writing-mode: vertical-rl;
     text-orientation: mixed;
   }
+  .tz-book-description-image-spacing {
+    margin-left: 25px;
+    margin-right: 30px;
+  }
 }
 @media only screen and (max-width: 768px) and (min-width: 576px) {
   .tz-container-padding {
@@ -39,6 +43,10 @@
         writing-mode: vertical-rl;
     text-orientation: mixed;
   }
+  .tz-book-description-image-spacing {
+    margin-left: 25px;
+    margin-right: 30px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .tz-container-padding {
@@ -50,4 +58,12 @@
   .tz-right-text-spacing {
     margin-left: 0px;
   }
+  .tz-book-description-image-spacing {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.tz-book-description-image-dimensions {
+  max-width: 260px;
+  min-width: 200px;
 }/*# sourceMappingURL=style.css.map */
