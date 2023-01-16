@@ -38,6 +38,11 @@ $padding-48: 48px;
 
 }
 
+@mixin vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
 @mixin tz-container-y-padding {
   padding-top: $padding-32;
   padding-bottom: $padding-32;
@@ -59,6 +64,19 @@ $padding-48: 48px;
     min-width: 440px;
     height: auto;
   }
+
+  .tz-right-text-spacing {
+    margin-left: 30px;
+  }
+
+  .tz-book-description-left-title-spacing {
+    @include vertical-text();
+  }
+
+  .tz-book-description-image-spacing {
+    margin-left: 25px;
+    margin-right: 30px;
+  }
 }
 
 @media only screen and (max-width: $md) and (min-width: $sm) {
@@ -77,6 +95,19 @@ $padding-48: 48px;
     min-width: 100%;
     max-width: 100%;
     height: auto;
+  }
+
+  .tz-right-text-spacing {
+    margin-left: 30px;
+  }
+
+  .tz-book-description-left-title-spacing {
+    @include vertical-text();
+  }
+
+  .tz-book-description-image-spacing {
+    margin-left: 25px;
+    margin-right: 30px;
   }
 }
 
@@ -97,4 +128,20 @@ $padding-48: 48px;
     max-width: 100%;
     height: auto;
   }
+
+  .tz-right-text-spacing {
+    margin-left: 0px;
+  }
+
+  .tz-book-description-left-title-spacing {}
+
+  .tz-book-description-image-spacing {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.tz-book-description-image-dimensions {
+  max-width: 260px;
+  min-width: 200px;
 }
