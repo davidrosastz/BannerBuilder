@@ -31,6 +31,18 @@ $padding-48: 48px;
   color: $taaze-text-grey-color;
 }
 
+.tz-footer-link {
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+
+}
+
+@mixin vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
 @mixin tz-container-y-padding {
   padding-top: $padding-32;
   padding-bottom: $padding-32;
@@ -42,6 +54,29 @@ $padding-48: 48px;
     padding-left: $padding-0;
     padding-right: $padding-0;
   }
+
+  .tz-free-description-text-spacing {
+    margin-left: 30px;
+  }
+
+  .tz-free-description-image-dimensions {
+    max-width: 440px;
+    min-width: 440px;
+    height: auto;
+  }
+
+  .tz-right-text-spacing {
+    margin-left: 30px;
+  }
+
+  .tz-book-description-left-title-spacing {
+    @include vertical-text();
+  }
+
+  .tz-book-description-image-spacing {
+    margin-left: 25px;
+    margin-right: 30px;
+  }
 }
 
 @media only screen and (max-width: $md) and (min-width: $sm) {
@@ -49,6 +84,34 @@ $padding-48: 48px;
     @include tz-container-y-padding();
     padding-left: $padding-48;
     padding-right: $padding-48;
+  }
+
+  .free-description-text-spacing {
+    margin-left: 0px;
+  }
+
+  .tz-free-description-image-dimensions {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .tz-right-text-spacing {
+    margin-left: 30px;
+  }
+
+  .tz-book-description-left-title-spacing {
+    @include vertical-text();
+  }
+
+  .tz-book-description-image-spacing {
+    margin-left: 25px;
+    margin-right: 30px;
+  }
+
+  .tz-free-description-title-spacing {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -58,4 +121,39 @@ $padding-48: 48px;
     padding-left: $padding-24;
     padding-right: $padding-24;
   }
+
+  .free-description-text-spacing {
+    margin-left: 0px;
+  }
+
+  .tz-free-description-image-dimensions {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .tz-right-text-spacing {
+    margin-left: 0px;
+  }
+
+  .tz-book-description-left-title-spacing {}
+
+  .tz-book-description-image-spacing {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .tz-free-description-title-spacing {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.tz-free-description-title-spacing {
+  margin-bottom: 30px;
+}
+
+.tz-book-description-image-dimensions {
+  max-width: 260px;
+  min-width: 200px;
 }
