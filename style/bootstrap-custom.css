@@ -11963,6 +11963,8 @@ fieldset:disabled .tz-more-button {
 
 .gridpic img,
 .gridpic {
+  overflow: hidden;
+  border: 1px solid red;
   transform: scale(1);
 }
 
