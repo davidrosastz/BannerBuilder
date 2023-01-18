@@ -22,7 +22,7 @@
     padding-right: 48px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .tz-container-padding {
     padding-left: 0px;
     padding-right: 0px;
@@ -60,6 +60,85 @@
   margin-bottom: 30px;
 }
 
+.tz-four-book-card {
+  transition: transform 0.2s;
+  border-radius: 12px;
+  background-color: white;
+  margin: auto;
+}
+.tz-four-book-card:hover {
+  transform: scale(0.95);
+}
+@media (min-width: 0) {
+  .tz-four-book-card {
+    max-width: 179px;
+    height: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .tz-four-book-card {
+    max-width: 324px;
+    height: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .tz-four-book-card {
+    max-width: 282px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 0) {
+  .tz-four-book-card-text {
+    margin-top: 12px;
+  }
+  .tz-four-book-card-text > div {
+    margin-bottom: 8px;
+  }
+}
+@media (min-width: 576px) {
+  .tz-four-book-card-text > div {
+    margin-bottom: 12px;
+  }
+}
+@media (min-width: 992px) {
+  .tz-four-book-card-text {
+    margin-top: 11px;
+  }
+}
+
+.tz-four-book-image-wrapper {
+  position: relative;
+  padding: 12px;
+}
+.tz-four-book-image-wrapper > * {
+  border-radius: 6px;
+}
+.tz-four-book-image-wrapper > div {
+  position: absolute;
+  z-index: 1;
+  background-color: #FF057D;
+  color: white;
+}
+@media (min-width: 0) {
+  .tz-four-book-image-wrapper > div {
+    width: 37px;
+    height: 24px;
+  }
+}
+@media (min-width: 576px) {
+  .tz-four-book-image-wrapper > div {
+    height: 34px;
+    width: 57px;
+  }
+}
+@media (min-width: 992px) {
+  .tz-four-book-image-wrapper > div {
+    height: 30px;
+    width: 53px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .tz-right-text-spacing {
     margin-left: 30px;
@@ -72,31 +151,6 @@
   .tz-book-description-image-spacing {
     margin-left: 25px;
     margin-right: 30px;
-  }
-  .tz-four-book-card {
-    transition: transform 0.2s;
-    border-radius: 12px;
-    background-color: white;
-    margin: auto;
-    max-width: 282px;
-    height: 100%;
-  }
-  .tz-four-book-card:hover {
-    transform: scale(0.95);
-  }
-  .tz-four-book-card-text {
-    margin-top: 11px;
-  }
-  .tz-four-book-card-text > * {
-    margin-bottom: 12px;
-  }
-  .tz-four-book-image-wrapper div {
-    position: absolute;
-    z-index: 1;
-    background-color: #FF057D;
-    color: white;
-    height: 30px;
-    width: 53px;
   }
 }
 @media only screen and (max-width: 768px) and (min-width: 576px) {
@@ -116,31 +170,6 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .tz-four-book-card {
-    transition: transform 0.2s;
-    border-radius: 12px;
-    background-color: white;
-    margin: auto;
-    max-width: 324px;
-    height: 100%;
-  }
-  .tz-four-book-card:hover {
-    transform: scale(0.95);
-  }
-  .tz-four-book-card-text {
-    margin-top: 12px;
-  }
-  .tz-four-book-card-text > * {
-    margin-bottom: 12px;
-  }
-  .tz-four-book-image-wrapper div {
-    position: absolute;
-    z-index: 1;
-    background-color: #FF057D;
-    color: white;
-    height: 34px;
-    width: 57px;
-  }
 }
 @media only screen and (max-width: 576px) {
   .tz-right-text-spacing {
@@ -154,31 +183,6 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .tz-four-book-card {
-    transition: transform 0.2s;
-    border-radius: 12px;
-    background-color: white;
-    margin: auto;
-    max-width: 179px;
-    height: 100%;
-  }
-  .tz-four-book-card:hover {
-    transform: scale(0.95);
-  }
-  .tz-four-book-card-text {
-    margin-top: 12px;
-  }
-  .tz-four-book-card-text > * {
-    margin-bottom: 8px;
-  }
-  .tz-four-book-image-wrapper div {
-    position: absolute;
-    z-index: 1;
-    background-color: #FF057D;
-    color: white;
-    width: 37px;
-    height: 24px;
-  }
 }
 .tz-footer-link {
   font-size: 12px;
@@ -189,13 +193,4 @@
 .tz-book-description-image-dimensions {
   max-width: 260px;
   min-width: 200px;
-}
-
-.tz-four-book-image-wrapper {
-  position: relative;
-  padding: 12px;
-}
-
-.tz-four-book-image-wrapper > * {
-  border-radius: 6px;
 }/*# sourceMappingURL=style.css.map */
