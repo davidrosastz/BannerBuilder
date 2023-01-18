@@ -1,75 +1,32 @@
-// || COLOR VARIABLES
-$taaze-main-color: #FF057D;
-$taaze-white-color: white;
-$taaze-text-grey-color: #535353;
-$taaze-black-color: #000000;
-$taaze-grey1-color: #535353;
-$taaze-grey2-color: #757575;
-$taaze-grey3-color: #BDBDBD;
-$taaze-grey4-color: #E7E7E7;
-$taaze-grey5-color: #F2F2F2;
+@import 'variables';
+@import 'colors';
+@import 'mixins';
+@import 'fonts';
+@import 'breakpoints';
 
-// || MEDIA QUERY VARIABLES
-$xs: 0;
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-$xxl: 1400px;
-
-// || TYPOGRAPHY VARIABLES
-$taaze-ff-nav: 'Noto Sans TC', sans-serif;
 $taaze-fs-nav: 14px;
 
-// || SPACING VARIABLES
-$padding-0: 0px;
-$padding-24: 24px;
-$padding-32: 32px;
-$padding-48: 48px;
+.tz-container-padding {
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-.main-color {
-  color: $taaze-main-color;
-}
+  @include xs {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 
-.default-text-color {
-  color: $taaze-text-grey-color;
-}
+  @include sm {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
 
-@mixin hover-shrink {
-  transition: transform 0.2s;
-  &:hover {
-    transform: scale(0.95);
+  @include lg {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
-@mixin vertical-text {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-}
-
-@mixin tz-container-y-padding {
-  padding-top: $padding-32;
-  padding-bottom: $padding-32;
-}
-
-@mixin tz-four-book-card-base {
-  @include hover-shrink();
-  border-radius: 12px;
-  background-color: white;
-  margin: auto;
-}
-
-@media only screen and (min-width: $md) {
-  .tz-container-padding {
-    @include tz-container-y-padding();
-    padding-left: $padding-0;
-    padding-right: $padding-0;
-  }
-
-  .tz-free-description-text-spacing {
-    margin-left: 30px;
-  }
-
+@media only screen and (min-width: 768px) {
   .tz-free-description-image-dimensions {
     max-width: 440px;
     min-width: 440px;
@@ -113,16 +70,7 @@ $padding-48: 48px;
   }
 }
 
-@media only screen and (max-width: $md) and (min-width: $sm) {
-  .tz-container-padding {
-    @include tz-container-y-padding();
-    padding-left: $padding-48;
-    padding-right: $padding-48;
-  }
-
-  .free-description-text-spacing {
-    margin-left: 0px;
-  }
+@media only screen and (max-width: 768px) and (min-width: 576px) {
 
   .tz-free-description-image-dimensions {
     min-width: 100%;
@@ -172,16 +120,7 @@ $padding-48: 48px;
   }
 }
 
-@media only screen and (max-width: $sm) {
-  .tz-container-padding {
-    @include tz-container-y-padding();
-    padding-left: $padding-24;
-    padding-right: $padding-24;
-  }
-
-  .free-description-text-spacing {
-    margin-left: 0px;
-  }
+@media only screen and (max-width: 576px) {
 
   .tz-free-description-image-dimensions {
     min-width: 100%;
@@ -227,6 +166,14 @@ $padding-48: 48px;
     width: 37px;
     height: 24px;
   }
+}
+
+.main-color {
+  color: $taaze-main-color;
+}
+
+.default-text-color {
+  color: $taaze-text-grey-color;
 }
 
 .tz-footer-link {
