@@ -34,11 +34,15 @@
     margin-right: 30px;
   }
   .tz-four-book-card {
+    transition: transform 0.2s;
     border-radius: 12px;
     background-color: white;
     margin: auto;
     max-width: 282px;
     height: 100%;
+  }
+  .tz-four-book-card:hover {
+    transform: scale(0.95);
   }
   .tz-four-book-card-text {
     margin-top: 11px;
@@ -87,11 +91,15 @@
     margin-bottom: 30px;
   }
   .tz-four-book-card {
+    transition: transform 0.2s;
     border-radius: 12px;
     background-color: white;
     margin: auto;
     max-width: 324px;
     height: 100%;
+  }
+  .tz-four-book-card:hover {
+    transform: scale(0.95);
   }
   .tz-four-book-card-text {
     margin-top: 12px;
@@ -135,11 +143,15 @@
     margin-bottom: 30px;
   }
   .tz-four-book-card {
+    transition: transform 0.2s;
     border-radius: 12px;
     background-color: white;
     margin: auto;
     max-width: 179px;
     height: 100%;
+  }
+  .tz-four-book-card:hover {
+    transform: scale(0.95);
   }
   .tz-four-book-card-text {
     margin-top: 12px;

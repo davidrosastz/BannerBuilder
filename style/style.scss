@@ -35,6 +35,13 @@ $padding-48: 48px;
   color: $taaze-text-grey-color;
 }
 
+@mixin hover-shrink {
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
 @mixin vertical-text {
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -46,6 +53,7 @@ $padding-48: 48px;
 }
 
 @mixin tz-four-book-card-base {
+  @include hover-shrink();
   border-radius: 12px;
   background-color: white;
   margin: auto;
