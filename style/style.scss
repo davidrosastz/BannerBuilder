@@ -27,15 +27,12 @@ $padding-24: 24px;
 $padding-32: 32px;
 $padding-48: 48px;
 
-.default-text-color {
-  color: $taaze-text-grey-color;
+.main-color {
+  color: $taaze-main-color;
 }
 
-.tz-footer-link {
-  font-size: 12px;
-  color: black;
-  text-decoration: none;
-
+.default-text-color {
+  color: $taaze-text-grey-color;
 }
 
 @mixin vertical-text {
@@ -46,6 +43,12 @@ $padding-48: 48px;
 @mixin tz-container-y-padding {
   padding-top: $padding-32;
   padding-bottom: $padding-32;
+}
+
+@mixin tz-four-book-card-base {
+  border-radius: 12px;
+  background-color: white;
+  margin: auto;
 }
 
 @media only screen and (min-width: $md) {
@@ -76,6 +79,20 @@ $padding-48: 48px;
   .tz-book-description-image-spacing {
     margin-left: 25px;
     margin-right: 30px;
+  }
+
+  .tz-four-book-card {
+    @include tz-four-book-card-base();
+    max-width: 282px;
+    height: 100%;
+  }
+
+  .tz-four-book-card-text {
+    margin-top: 11px;
+  }
+
+  .tz-four-book-card-text>* {
+    margin-bottom: 12px;
   }
 }
 
@@ -113,6 +130,20 @@ $padding-48: 48px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
+  .tz-four-book-card {
+    @include tz-four-book-card-base();
+    max-width: 324px;
+    height: 100%;
+  }
+
+  .tz-four-book-card-text {
+    margin-top: 12px;
+  }
+
+  .tz-four-book-card-text>* {
+    margin-bottom: 12px;
+  }
 }
 
 @media only screen and (max-width: $sm) {
@@ -147,6 +178,26 @@ $padding-48: 48px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
+  .tz-four-book-card {
+    @include tz-four-book-card-base();
+    max-width: 179px;
+    height: 100%;
+  }
+
+  .tz-four-book-card-text {
+    margin-top: 12px;
+  }
+
+  .tz-four-book-card-text>* {
+    margin-bottom: 8px;
+  }
+}
+
+.tz-footer-link {
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
 }
 
 .tz-free-description-title-spacing {
@@ -156,4 +207,12 @@ $padding-48: 48px;
 .tz-book-description-image-dimensions {
   max-width: 260px;
   min-width: 200px;
+}
+
+.tz-four-book-image-wrapper {
+  padding: 12px;
+}
+
+.tz-four-book-image-wrapper img {
+  border-radius: 6px;
 }
