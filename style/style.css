@@ -46,6 +46,14 @@
   .tz-four-book-card-text > * {
     margin-bottom: 12px;
   }
+  .tz-four-book-image-wrapper div {
+    position: absolute;
+    z-index: 1;
+    background-color: #FF057D;
+    color: white;
+    height: 30px;
+    width: 53px;
+  }
 }
 @media only screen and (max-width: 768px) and (min-width: 576px) {
   .tz-container-padding {
@@ -91,6 +99,14 @@
   .tz-four-book-card-text > * {
     margin-bottom: 12px;
   }
+  .tz-four-book-image-wrapper div {
+    position: absolute;
+    z-index: 1;
+    background-color: #FF057D;
+    color: white;
+    height: 34px;
+    width: 57px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .tz-container-padding {
@@ -131,6 +147,14 @@
   .tz-four-book-card-text > * {
     margin-bottom: 8px;
   }
+  .tz-four-book-image-wrapper div {
+    position: absolute;
+    z-index: 1;
+    background-color: #FF057D;
+    color: white;
+    width: 37px;
+    height: 24px;
+  }
 }
 .tz-footer-link {
   font-size: 12px;
@@ -148,9 +172,10 @@
 }
 
 .tz-four-book-image-wrapper {
+  position: relative;
   padding: 12px;
 }
 
-.tz-four-book-image-wrapper img {
+.tz-four-book-image-wrapper > * {
   border-radius: 6px;
 }/*# sourceMappingURL=style.css.map */
