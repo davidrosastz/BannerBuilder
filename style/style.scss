@@ -6,6 +6,14 @@
 
 $taaze-fs-nav: 14px;
 
+.main-color {
+  color: $taaze-main-color;
+}
+
+.default-text-color {
+  color: $taaze-text-grey-color;
+}
+
 .tz-container-padding {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -26,13 +34,36 @@ $taaze-fs-nav: 14px;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .tz-free-description-image-dimensions {
-    max-width: 440px;
-    min-width: 440px;
-    height: auto;
+.tz-free-description-text-spacing {
+  @include xs {
+    margin-left: 0px;
   }
 
+  @include md {
+    margin-left: 30px;
+  }
+}
+
+.tz-free-description-image-dimensions {
+  height: auto;
+
+  @include xs {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  @include md {
+    max-width: 440px;
+    min-width: 440px;
+  }
+}
+
+.tz-free-description-title-spacing {
+  margin-bottom: 30px;
+}
+
+
+@media only screen and (min-width: 768px) {
   .tz-right-text-spacing {
     margin-left: 30px;
   }
@@ -71,13 +102,6 @@ $taaze-fs-nav: 14px;
 }
 
 @media only screen and (max-width: 768px) and (min-width: 576px) {
-
-  .tz-free-description-image-dimensions {
-    min-width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
   .tz-right-text-spacing {
     margin-left: 30px;
   }
@@ -121,13 +145,6 @@ $taaze-fs-nav: 14px;
 }
 
 @media only screen and (max-width: 576px) {
-
-  .tz-free-description-image-dimensions {
-    min-width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
   .tz-right-text-spacing {
     margin-left: 0px;
   }
@@ -168,22 +185,10 @@ $taaze-fs-nav: 14px;
   }
 }
 
-.main-color {
-  color: $taaze-main-color;
-}
-
-.default-text-color {
-  color: $taaze-text-grey-color;
-}
-
 .tz-footer-link {
   font-size: 12px;
   color: black;
   text-decoration: none;
-}
-
-.tz-free-description-title-spacing {
-  margin-bottom: 30px;
 }
 
 .tz-book-description-image-dimensions {
