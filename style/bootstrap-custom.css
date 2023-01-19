@@ -11953,4 +11953,68 @@ fieldset:disabled .tz-more-button {
 }
 
 /*# sourceMappingURL=bootstrap-custom.css.map */
+.two-book-banner {
+  gap: 24px;
+}
+
+.book-card {
+
+
+  background: #FFFFFF;
+
+}
+
+.book-card-content {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.text-title {
+  font-family: 'Noto Sans TC';
+  font-weight: 700;
+  color: #535353;
+}
+
+.text-body {
+  font-family: 'Noto Sans TC';
+  font-weight: 400 !important;
+  color: #757575 !important;
+}
+
+.text-price {
+  font-family: 'Roboto';
+  font-weight: 700;
+  color: #FF057D;
+  display: flex;
+}
+
+.text-price-crossed {
+  font-family: 'Roboto';
+  text-decoration: line-through;
+  color: #BDBDBD;
+  display: flex;
+}
+
+/* changing naming convention to start with "tz". This is to easily id the custom classes */
+
+.tz-container-white {
+  background-color: #F2F2F2;
+}
+
+/* this doesnt work */
+.tz-book-card-image {
+  height: auto;
+  max-width: 180px;
+}
+
+.tz-text-pricecontainer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4px;
+}
+
+/**/
+
 /*# sourceMappingURL=bootstrap-custom.css.map */
