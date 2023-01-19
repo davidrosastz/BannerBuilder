@@ -167,6 +167,19 @@
 }
 
 /***************************************
+  10_text_description_division STYLE
+***************************************/
+.tz-text-description-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.tz-text-description-description {
+  font-size: 18px;
+}
+
+/***************************************
   14_book_description_division STYLE
 ***************************************/
 @media (min-width: 576px) {
