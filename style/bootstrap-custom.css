@@ -11,10 +11,9 @@
 
 .tz-more-button {
   color: #FF057D;
-  padding: 4px;
   width: 86px;
   height: 46px;
-  font-weight: bold;
+  padding: 4px;
   font-size: 16px;
 }
 
@@ -7143,7 +7142,7 @@ textarea.form-control-lg {
   font-weight: 400 !important;
 }
 
-.fw-bold {
+.fw-bold, .tz-more-button {
   font-weight: 700 !important;
 }
 
@@ -7404,10 +7403,6 @@ textarea.form-control-lg {
 
 .invisible {
   visibility: hidden !important;
-}
-
-.w-10 {
-  width: 10% !important;
 }
 
 @media (min-width: 576px) {
@@ -7905,9 +7900,6 @@ textarea.form-control-lg {
   .text-sm-center {
     text-align: center !important;
   }
-  .w-sm-10 {
-    width: 10% !important;
-  }
 }
 @media (min-width: 768px) {
   .float-md-start {
@@ -8403,9 +8395,6 @@ textarea.form-control-lg {
   }
   .text-md-center {
     text-align: center !important;
-  }
-  .w-md-10 {
-    width: 10% !important;
   }
 }
 @media (min-width: 992px) {
@@ -8903,9 +8892,6 @@ textarea.form-control-lg {
   .text-lg-center {
     text-align: center !important;
   }
-  .w-lg-10 {
-    width: 10% !important;
-  }
 }
 @media (min-width: 1200px) {
   .float-xl-start {
@@ -9402,9 +9388,6 @@ textarea.form-control-lg {
   .text-xl-center {
     text-align: center !important;
   }
-  .w-xl-10 {
-    width: 10% !important;
-  }
 }
 @media (min-width: 1400px) {
   .float-xxl-start {
@@ -9900,9 +9883,6 @@ textarea.form-control-lg {
   }
   .text-xxl-center {
     text-align: center !important;
-  }
-  .w-xxl-10 {
-    width: 10% !important;
   }
 }
 @media (min-width: 1200px) {

@@ -10,10 +10,6 @@ $taaze-fs-nav: 14px;
   color: $taaze-main-color;
 }
 
-.default-text-color {
-  color: $taaze-text-grey-color;
-}
-
 .tz-container-padding {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -139,6 +135,22 @@ $taaze-fs-nav: 14px;
 
 .tz-free-description-title-spacing {
   margin-bottom: 30px;
+}
+
+/***************************************
+  2_four_book_division STYLE
+***************************************/
+.tz-title_briefing_title {
+  color: $taaze-text-grey-color;
+  margin: auto;
+  font-weight: $font-weight-bold;
+  font-size: 30px;
+}
+
+.tz-title_briefing_description {
+  color: $taaze-text-grey-color;
+  margin: auto;
+  font-size: 20px;
 }
 
 /***************************************

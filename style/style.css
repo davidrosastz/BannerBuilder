@@ -2,10 +2,6 @@
   color: #FF057D;
 }
 
-.default-text-color {
-  color: #535353;
-}
-
 .tz-container-padding {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -143,6 +139,22 @@
 
 .tz-free-description-title-spacing {
   margin-bottom: 30px;
+}
+
+/***************************************
+  2_four_book_division STYLE
+***************************************/
+.tz-title_briefing_title {
+  color: #535353;
+  margin: auto;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.tz-title_briefing_description {
+  color: #535353;
+  margin: auto;
+  font-size: 20px;
 }
 
 /***************************************

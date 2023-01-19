@@ -9,14 +9,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
-$utilities: (
-  "w": (property: width, 
-    class: w,
-    responsive: true,
-    values: (10: 10%,
-    ))
-);
-
 @mixin outline-button($color: $taaze-main-color) {
   .btn-outline-taaze-pink {
     border-color: $taaze-main-color;
@@ -76,12 +68,12 @@ $utilities: (
   @extend .btn;
   @extend .btn-outline-taaze-pink;
   @extend .btn-sm;
+  @extend .fw-bold;
 
   color: $taaze-main-color;
-  padding: 4px;
   width: 86px;
   height: 46px;
-  font-weight: bold;
+  padding: 4px;
   font-size: 16px;
 }
 
