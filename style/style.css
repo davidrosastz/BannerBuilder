@@ -1,34 +1,232 @@
-.default-text-color {
-  color: #535353;
+.main-color {
+  color: #FF057D;
 }
 
-.tz-footer-link {
-  font-size: 12px;
-  color: black;
-  text-decoration: none;
+.tz-container-padding {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-
-@media only screen and (min-width: 768px) {
+@media (min-width: 0) {
   .tz-container-padding {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
-@media only screen and (max-width: 768px) and (min-width: 576px) {
+@media (min-width: 576px) {
   .tz-container-padding {
-    padding-top: 32px;
-    padding-bottom: 32px;
     padding-left: 48px;
     padding-right: 48px;
   }
 }
-@media only screen and (max-width: 576px) {
+@media (min-width: 768px) {
   .tz-container-padding {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
+}
+
+/***************************************
+  2_four_book_division STYLE
+***************************************/
+.tz-four-book-card {
+  transition: transform 0.2s;
+  border-radius: 12px;
+  background-color: white;
+  margin: auto;
+}
+.tz-four-book-card:hover {
+  transform: scale(0.95);
+}
+@media (min-width: 0) {
+  .tz-four-book-card {
+    max-width: 179px;
+    height: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .tz-four-book-card {
+    max-width: 324px;
+    height: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .tz-four-book-card {
+    max-width: 282px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 0) {
+  .tz-four-book-card-text {
+    margin-top: 12px;
+  }
+  .tz-four-book-card-text > div {
+    margin-bottom: 8px;
+  }
+}
+@media (min-width: 576px) {
+  .tz-four-book-card-text > div {
+    margin-bottom: 12px;
+  }
+}
+@media (min-width: 992px) {
+  .tz-four-book-card-text {
+    margin-top: 11px;
+  }
+}
+
+.tz-four-book-image-wrapper {
+  position: relative;
+  padding: 12px;
+}
+.tz-four-book-image-wrapper > * {
+  border-radius: 6px;
+}
+.tz-four-book-image-wrapper > div {
+  position: absolute;
+  z-index: 1;
+  background-color: #FF057D;
+  color: white;
+}
+@media (min-width: 0) {
+  .tz-four-book-image-wrapper > div {
+    width: 37px;
+    height: 24px;
+  }
+}
+@media (min-width: 576px) {
+  .tz-four-book-image-wrapper > div {
+    height: 34px;
+    width: 57px;
+  }
+}
+@media (min-width: 992px) {
+  .tz-four-book-image-wrapper > div {
+    height: 30px;
+    width: 53px;
+  }
+}
+
+/***************************************
+  4_free_description_division STYLE
+***************************************/
+@media (min-width: 0) {
+  .tz-free-description-text-spacing {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .tz-free-description-text-spacing {
+    margin-left: 30px;
+  }
+}
+
+.tz-free-description-image-dimensions {
+  height: auto;
+}
+@media (min-width: 0) {
+  .tz-free-description-image-dimensions {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .tz-free-description-image-dimensions {
+    max-width: 440px;
+    min-width: 440px;
+  }
+}
+
+.tz-free-description-title-spacing {
+  margin-bottom: 30px;
+}
+
+/***************************************
+  6_title_briefing_between_division STYLE
+  7_title_briefing_center_division STYLE
+***************************************/
+.tz-title-briefing-title {
+  color: #535353;
+  margin: auto;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.tz-title-briefing-title-spacing {
+  margin-bottom: 10px;
+}
+
+.tz-title-briefing-description {
+  color: #535353;
+  margin: auto;
+  font-size: 20px;
+}
+
+.tz-title-briefing-description-spacing {
+  margin-bottom: 16px;
+}
+
+/***************************************
+  10_text_description_division STYLE
+***************************************/
+.tz-text-description-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.tz-text-description-description {
+  font-size: 18px;
+}
+
+/***************************************
+  14_book_description_division STYLE
+***************************************/
+@media (min-width: 576px) {
+  .tz-book-description-left-title-spacing {
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+}
+
+@media (min-width: 0) {
+  .tz-book-description-image-spacing {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media (min-width: 576px) {
+  .tz-book-description-image-spacing {
+    margin-left: 25px;
+    margin-right: 30px;
+  }
+}
+
+.tz-book-description-image-dimensions {
+  max-width: 260px;
+  min-width: 200px;
+}
+
+.tz-free-description-title-spacing {
+  margin-bottom: 30px;
+}
+@media (min-width: 0) {
+  .tz-free-description-title-spacing {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .tz-free-description-title-spacing {
+    margin-top: 0px;
+  }
+}
+
+/***************************************
+  15_footer STYLE
+***************************************/
+.tz-footer-link {
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

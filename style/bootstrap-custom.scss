@@ -2,35 +2,12 @@
 @import "../bootstrap-5.0.2/scss/variables";
 @import "../bootstrap-5.0.2/scss/utilities";
 @import "../bootstrap-5.0.2/scss/mixins";
+@import "colors";
+@import "fonts";
+@import "variables";
+@import "fonts";
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
-
-
-// || COLOR VARIABLES
-// Brand colors
-$taaze-main-color: #FF057D;
-$taaze-white-color: white;
-
-// Grey Scale
-$taaze-black-color: #000000;
-$taaze-grey1-color: #535353;
-$taaze-grey2-color: #757575;
-$taaze-grey3-color: #BDBDBD;
-$taaze-grey4-color: #E7E7E7;
-$taaze-grey5-color: #F2F2F2;
-
-// || TYPOGRAPHY VARIABLES
-// Font family
-$taaze-ff-nav: 'Noto Sans TC', sans-serif;
-$taaze-fs-nav: 14px;
-
-$utilities: (
-  "w": (property: width,
-    class: w,
-    responsive: true,
-    values: (10: 10%,
-    ))
-);
 
 @mixin outline-button($color: $taaze-main-color) {
   .btn-outline-taaze-pink {
@@ -49,12 +26,12 @@ $utilities: (
   .nav-sec-button {
     color: $taaze-grey1-color;
     font-family: $taaze-ff-nav;
-    font-size: $taaze-fs-nav;
+    font-size: 14px;
 
     &:hover {
       color: #535353;
       font-family: $taaze-ff-nav;
-      font-size: $taaze-fs-nav;
+      font-size: 14px;
       text-decoration: underline;
     }
   }
@@ -66,7 +43,7 @@ $utilities: (
     border-radius: 6px;
     color: $taaze-white-color;
     font-family: $taaze-ff-nav;
-    font-size: $taaze-fs-nav;
+    font-size: 14px;
     min-height: 46px;
     min-width: 100px;
     line-height: 2.2;
@@ -91,12 +68,12 @@ $utilities: (
   @extend .btn;
   @extend .btn-outline-taaze-pink;
   @extend .btn-sm;
+  @extend .fw-bold;
 
   color: $taaze-main-color;
-  padding: 4px;
   width: 86px;
   height: 46px;
-  font-weight: bold;
+  padding: 4px;
   font-size: 16px;
 }
 

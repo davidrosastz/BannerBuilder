@@ -12,10 +12,9 @@
 
 .tz-more-button {
   color: #FF057D;
-  padding: 4px;
   width: 86px;
   height: 46px;
-  font-weight: bold;
+  padding: 4px;
   font-size: 16px;
 }
 
@@ -8318,7 +8317,8 @@ fieldset:disabled .tz-more-button {
   font-weight: 400 !important;
 }
 
-.fw-bold {
+.fw-bold,
+.tz-more-button {
   font-weight: 700 !important;
 }
 
@@ -8579,10 +8579,6 @@ fieldset:disabled .tz-more-button {
 
 .invisible {
   visibility: hidden !important;
-}
-
-.w-10 {
-  width: 10% !important;
 }
 
 @media (min-width: 576px) {
@@ -9234,10 +9230,6 @@ fieldset:disabled .tz-more-button {
 
   .text-sm-center {
     text-align: center !important;
-  }
-
-  .w-sm-10 {
-    width: 10% !important;
   }
 }
 
@@ -9891,10 +9883,6 @@ fieldset:disabled .tz-more-button {
   .text-md-center {
     text-align: center !important;
   }
-
-  .w-md-10 {
-    width: 10% !important;
-  }
 }
 
 @media (min-width: 992px) {
@@ -10546,10 +10534,6 @@ fieldset:disabled .tz-more-button {
 
   .text-lg-center {
     text-align: center !important;
-  }
-
-  .w-lg-10 {
-    width: 10% !important;
   }
 }
 
@@ -11203,10 +11187,6 @@ fieldset:disabled .tz-more-button {
   .text-xl-center {
     text-align: center !important;
   }
-
-  .w-xl-10 {
-    width: 10% !important;
-  }
 }
 
 @media (min-width: 1400px) {
@@ -11859,10 +11839,6 @@ fieldset:disabled .tz-more-button {
   .text-xxl-center {
     text-align: center !important;
   }
-
-  .w-xxl-10 {
-    width: 10% !important;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -11964,7 +11940,6 @@ fieldset:disabled .tz-more-button {
 .gridpic img,
 .gridpic {
   overflow: hidden;
-  border: 1px solid red;
   transform: scale(1);
 }
 
@@ -11977,4 +11952,5 @@ fieldset:disabled .tz-more-button {
   transition: transform 0.1s ease-in-out;
 }
 
+/*# sourceMappingURL=bootstrap-custom.css.map */
 /*# sourceMappingURL=bootstrap-custom.css.map */
