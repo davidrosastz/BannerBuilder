@@ -5,7 +5,7 @@
 @import "colors";
 @import "fonts";
 @import "variables";
-@import "fonts";
+@import "mixins";
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
@@ -89,8 +89,13 @@
 .footer{
   max-width: 1200px
 }
+ 
+.book-card {
+@include hover-shrink();
 
+  background: #FFFFFF;
 
+}
 @import "../bootstrap-5.0.2/scss/bootstrap.scss";
 @include outline-button;
 @include nav-link;
