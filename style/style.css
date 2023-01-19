@@ -30,40 +30,6 @@
 }
 
 /***************************************
-  4_free_description_division STYLE
-***************************************/
-@media (min-width: 0) {
-  .tz-free-description-text-spacing {
-    margin-left: 0px;
-  }
-}
-@media (min-width: 768px) {
-  .tz-free-description-text-spacing {
-    margin-left: 30px;
-  }
-}
-
-.tz-free-description-image-dimensions {
-  height: auto;
-}
-@media (min-width: 0) {
-  .tz-free-description-image-dimensions {
-    min-width: 100%;
-    max-width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .tz-free-description-image-dimensions {
-    max-width: 440px;
-    min-width: 440px;
-  }
-}
-
-.tz-free-description-title-spacing {
-  margin-bottom: 30px;
-}
-
-/***************************************
   2_four_book_division STYLE
 ***************************************/
 .tz-four-book-card {
@@ -143,6 +109,40 @@
     height: 30px;
     width: 53px;
   }
+}
+
+/***************************************
+  4_free_description_division STYLE
+***************************************/
+@media (min-width: 0) {
+  .tz-free-description-text-spacing {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .tz-free-description-text-spacing {
+    margin-left: 30px;
+  }
+}
+
+.tz-free-description-image-dimensions {
+  height: auto;
+}
+@media (min-width: 0) {
+  .tz-free-description-image-dimensions {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .tz-free-description-image-dimensions {
+    max-width: 440px;
+    min-width: 440px;
+  }
+}
+
+.tz-free-description-title-spacing {
+  margin-bottom: 30px;
 }
 
 /***************************************
