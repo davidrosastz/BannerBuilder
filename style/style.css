@@ -142,19 +142,28 @@
 }
 
 /***************************************
-  2_four_book_division STYLE
+  6_title_briefing_between_division STYLE
+  7_title_briefing_center_division STYLE
 ***************************************/
-.tz-title_briefing_title {
+.tz-title-briefing-title {
   color: #535353;
   margin: auto;
   font-weight: bold;
   font-size: 30px;
 }
 
-.tz-title_briefing_description {
+.tz-title-briefing-title-spacing {
+  margin-bottom: 10px;
+}
+
+.tz-title-briefing-description {
   color: #535353;
   margin: auto;
   font-size: 20px;
+}
+
+.tz-title-briefing-description-spacing {
+  margin-bottom: 16px;
 }
 
 /***************************************
