@@ -201,6 +201,16 @@
 }
 
 /***************************************
+  11_four_pic_grid_division STYLE
+***************************************/
+.image-hover-container {
+  transition: transform 0.2s;
+}
+.image-hover-container:hover {
+  transform: scale(0.95);
+}
+
+/***************************************
   14_book_description_division STYLE
 ***************************************/
 @media (min-width: 576px) {

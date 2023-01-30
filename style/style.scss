@@ -196,6 +196,13 @@ $taaze-fs-nav: 14px;
 }
 
 /***************************************
+  11_four_pic_grid_division STYLE
+***************************************/
+.image-hover-container {
+  @include hover-shrink();
+}
+
+/***************************************
   14_book_description_division STYLE
 ***************************************/
 .tz-book-description-left-title-spacing {
