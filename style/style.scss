@@ -234,7 +234,15 @@ $taaze-fs-nav: 14px;
 }
 
 /***************************************
-  15_footer STYLE
+  16_footer STYLE
+***************************************/
+.book-card {
+  @include hover-shrink();
+  background-color: $taaze-white-color;
+}
+
+/***************************************
+  16_footer STYLE
 ***************************************/
 .tz-footer-link {
   font-size: 12px;

@@ -244,7 +244,18 @@
 }
 
 /***************************************
-  15_footer STYLE
+  16_footer STYLE
+***************************************/
+.book-card {
+  transition: transform 0.2s;
+  background-color: white;
+}
+.book-card:hover {
+  transform: scale(0.95);
+}
+
+/***************************************
+  16_footer STYLE
 ***************************************/
 .tz-footer-link {
   font-size: 12px;
