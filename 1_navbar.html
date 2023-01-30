@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="style/bootstrap-custom.css" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="style/bootstrap-custom.css" />
+  <link rel="stylesheet" href="style/style.css" />
 
-    <title>Document</title>
-  </head>
+  <title>Document</title>
+</head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-md bg-body-tertiary">
-        <div class="container-md">
-          <a class="navbar-brand" href="#"><img class='navbar-brand-pic' src="assets/taaze-logo.svg" /></a>
+<body>
+  <div class="container-1200 tz-container-padding py-0">
+    <nav class="navbar navbar-light navbar-expand-md bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class='navbar-brand-pic' src="assets/taaze-logo.svg" /></a>
 
-          <div class="row">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav nav-fill">
-                <li class="nav-item">
-                  <a class="nav-link nav-sec-button" href="#">中文書</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-sec-button" href="#">二手書</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-sec-button" href="#">電子書</a>
-                </li>
-                <li class="nav-item">
-                  <a class="btn nav-prim-button">註冊/登入</a>
-                </li>
-              </ul>
+        <div class="row">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav navbar-item-container">
+              <a class="nav-link nav-sec-button" href="#">中文書</a>
+              <a class="nav-link nav-sec-button" href="#">二手書</a>
+              <a class="nav-link nav-sec-button" href="#">電子書</a>
+              <a class="btn btn-taaze-grey">註冊/登入</a>
             </div>
           </div>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" aria-labelledby="offcanvasExampleLabel" id="sidebar">
+            <div class="offcanvas-body" style="margin-top: 8px;">
+
+              <div class="offcanvas-section navbar-item-container">
+                <a class="nav-link nav-sec-button nav-sec-button-offcanvas" href="#">中文書</a>
+                <a class="nav-link nav-sec-button nav-sec-button-offcanvas" href="#">二手書</a>
+                <a class="nav-link nav-sec-button nav-sec-button-offcanvas" href="#">電子書</a>
+              </div>
+
+              <div class="offcanvas-line"> </div>
+
+              <div class="offcanvas-section navbar-item-container">
+                <a class="nav-link nav-sec-button nav-sec-button-offcanvas" href="#">注目新書</a>
+                <a class="nav-link nav-sec-button nav-sec-button-offcanvas" href="#">小故事大啟示</a>
+                <a class="nav-link nav-sec-button nav-sec-button-offcanvas" href="#">滿級分的語文寫作</a>
+                <a class="nav-link nav-sec-button nav-sec-button-offcanvas" href="#">超值75折</a>
+              </div>
+
+              <div class="offcanvas-line"> </div>
+
+              <div class="offcanvas-section navbar-item-container">
+                <a class="btn btn-taaze-grey" style="margin-top: 18px;">註冊/登入</a>
+              </div>
+
+            </div>
+          </div>
+
         </div>
-      </nav>
-    </header>
-  </body>
+    </nav>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
 
 </html>

@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'colors';
+
+@mixin hover-shrink {
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: scale(0.95);
+    }
+}
+
+@mixin vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+@mixin tz-container-y-padding {
+    padding-top: $padding-32;
+    padding-bottom: $padding-32;
+}
+
+@mixin tz-four-book-card-base {
+    @include hover-shrink();
+    border-radius: 12px;
+    background-color: $taaze-white-color;
+    margin: auto;
+}

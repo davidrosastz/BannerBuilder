@@ -1,55 +1,13 @@
-@import "bootstrap-5.0.2/scss/functions";
-@import "bootstrap-5.0.2/scss/variables";
-@import "bootstrap-5.0.2/scss/utilities";
-@import "bootstrap-5.0.2/scss/mixins";
+@import "../bootstrap-5.0.2/scss/functions";
+@import "../bootstrap-5.0.2/scss/variables";
+@import "../bootstrap-5.0.2/scss/utilities";
+@import "../bootstrap-5.0.2/scss/mixins";
+@import "colors";
+@import "fonts";
+@import "variables";
+@import "mixins";
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
-
-
-// || COLOR VARIABLES
-// Brand colors
-$taaze-main-color: #e3007f;
-$taaze-white-color: white;
-
-// Grey Scale
-$taaze-black-color: #000000;
-$taaze-grey1-color: #535353;
-$taaze-grey2-color: #757575;
-$taaze-grey3-color: #BDBDBD;
-$taaze-grey4-color: #E7E7E7;
-$taaze-grey5-color: #F2F2F2;
-
-// || TYPOGRAPHY VARIABLES
-// Font family
-$taaze-ff-nav: 'Noto Sans TC', sans-serif;
-$taaze-fs-nav: 14px;
-
-$utilities: (
-  "w": (property: width,
-    class: w,
-    responsive: true,
-    values: (10: 10%,
-    ))
-);
-
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px,
-  xxxl: 1400px
-);
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px,
-  xxxl: 1400px,
-);
+$theme-colors: map-merge($theme-colors, $taaze-colors);
 
 @mixin outline-button($color: $taaze-main-color) {
   .btn-outline-taaze-pink {
@@ -64,54 +22,26 @@ $grid-breakpoints: (
   }
 }
 
-@mixin nav-link($color: $taaze-main-color) {
-  .nav-sec-button {
-    color: $taaze-grey1-color;
-    font-family: $taaze-ff-nav;
-    font-size: $taaze-fs-nav;
-
-    &:hover {
-      color: #535353;
-      font-family: $taaze-ff-nav;
-      font-size: $taaze-fs-nav;
-      text-decoration: underline;
-    }
-  }
+.container-1200 {
+  @include make-container();
+  max-width: 1200px;
 }
 
-@mixin btn($color: $taaze-main-color) {
-  .nav-prim-button {
-    background-color: #535353;
-    border-radius: 6px;
-    color: $taaze-white-color;
-    font-family: $taaze-ff-nav;
-    font-size: $taaze-fs-nav;
-    min-height: 46px;
-    min-width: 100px;
-    line-height: 2.2;
+.tz-more-button {
+  @extend .d-flex;
+  @extend .align-items-center;
+  @extend .justify-content-center;
+  @extend .btn;
+  @extend .btn-outline-taaze-pink;
+  @extend .btn-sm;
+  @extend .fw-bold;
 
-    &:hover {
-      background-color: $taaze-main-color;
-      color: $taaze-white-color;
-
-    }
-  }
+  color: $taaze-main-color;
+  width: 86px;
+  height: 46px;
+  padding: 4px;
+  font-size: 16px;
 }
 
-// todo
-.navbar-nav {
-  column-gap: 48px;
-}
-
-.navbar {
-  max-width: 1200px
-}
-
-.footer{
-  max-width: 1200px
-}
-
-
-@import "bootstrap-5.0.2/scss/bootstrap.scss";
+@import "../bootstrap-5.0.2/scss/bootstrap.scss";
 @include outline-button;
-@include nav-link;
