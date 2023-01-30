@@ -77,20 +77,6 @@
   font-size: 16px;
 }
 
-// todo
-.navbar-nav {
-  column-gap: 48px;
-}
-
-.navbar {
-  max-width: 1200px
-}
-
-.footer{
-  max-width: 1200px
-}
-
-
 @import "../bootstrap-5.0.2/scss/bootstrap.scss";
 @include outline-button;
 @include nav-link;

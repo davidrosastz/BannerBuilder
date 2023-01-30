@@ -17,19 +17,6 @@
   font-size: 16px;
 }
 
-.navbar-nav {
-  -moz-column-gap: 48px;
-       column-gap: 48px;
-}
-
-.navbar {
-  max-width: 1200px;
-}
-
-.footer {
-  max-width: 1200px;
-}
-
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
