@@ -5,7 +5,7 @@
 @import "colors";
 @import "fonts";
 @import "variables";
-@import "fonts";
+@import "mixins";
 
 $theme-colors: map-merge($theme-colors, $taaze-colors);
 
