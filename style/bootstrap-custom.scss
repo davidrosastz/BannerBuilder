@@ -7,7 +7,7 @@
 @import "variables";
 @import "fonts";
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+$theme-colors: map-merge($theme-colors, $taaze-colors);
 
 @mixin outline-button($color: $taaze-main-color) {
   .btn-outline-taaze-pink {
@@ -18,40 +18,6 @@
     &:hover {
       background-color: $taaze-main-color;
       color: #fff;
-    }
-  }
-}
-
-@mixin nav-link($color: $taaze-main-color) {
-  .nav-sec-button {
-    color: $taaze-grey1-color;
-    font-family: $taaze-ff-nav;
-    font-size: 14px;
-
-    &:hover {
-      color: #535353;
-      font-family: $taaze-ff-nav;
-      font-size: 14px;
-      text-decoration: underline;
-    }
-  }
-}
-
-@mixin btn($color: $taaze-main-color) {
-  .nav-prim-button {
-    background-color: #535353;
-    border-radius: 6px;
-    color: $taaze-white-color;
-    font-family: $taaze-ff-nav;
-    font-size: 14px;
-    min-height: 46px;
-    min-width: 100px;
-    line-height: 2.2;
-
-    &:hover {
-      background-color: $taaze-main-color;
-      color: $taaze-white-color;
-
     }
   }
 }
@@ -79,4 +45,3 @@
 
 @import "../bootstrap-5.0.2/scss/bootstrap.scss";
 @include outline-button;
-@include nav-link;

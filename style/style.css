@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
 .main-color {
   color: #FF057D;
 }
@@ -31,6 +32,18 @@
 .navbar-nav {
   -moz-column-gap: 48px;
        column-gap: 48px;
+}
+
+.navbar-item-container > * {
+  font-size: 14px;
+}
+
+.nav-sec-button {
+  color: #535353;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.nav-sec-button:hover {
+  text-decoration: underline;
 }
 
 /***************************************

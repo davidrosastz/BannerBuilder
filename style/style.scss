@@ -37,6 +37,19 @@ $taaze-fs-nav: 14px;
   column-gap: 48px;
 }
 
+.navbar-item-container>* {
+  font-size: 14px;
+}
+
+.nav-sec-button {
+  color: $taaze-grey1-color;
+  font-family: $taaze-ff-nav;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 /***************************************
   2_four_book_division STYLE
 ***************************************/
