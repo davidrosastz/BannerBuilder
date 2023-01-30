@@ -34,7 +34,13 @@
        column-gap: 48px;
 }
 
-.navbar-item-container > * {
+.navbar-item-container* > {
+  font-size: 14px;
+}
+
+.navbar-item-offcanvas-container {
+  color: #535353;
+  font-family: "Noto Sans TC", sans-serif;
   font-size: 14px;
 }
 
@@ -44,6 +50,19 @@
 }
 .nav-sec-button:hover {
   text-decoration: underline;
+}
+
+.nav-sec-button-offcanvas {
+  padding-left: 0px;
+  padding-bottom: 20px;
+}
+
+.offcanvas-line {
+  background-color: black;
+  width: 100%;
+  height: 0.5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /***************************************
