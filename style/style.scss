@@ -214,7 +214,22 @@ $taaze-fs-nav: 14px;
 /***************************************
   4_free_description_division STYLE
 ***************************************/
-.tz-free-description-text-spacing {
+.tz-free-description-text {
+  &>* {
+    font-family: $default-font-family;
+    color: $taaze-grey1-color;
+  }
+
+  &>.tz-free-description-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  &>.tz-free-description-description {
+    font-size: 18px;
+  }
+
   @include xs {
     margin-left: 0px;
   }
@@ -224,8 +239,14 @@ $taaze-fs-nav: 14px;
   }
 }
 
-.tz-free-description-image-dimensions {
+.tz-free-description-image-wrapper {
   height: auto;
+
+  &>img {
+    width: 100%;
+  }
+
+  @include hover-shrink();
 
   @include xs {
     min-width: 100%;
@@ -236,10 +257,6 @@ $taaze-fs-nav: 14px;
     max-width: 440px;
     min-width: 440px;
   }
-}
-
-.tz-free-description-title-spacing {
-  margin-bottom: 30px;
 }
 
 /***************************************

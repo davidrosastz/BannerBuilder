@@ -200,35 +200,50 @@
 /***************************************
   4_free_description_division STYLE
 ***************************************/
+.tz-free-description-text > * {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #535353;
+}
+.tz-free-description-text > .tz-free-description-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.tz-free-description-text > .tz-free-description-description {
+  font-size: 18px;
+}
 @media (min-width: 0) {
-  .tz-free-description-text-spacing {
+  .tz-free-description-text {
     margin-left: 0px;
   }
 }
 @media (min-width: 768px) {
-  .tz-free-description-text-spacing {
+  .tz-free-description-text {
     margin-left: 30px;
   }
 }
 
-.tz-free-description-image-dimensions {
+.tz-free-description-image-wrapper {
   height: auto;
+  transition: transform 0.2s;
+}
+.tz-free-description-image-wrapper > img {
+  width: 100%;
+}
+.tz-free-description-image-wrapper:hover {
+  transform: scale(0.95);
 }
 @media (min-width: 0) {
-  .tz-free-description-image-dimensions {
+  .tz-free-description-image-wrapper {
     min-width: 100%;
     max-width: 100%;
   }
 }
 @media (min-width: 768px) {
-  .tz-free-description-image-dimensions {
+  .tz-free-description-image-wrapper {
     max-width: 440px;
     min-width: 440px;
   }
-}
-
-.tz-free-description-title-spacing {
-  margin-bottom: 30px;
 }
 
 /***************************************
