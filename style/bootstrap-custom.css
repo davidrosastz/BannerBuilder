@@ -11,8 +11,9 @@
 }
 
 .tz-more-button {
-  color: #FF057D;
+  font-family: "Noto Sans TC", sans-serif;
   font-weight: bold;
+  color: #FF057D;
   padding: 4px;
 }
 @media (min-width: 0) {
