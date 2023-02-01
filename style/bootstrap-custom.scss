@@ -38,10 +38,20 @@ $theme-colors: map-merge($theme-colors, $taaze-colors);
   @extend .fw-bold;
 
   color: $taaze-main-color;
-  width: 86px;
-  height: 46px;
+  font-weight: $font-weight-bold;
   padding: 4px;
-  font-size: 16px;
+
+  @include xs {
+    width: 65px;
+    height: 33px;
+    font-size: 12px;
+  }
+
+  @include xsm {
+    width: 86px;
+    height: 46px;
+    font-size: 16px;
+  }
 }
 
 @import "../bootstrap-5.0.2/scss/bootstrap";

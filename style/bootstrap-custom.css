@@ -12,10 +12,22 @@
 
 .tz-more-button {
   color: #FF057D;
-  width: 86px;
-  height: 46px;
+  font-weight: bold;
   padding: 4px;
-  font-size: 16px;
+}
+@media (min-width: 0) {
+  .tz-more-button {
+    width: 65px;
+    height: 33px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 414px) {
+  .tz-more-button {
+    width: 86px;
+    height: 46px;
+    font-size: 16px;
+  }
 }
 
 /*!

@@ -251,20 +251,40 @@
   7_title_briefing_center_division STYLE
 ***************************************/
 .tz-title-briefing-title {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #535353;
+  font-weight: bold;
+  margin: auto;
+}
+@media (min-width: 0) {
+  .tz-title-briefing-title {
+    font-size: 26px;
+  }
+}
+@media (min-width: 414px) {
+  .tz-title-briefing-title {
+    font-size: 32px;
+  }
+}
+
+.tz-title-briefing-description {
+  font-family: "Noto Sans TC", sans-serif;
   color: #535353;
   margin: auto;
-  font-weight: bold;
-  font-size: 30px;
+}
+@media (min-width: 0) {
+  .tz-title-briefing-description {
+    font-size: 18px;
+  }
+}
+@media (min-width: 414px) {
+  .tz-title-briefing-description {
+    font-size: 20px;
+  }
 }
 
 .tz-title-briefing-title-spacing {
   margin-bottom: 10px;
-}
-
-.tz-title-briefing-description {
-  color: #535353;
-  margin: auto;
-  font-size: 20px;
 }
 
 .tz-title-briefing-description-spacing {
