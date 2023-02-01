@@ -6,6 +6,7 @@
 @import "fonts";
 @import "variables";
 @import "mixins";
+@import "breakpoints";
 
 $theme-colors: map-merge($theme-colors, $taaze-colors);
 
@@ -43,5 +44,5 @@ $theme-colors: map-merge($theme-colors, $taaze-colors);
   font-size: 16px;
 }
 
-@import "../bootstrap-5.0.2/scss/bootstrap.scss";
+@import "../bootstrap-5.0.2/scss/bootstrap";
 @include outline-button;

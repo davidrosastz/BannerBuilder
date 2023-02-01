@@ -83,7 +83,7 @@
     height: 100%;
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 414px) {
   .tz-four-book-card {
     max-width: 324px;
     height: 100%;
