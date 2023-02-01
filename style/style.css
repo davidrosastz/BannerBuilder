@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .main-color {
   color: #FF057D;
 }
@@ -96,22 +97,71 @@
   }
 }
 
+.tz-four-book-card-text > * {
+  font-family: "Noto Sans TC", sans-serif;
+}
+.tz-four-book-card-text > .tz-four-book-card-title {
+  font-weight: bold;
+}
+.tz-four-book-card-text > .tz-four-book-card-author {
+  color: #757575;
+}
 @media (min-width: 0) {
   .tz-four-book-card-text {
     margin-top: 12px;
   }
-  .tz-four-book-card-text > div {
+  .tz-four-book-card-text > * {
     margin-bottom: 8px;
   }
-}
-@media (min-width: 576px) {
-  .tz-four-book-card-text > div {
-    margin-bottom: 12px;
+  .tz-four-book-card-text > .tz-four-book-card-title {
+    font-size: 18px;
+  }
+  .tz-four-book-card-text > .tz-four-book-card-author {
+    font-size: 11px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 414px) {
+  .tz-four-book-card-text > * {
+    margin-bottom: 12px;
+  }
+  .tz-four-book-card-text > .tz-four-book-card-title {
+    font-size: 22px;
+  }
+  .tz-four-book-card-text > .tz-four-book-card-author {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
   .tz-four-book-card-text {
     margin-top: 11px;
+  }
+  .tz-four-book-card-text > .tz-four-book-card-title {
+    font-size: 26px;
+  }
+  .tz-four-book-card-text > .tz-four-book-card-author {
+    font-size: 18px;
+  }
+}
+
+.tz-four-book-card-price > * {
+  font-family: "Roboto", "sans-serif";
+}
+.tz-four-book-card-price > .tz-four-book-card-price-enabled {
+  color: #FF057D;
+  font-weight: bold;
+}
+.tz-four-book-card-price > .tz-four-book-card-price-disabled {
+  text-decoration: line-through;
+  color: #BDBDBD;
+}
+@media (min-width: 0) {
+  .tz-four-book-card-price > * {
+    font-size: 16px;
+  }
+}
+@media (min-width: 414px) {
+  .tz-four-book-card-price > * {
+    font-size: 24px;
   }
 }
 
