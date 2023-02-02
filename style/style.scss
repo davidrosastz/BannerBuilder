@@ -398,10 +398,6 @@ $taaze-fs-nav: 14px;
   15_two_product_cards_division STYLE
 ***************************************/
 .tz-two-product-card {
-  * {
-    font-family: $default-font-family;
-  }
-
   &>.tz-two-product-card-image-wrapper {
     position: relative;
     max-width: 260px;
@@ -428,6 +424,11 @@ $taaze-fs-nav: 14px;
   }
 
   &>.tz-two-product-card-content-wrapper {
+    * {
+      font-family: $default-font-family;
+      color: $taaze-grey1-color;
+    }
+
     padding-left: 12px;
     width: 100%;
 

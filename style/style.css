@@ -380,9 +380,6 @@
 /***************************************
   15_two_product_cards_division STYLE
 ***************************************/
-.tz-two-product-card * {
-  font-family: "Noto Sans TC", sans-serif;
-}
 .tz-two-product-card > .tz-two-product-card-image-wrapper {
   position: relative;
   max-width: 260px;
@@ -407,6 +404,10 @@
 .tz-two-product-card > .tz-two-product-card-content-wrapper {
   padding-left: 12px;
   width: 100%;
+}
+.tz-two-product-card > .tz-two-product-card-content-wrapper * {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #535353;
 }
 .tz-two-product-card > .tz-two-product-card-content-wrapper > * {
   margin-bottom: 8px;
