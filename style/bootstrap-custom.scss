@@ -9,6 +9,7 @@
 @import "breakpoints";
 
 $theme-colors: map-merge($theme-colors, $taaze-colors);
+$grid-breakpoints: $breakpoints;
 
 @mixin outline-button($color: $taaze-main-color) {
   .btn-outline-taaze-pink {

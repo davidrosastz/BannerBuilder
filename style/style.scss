@@ -456,6 +456,66 @@ $taaze-fs-nav: 14px;
 }
 
 /***************************************
+  11_banner_description_division STYLE
+***************************************/
+.tz-banner-description-text {
+  &>* {
+    font-family: $default-font-family;
+    color: $taaze-grey1-color;
+  }
+
+  &>.tz-banner-description-title {
+    font-weight: $font-weight-bold;
+  }
+
+  &>.tz-banner-description-description {
+    font-size: 18px;
+  }
+
+  @include xs {
+    margin-left: 0px;
+
+    &>.tz-banner-description-title {
+      font-size: 26px;
+      font-weight: $font-weight-bold;
+      margin-bottom: 30px;
+    }
+
+    &>.tz-banner-description-description {
+      font-size: 18px;
+    }
+  }
+
+  @include xsm {
+    margin-left: 30px;
+  }
+}
+
+.tz-banner-description-image-wrapper {
+  @include hover-shrink();
+
+  &>img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include xs {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  @include xsm {
+    max-width: 310px;
+    margin-bottom: 0;
+  }
+
+  @include md {
+    max-width: 440px;
+  }
+}
+
+
+/***************************************
   14_book_description_division STYLE
 ***************************************/
 .tz-book-description-wrapper {

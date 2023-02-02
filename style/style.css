@@ -452,6 +452,66 @@
 }
 
 /***************************************
+  11_banner_description_division STYLE
+***************************************/
+.tz-banner-description-text > * {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #535353;
+}
+.tz-banner-description-text > .tz-banner-description-title {
+  font-weight: bold;
+}
+.tz-banner-description-text > .tz-banner-description-description {
+  font-size: 18px;
+}
+@media (min-width: 0) {
+  .tz-banner-description-text {
+    margin-left: 0px;
+  }
+  .tz-banner-description-text > .tz-banner-description-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .tz-banner-description-text > .tz-banner-description-description {
+    font-size: 18px;
+  }
+}
+@media (min-width: 414px) {
+  .tz-banner-description-text {
+    margin-left: 30px;
+  }
+}
+
+.tz-banner-description-image-wrapper {
+  transition: transform 0.2s;
+}
+.tz-banner-description-image-wrapper:hover {
+  transform: scale(0.95);
+}
+.tz-banner-description-image-wrapper > img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 0) {
+  .tz-banner-description-image-wrapper {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 414px) {
+  .tz-banner-description-image-wrapper {
+    max-width: 310px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .tz-banner-description-image-wrapper {
+    max-width: 440px;
+  }
+}
+
+/***************************************
   14_book_description_division STYLE
 ***************************************/
 .tz-book-description-wrapper * {
