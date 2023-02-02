@@ -19,9 +19,13 @@
     padding-bottom: $padding-32;
 }
 
-@mixin tz-four-book-card-base {
+@mixin tz-card-base($border-radius: 12px, $padding-x: 12px, $padding-y: 12px) {
     @include hover-shrink();
-    border-radius: 12px;
+    border-radius: $border-radius;
     background-color: $taaze-white-color;
+    padding-left: $padding-x;
+    padding-right: $padding-x;
+    padding-top: $padding-y;
+    padding-bottom: $padding-y;
     margin: auto;
 }

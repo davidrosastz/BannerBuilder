@@ -395,12 +395,145 @@ $taaze-fs-nav: 14px;
 }
 
 /***************************************
-  16_footer STYLE
+  15_two_product_cards_division STYLE
 ***************************************/
-.book-card {
-  @include hover-shrink();
-  background-color: $taaze-white-color;
+.tz-two-product-card {
+  * {
+    font-family: $default-font-family;
+  }
+
+  &>.tz-two-product-card-image-wrapper {
+    position: relative;
+    max-width: 260px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    &>* {
+      border-radius: 6px;
+    }
+
+    &>div {
+      position: absolute;
+      z-index: 1;
+      width: 50px;
+      height: 30px;
+      color: $taaze-white-color;
+      background-color: $taaze-main-color;
+    }
+
+    &>img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &>.tz-two-product-card-content-wrapper {
+    padding-left: 12px;
+    width: 100%;
+
+    &>* {
+      margin-bottom: 8px;
+    }
+
+    &>.tz-two-product-card-title {
+      font-size: 32px;
+      font-weight: $font-weight-bold;
+      text-align: center;
+    }
+
+    &>.tz-two-product-card-subtitle {
+      font-weight: $font-weight-bold;
+      background-color: $taaze-grey3-color;
+      width: 100%;
+      padding: 5px;
+      border-radius: 6px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    &>.tz-two-product-card-price-wrapper {
+      font-size: 24px;
+      margin: 0;
+
+      &>.tz-two-product-card-price-enabled {
+        color: $taaze-main-color;
+        font-weight: $font-weight-bold;
+      }
+
+      &>.tz-two-product-card-price-disabled {
+        text-decoration: line-through;
+        color: $taaze-grey3-color;
+      }
+    }
+  }
+
+  @include xs {
+    @include tz-card-base($padding-y: 16px);
+
+    &>.tz-two-product-card-image-wrapper {
+      max-width: 120px;
+
+      &>div {
+        width: 37px;
+        height: 24px;
+      }
+    }
+
+    &>.tz-two-product-card-content-wrapper {
+      &>.tz-two-product-card-title {
+        font-size: 16px;
+      }
+
+      &>.tz-two-product-card-subtitle {
+        font-size: 14px;
+      }
+
+      &>.tz-two-product-card-price-wrapper {
+        &>p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @include xsm {
+    @include tz-card-base($padding-x: 16px, $padding-y: 24px);
+
+    &>.tz-two-product-card-image-wrapper {
+      max-width: 180px;
+
+      &>div {
+        width: 57px;
+        height: 34px;
+      }
+    }
+
+    &>.tz-two-product-card-content-wrapper {
+      &>* {
+        margin-bottom: 12px;
+      }
+
+      &>.tz-two-product-card-title {
+        font-size: 26px;
+      }
+
+      &>.tz-two-product-card-subtitle {
+        font-size: 18px;
+      }
+
+      &>.tz-two-product-card-price-wrapper {
+        &>p {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  @include md {
+    @include tz-card-base($padding-x: 16px, $padding-y: 16px);
+  }
 }
+
 
 /***************************************
   16_footer STYLE
