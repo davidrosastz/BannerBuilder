@@ -433,10 +433,12 @@
 .tz-two-product-card > .tz-two-product-card-content-wrapper > .tz-two-product-card-price-wrapper > .tz-two-product-card-price-enabled {
   color: #FF057D;
   font-weight: bold;
+  margin: 0;
 }
 .tz-two-product-card > .tz-two-product-card-content-wrapper > .tz-two-product-card-price-wrapper > .tz-two-product-card-price-disabled {
   text-decoration: line-through;
   color: #BDBDBD;
+  margin: 0;
 }
 @media (min-width: 0) {
   .tz-two-product-card {
