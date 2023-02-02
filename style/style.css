@@ -512,6 +512,20 @@
 }
 
 /***************************************
+  13_big_banner_division STYLE
+***************************************/
+.tz-big-banner-image-wrapper {
+  transition: transform 0.2s;
+}
+.tz-big-banner-image-wrapper:hover {
+  transform: scale(0.95);
+}
+.tz-big-banner-image-wrapper > img {
+  width: 100%;
+  height: auto;
+}
+
+/***************************************
   14_book_description_division STYLE
 ***************************************/
 .tz-book-description-wrapper * {

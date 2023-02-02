@@ -514,6 +514,18 @@ $taaze-fs-nav: 14px;
   }
 }
 
+/***************************************
+  13_big_banner_division STYLE
+***************************************/
+.tz-big-banner-image-wrapper {
+  @include hover-shrink();
+
+  &>img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 /***************************************
   14_book_description_division STYLE
