@@ -444,11 +444,32 @@
 /***************************************
   11_four_pic_grid_division STYLE
 ***************************************/
-.image-hover-container {
+.tz-four-pic-grid-image-wrapper {
   transition: transform 0.2s;
+  margin: auto;
 }
-.image-hover-container:hover {
+.tz-four-pic-grid-image-wrapper:hover {
   transform: scale(0.95);
+}
+.tz-four-pic-grid-image-wrapper > img {
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 0) {
+  .tz-four-pic-grid-image-wrapper {
+    max-width: 179px;
+  }
+}
+@media (min-width: 414px) {
+  .tz-four-pic-grid-image-wrapper {
+    max-width: 324px;
+  }
+}
+@media (min-width: 768px) {
+  .tz-four-pic-grid-image-wrapper {
+    max-width: 282px;
+  }
 }
 
 /***************************************

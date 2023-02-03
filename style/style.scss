@@ -451,8 +451,27 @@ $taaze-fs-nav: 14px;
 /***************************************
   11_four_pic_grid_division STYLE
 ***************************************/
-.image-hover-container {
+.tz-four-pic-grid-image-wrapper {
   @include hover-shrink();
+  margin: auto;
+
+  &>img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: auto;
+  }
+
+  @include xs {
+    max-width: 179px;
+  }
+
+  @include xsm {
+    max-width: 324px;
+  }
+
+  @include md {
+    max-width: 282px;
+  }
 }
 
 /***************************************
