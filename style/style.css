@@ -290,6 +290,31 @@
 }
 
 /***************************************
+  8_four_pic_section STYLE
+***************************************/
+.tz-four-pic-section-image-wrapper {
+  transition: transform 0.2s;
+  margin: auto;
+}
+.tz-four-pic-section-image-wrapper:hover {
+  transform: scale(0.95);
+}
+.tz-four-pic-section-image-wrapper > img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 0) {
+  .tz-four-pic-section-image-wrapper {
+    max-width: 366px;
+  }
+}
+@media (min-width: 414px) {
+  .tz-four-pic-section-image-wrapper {
+    max-width: 672px;
+  }
+}
+
+/***************************************
   9_two_book_cards_division STYLE
 ***************************************/
 .tz-two-book-card {

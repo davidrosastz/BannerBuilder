@@ -299,6 +299,27 @@ $taaze-fs-nav: 14px;
 }
 
 /***************************************
+  8_four_pic_section STYLE
+***************************************/
+.tz-four-pic-section-image-wrapper {
+  @include hover-shrink();
+  margin: auto;
+
+  &>img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include xs {
+    max-width: 366px;
+  }
+
+  @include xsm {
+    max-width: 672px;
+  }
+}
+
+/***************************************
   9_two_book_cards_division STYLE
 ***************************************/
 .tz-two-book-card {
