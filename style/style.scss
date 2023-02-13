@@ -467,7 +467,14 @@ $taaze-fs-nav: 14px;
   font-weight: $font-weight-bold;
   color: $taaze-grey1-color;
   font-size: 26px;
-  margin-bottom: 30px;
+
+  @include xs {
+    margin-bottom: 16px;
+  }
+
+  @include md {
+    margin-bottom: 30px;
+  }
 }
 
 .tz-text-description-description {
