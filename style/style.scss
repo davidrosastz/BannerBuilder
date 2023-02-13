@@ -593,8 +593,6 @@ $taaze-fs-nav: 14px;
   &>.tz-book-description-main-title {
     font-weight: $font-weight-bold;
     font-size: 32px;
-    margin: 0px;
-    margin-bottom: 30px;
   }
 
   *>.tz-book-description-second-title {
@@ -609,8 +607,7 @@ $taaze-fs-nav: 14px;
   }
 
   &>.tz-book-description-image-wrapper {
-    max-width: 260px;
-    min-width: 200px;
+    flex-shrink: 0;
 
     &>img {
       width: 100%;
@@ -622,21 +619,34 @@ $taaze-fs-nav: 14px;
     &>.tz-book-description-image-wrapper {
       margin-left: 0px;
       margin-right: 0px;
+      margin-bottom: 16px;
+      width: 366px;
+    }
+
+    &>.tz-book-description-main-title {
+      margin-bottom: 16px;
     }
 
     *>.tz-book-description-second-title {
-      margin-top: 30px;
+      margin-bottom: 12px;
+    }
+
+    *>.tz-book-description-description {
+      margin-bottom: 12px;
+    }
+  }
+
+  @include xsm {
+    &>.tz-book-description-image-wrapper {
+      margin-left: 30px;
+      margin-right: 30px;
     }
   }
 
   @include sm {
-    &>.tz-book-description-main-title {
-      @include vertical-text();
-    }
-
     &>.tz-book-description-image-wrapper {
-      margin-left: 25px;
-      margin-right: 30px;
+      margin-left: 48px;
+      margin-right: 48px;
     }
 
     *>.tz-book-description-second-title {
@@ -645,6 +655,15 @@ $taaze-fs-nav: 14px;
   }
 
   @include md {
+    &>.tz-book-description-main-title {
+      @include vertical-text();
+      margin: 0;
+    }
+
+    &>.tz-book-description-image-wrapper {
+      width: 310px;
+    }
+
     &>.tz-book-description-main-title {
       margin-top: 0px;
     }
