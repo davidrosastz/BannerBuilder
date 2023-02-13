@@ -115,11 +115,11 @@ $taaze-fs-nav: 14px;
     }
 
     &>.tz-four-book-card-title {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     &>.tz-four-book-card-author {
-      font-size: 11px;
+      font-size: 14px;
     }
   }
 
@@ -129,24 +129,16 @@ $taaze-fs-nav: 14px;
     }
 
     &>.tz-four-book-card-title {
-      font-size: 22px;
-    }
-
-    &>.tz-four-book-card-author {
-      font-size: 16px;
-    }
-  }
-
-  @include md {
-    margin-top: 11px;
-
-    &>.tz-four-book-card-title {
       font-size: 26px;
     }
 
     &>.tz-four-book-card-author {
       font-size: 18px;
     }
+  }
+
+  @include md {
+    margin-top: 11px;
   }
 }
 
@@ -224,12 +216,26 @@ $taaze-fs-nav: 14px;
     margin-bottom: 30px;
   }
 
-  &>.tz-free-description-description {
-    font-size: 18px;
-  }
-
   @include xs {
     margin-left: 0px;
+
+    &>.tz-free-description-title {
+      font-size: 30px;
+    }
+
+    &>.tz-free-description-description {
+      font-size: 18px;
+    }
+  }
+
+  @include xsm {
+    &>.tz-free-description-title {
+      font-size: 26px;
+    }
+
+    &>.tz-free-description-description {
+      font-size: 16px;
+    }
   }
 
   @include md {
@@ -780,6 +786,23 @@ $taaze-fs-nav: 14px;
   }
 }
 
+/***************************************
+  16_three_picture_division STYLE
+***************************************/
+.tz-three-picture-image-wrapper {
+  @include hover-shrink();
+  margin: auto;
+
+  &>img {
+    height: 100%;
+    width: auto;
+  }
+
+  @include xs {
+    max-height: 350px;
+  }
+
+}
 
 /***************************************
   16_footer STYLE
