@@ -35,10 +35,6 @@
        column-gap: 48px;
 }
 
-.navbar-item-container* > {
-  font-size: 14px;
-}
-
 .navbar-item-offcanvas-container {
   color: #535353;
   font-family: "Noto Sans TC", sans-serif;
@@ -112,10 +108,10 @@
     margin-bottom: 8px;
   }
   .tz-four-book-card-text > .tz-four-book-card-title {
-    font-size: 18px;
+    font-size: 16px;
   }
   .tz-four-book-card-text > .tz-four-book-card-author {
-    font-size: 11px;
+    font-size: 14px;
   }
 }
 @media (min-width: 414px) {
@@ -123,21 +119,15 @@
     margin-bottom: 12px;
   }
   .tz-four-book-card-text > .tz-four-book-card-title {
-    font-size: 22px;
+    font-size: 26px;
   }
   .tz-four-book-card-text > .tz-four-book-card-author {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (min-width: 768px) {
   .tz-four-book-card-text {
     margin-top: 11px;
-  }
-  .tz-four-book-card-text > .tz-four-book-card-title {
-    font-size: 26px;
-  }
-  .tz-four-book-card-text > .tz-four-book-card-author {
-    font-size: 18px;
   }
 }
 
@@ -203,16 +193,26 @@
   color: #535353;
 }
 .tz-free-description-text > .tz-free-description-title {
-  font-size: 26px;
   font-weight: bold;
-  margin-bottom: 30px;
-}
-.tz-free-description-text > .tz-free-description-description {
-  font-size: 18px;
+  margin-bottom: 36px;
 }
 @media (min-width: 0) {
   .tz-free-description-text {
     margin-left: 0px;
+  }
+  .tz-free-description-text > .tz-free-description-title {
+    font-size: 30px;
+  }
+  .tz-free-description-text > .tz-free-description-description {
+    font-size: 18px;
+  }
+}
+@media (min-width: 414px) {
+  .tz-free-description-text > .tz-free-description-title {
+    font-size: 26px;
+  }
+  .tz-free-description-text > .tz-free-description-description {
+    font-size: 16px;
   }
 }
 @media (min-width: 768px) {
@@ -612,8 +612,7 @@
 }
 @media (min-width: 576px) {
   .tz-book-description-wrapper > .tz-book-description-main-title {
-    -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
     text-orientation: mixed;
   }
   .tz-book-description-wrapper > .tz-book-description-image-wrapper {
@@ -771,6 +770,26 @@
   }
   .tz-two-product-card:hover {
     transform: scale(0.95);
+  }
+}
+
+/***************************************
+  16_three_picture_division STYLE
+***************************************/
+.tz-three-picture-image-wrapper {
+  transition: transform 0.2s;
+  margin: auto;
+}
+.tz-three-picture-image-wrapper:hover {
+  transform: scale(0.95);
+}
+.tz-three-picture-image-wrapper > img {
+  height: 100%;
+  width: auto;
+}
+@media (min-width: 0) {
+  .tz-three-picture-image-wrapper {
+    max-height: 350px;
   }
 }
 
