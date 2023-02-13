@@ -16,6 +16,7 @@ $grid-breakpoints: $breakpoints;
     border-color: $taaze-main-color;
     background-color: $taaze-white-color;
     color: $taaze-main-color;
+    border-radius: 6px;
 
     &:hover {
       background-color: $taaze-main-color;
@@ -41,18 +42,21 @@ $grid-breakpoints: $breakpoints;
   font-family: $default-font-family;
   font-weight: $font-weight-bold;
   color: $taaze-main-color;
-  padding: 4px;
 
   @include xs {
     width: 65px;
     height: 33px;
     font-size: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 
   @include xsm {
     width: 86px;
     height: 46px;
     font-size: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 }
 

@@ -281,12 +281,15 @@
   }
 }
 
-.tz-title-briefing-title-spacing {
-  margin-bottom: 10px;
+@media (min-width: 0) {
+  .tz-title-briefing-spacing {
+    margin-bottom: 16px;
+  }
 }
-
-.tz-title-briefing-description-spacing {
-  margin-bottom: 16px;
+@media (min-width: 414px) {
+  .tz-title-briefing-spacing {
+    margin-bottom: 24px;
+  }
 }
 
 /***************************************
