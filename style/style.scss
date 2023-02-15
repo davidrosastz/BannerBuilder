@@ -476,13 +476,15 @@ $taaze-fs-nav: 14px;
   font-family: $default-font-family;
   font-weight: $font-weight-bold;
   color: $taaze-grey1-color;
-  font-size: 26px;
+  padding-bottom: 36px;
 
   @include xs {
+    font-size: 22px;
     margin-bottom: 16px;
   }
 
   @include md {
+    font-size: 26px;
     margin-bottom: 30px;
   }
 }
@@ -490,7 +492,14 @@ $taaze-fs-nav: 14px;
 .tz-text-description-description {
   font-family: $default-font-family;
   color: $taaze-grey1-color;
-  font-size: 18px;
+
+  @include xs {
+    font-size: 16px;
+  }
+
+  @include md {
+    font-size: 18px;
+  }
 }
 
 /***************************************
@@ -847,21 +856,21 @@ $taaze-fs-nav: 14px;
 ***************************************/
 .tz-footer-logo-container {
   @include xs {
-    margin-bottom: 22px;    
+    margin-bottom: 22px;
   }
 
   @include xsm {
-    margin-bottom: 26px;    
+    margin-bottom: 26px;
   }
 }
 
 .tz-footer-links-container {
   @include xs {
-    margin-bottom: 22px;    
+    margin-bottom: 22px;
   }
 
   @include xsm {
-    margin-bottom: 26px;    
+    margin-bottom: 26px;
   }
 }
 

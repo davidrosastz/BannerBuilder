@@ -467,15 +467,17 @@
   font-family: "Noto Sans TC", sans-serif;
   font-weight: bold;
   color: #535353;
-  font-size: 26px;
+  padding-bottom: 36px;
 }
 @media (min-width: 0) {
   .tz-text-description-title {
+    font-size: 22px;
     margin-bottom: 16px;
   }
 }
 @media (min-width: 768px) {
   .tz-text-description-title {
+    font-size: 26px;
     margin-bottom: 30px;
   }
 }
@@ -483,7 +485,16 @@
 .tz-text-description-description {
   font-family: "Noto Sans TC", sans-serif;
   color: #535353;
-  font-size: 18px;
+}
+@media (min-width: 0) {
+  .tz-text-description-description {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .tz-text-description-description {
+    font-size: 18px;
+  }
 }
 
 /***************************************
