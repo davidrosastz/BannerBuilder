@@ -49,7 +49,6 @@
 }
 @media (min-width: 768px) {
   .bd-subnavbar {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
   }
@@ -279,7 +278,6 @@
 }
 @media (min-width: 768px) {
   .bd-links {
-    position: -webkit-sticky;
     position: sticky;
     top: 5rem;
     display: block !important;
@@ -396,7 +394,6 @@
 
 @media (min-width: 992px) {
   .bd-toc {
-    position: -webkit-sticky;
     position: sticky;
     top: 5rem;
     right: 0;
@@ -593,7 +590,7 @@
 }
 @media (min-width: 576px) {
   .bd-example .fixed-top,
-.bd-example .sticky-top {
+  .bd-example .sticky-top {
     margin: -1.5rem -1.5rem 1rem;
   }
   .bd-example .fixed-bottom {
@@ -1666,7 +1663,6 @@
   text-anchor: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -2015,7 +2011,6 @@
   content: "$ ";
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .chroma .language-powershell::before {
@@ -2023,7 +2018,6 @@
   content: "PM> ";
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 

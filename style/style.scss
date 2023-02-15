@@ -72,6 +72,16 @@ $taaze-fs-nav: 14px;
 }
 
 /***************************************
+  1_main_banner_division STYLE
+***************************************/
+.tz-main-banner-image-wrapper {
+  &>img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/***************************************
   2_four_book_division STYLE
 ***************************************/
 .tz-four-book-card {
@@ -491,21 +501,16 @@ $taaze-fs-nav: 14px;
   margin: auto;
 
   &>img {
-    aspect-ratio: 1/1;
     width: 100%;
     height: auto;
   }
 
   @include xs {
-    max-width: 179px;
+    max-width: 366px;
   }
 
   @include xsm {
-    max-width: 324px;
-  }
-
-  @include md {
-    max-width: 282px;
+    max-width: 672px;
   }
 }
 

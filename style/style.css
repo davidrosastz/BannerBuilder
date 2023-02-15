@@ -63,6 +63,14 @@
 }
 
 /***************************************
+  1_main_banner_division STYLE
+***************************************/
+.tz-main-banner-image-wrapper > img {
+  width: 100%;
+  height: auto;
+}
+
+/***************************************
   2_four_book_division STYLE
 ***************************************/
 .tz-four-book-card {
@@ -489,23 +497,17 @@
   transform: scale(0.95);
 }
 .tz-four-pic-grid-image-wrapper > img {
-  aspect-ratio: 1/1;
   width: 100%;
   height: auto;
 }
 @media (min-width: 0) {
   .tz-four-pic-grid-image-wrapper {
-    max-width: 179px;
+    max-width: 366px;
   }
 }
 @media (min-width: 414px) {
   .tz-four-pic-grid-image-wrapper {
-    max-width: 324px;
-  }
-}
-@media (min-width: 768px) {
-  .tz-four-pic-grid-image-wrapper {
-    max-width: 282px;
+    max-width: 672px;
   }
 }
 
