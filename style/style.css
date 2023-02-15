@@ -807,7 +807,6 @@
 ***************************************/
 .tz-three-picture-image-wrapper {
   transition: transform 0.2s;
-  margin: auto;
 }
 .tz-three-picture-image-wrapper:hover {
   transform: scale(0.95);
@@ -818,7 +817,17 @@
 }
 @media (min-width: 0) {
   .tz-three-picture-image-wrapper {
-    max-height: 350px;
+    max-width: 366px;
+  }
+}
+@media (min-width: 414px) {
+  .tz-three-picture-image-wrapper {
+    max-width: 672px;
+  }
+}
+@media (min-width: 768px) {
+  .tz-three-picture-image-wrapper {
+    max-width: 588px;
   }
 }
 

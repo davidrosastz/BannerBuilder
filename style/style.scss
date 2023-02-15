@@ -823,7 +823,6 @@ $taaze-fs-nav: 14px;
 ***************************************/
 .tz-three-picture-image-wrapper {
   @include hover-shrink();
-  margin: auto;
 
   &>img {
     height: 100%;
@@ -831,9 +830,16 @@ $taaze-fs-nav: 14px;
   }
 
   @include xs {
-    max-height: 350px;
+    max-width: 366px;
   }
 
+  @include xsm {
+    max-width: 672px;
+  }
+
+  @include md {
+    max-width: 588px;
+  }
 }
 
 /***************************************
