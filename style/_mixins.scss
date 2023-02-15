@@ -9,6 +9,12 @@
     }
 }
 
+@mixin hover-change-color($color: $taaze-main-color) {
+    &:hover {
+        color: $color;
+    }
+}
+
 @mixin vertical-text {
     writing-mode: vertical-rl;
     text-orientation: mixed;
