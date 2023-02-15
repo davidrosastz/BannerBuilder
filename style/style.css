@@ -85,7 +85,7 @@
 }
 @media (min-width: 0) {
   .tz-four-book-card {
-    max-width: 179px;
+    max-width: 177px;
   }
 }
 @media (min-width: 414px) {
@@ -190,6 +190,139 @@
   .tz-four-book-image-wrapper > div {
     height: 30px;
     width: 53px;
+  }
+}
+
+/***************************************
+  3_four_department_division STYLE
+***************************************/
+.tz-four-department-card {
+  transition: transform 0.2s;
+  border-radius: 12px;
+  background-color: white;
+  margin: auto;
+  height: 100%;
+}
+.tz-four-department-card:hover {
+  transform: scale(0.95);
+}
+@media (min-width: 0) {
+  .tz-four-department-card {
+    max-width: 177px;
+  }
+}
+@media (min-width: 414px) {
+  .tz-four-department-card {
+    max-width: 324px;
+  }
+}
+@media (min-width: 992px) {
+  .tz-four-department-card {
+    max-width: 282px;
+  }
+}
+
+.tz-four-department-card-text {
+  padding: 12px;
+}
+.tz-four-department-card-text > .tz-four-department-card-title {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+}
+.tz-four-department-card-text > .tz-four-department-card-author-wrapper {
+  border-radius: 6px;
+  width: 100%;
+  background-color: grey;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #E7E7E7;
+}
+.tz-four-department-card-text > .tz-four-department-card-author-wrapper > p {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #757575;
+  margin: auto;
+}
+@media (min-width: 0) {
+  .tz-four-department-card-text > * {
+    margin-bottom: 12px;
+  }
+  .tz-four-department-card-text > .tz-four-department-card-title {
+    font-size: 16px;
+  }
+  .tz-four-department-card-text > .tz-four-department-card-author-wrapper > p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 414px) {
+  .tz-four-department-card-text > * {
+    margin-bottom: 16px;
+  }
+  .tz-four-department-card-text > .tz-four-department-card-title {
+    font-size: 26px;
+  }
+  .tz-four-department-card-text > .tz-four-department-card-author-wrapper > p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .tz-four-department-card-text > * {
+    margin-bottom: 12px;
+  }
+}
+
+.tz-four-department-card-price {
+  margin-bottom: 0px;
+}
+.tz-four-department-card-price > * {
+  font-family: "Roboto", "sans-serif";
+}
+.tz-four-department-card-price > .tz-four-department-card-price-enabled {
+  color: #FF057D;
+  font-weight: bold;
+}
+.tz-four-department-card-price > .tz-four-department-card-price-disabled {
+  text-decoration: line-through;
+  color: #BDBDBD;
+}
+@media (min-width: 0) {
+  .tz-four-department-card-price > * {
+    font-size: 16px;
+  }
+}
+@media (min-width: 414px) {
+  .tz-four-department-card-price > * {
+    font-size: 24px;
+  }
+}
+
+.tz-four-department-image-wrapper {
+  position: relative;
+  padding: 12px;
+}
+.tz-four-department-image-wrapper > * {
+  border-radius: 6px;
+}
+.tz-four-department-image-wrapper > div {
+  position: absolute;
+  z-index: 1;
+  background-color: #FF057D;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media (min-width: 0) {
+  .tz-four-department-image-wrapper > div {
+    height: 24px;
+  }
+}
+@media (min-width: 576px) {
+  .tz-four-department-image-wrapper > div {
+    height: 34px;
+  }
+}
+@media (min-width: 992px) {
+  .tz-four-department-image-wrapper > div {
+    height: 30px;
   }
 }
 
@@ -467,7 +600,6 @@
   font-family: "Noto Sans TC", sans-serif;
   font-weight: bold;
   color: #535353;
-  padding-bottom: 36px;
 }
 @media (min-width: 0) {
   .tz-text-description-title {
