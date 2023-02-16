@@ -99,6 +99,9 @@
   }
 }
 
+.tz-four-book-card-text {
+  padding: 12px;
+}
 .tz-four-book-card-text > * {
   font-family: "Noto Sans TC", sans-serif;
 }
