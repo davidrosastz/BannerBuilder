@@ -15,6 +15,14 @@
     }
 }
 
+@mixin hover-change-background-image($image) {
+    transition: transform 1s ease;
+
+    &:hover {
+        background-image: url($image);
+    }
+}
+
 @mixin vertical-text {
     writing-mode: vertical-rl;
     text-orientation: mixed;
