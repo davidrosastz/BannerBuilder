@@ -431,11 +431,33 @@
   color: #BDBDBD;
 }
 @media (min-width: 0) {
+  .tz-four-department-card-price {
+    padding-top: 8px;
+  }
   .tz-four-department-card-price > * {
     font-size: 16px;
   }
 }
 @media (min-width: 414px) {
+  .tz-four-department-card-price {
+    padding-top: 0px;
+  }
+  .tz-four-department-card-price > * {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .tz-four-department-card-price {
+    padding-top: 6px;
+  }
+  .tz-four-department-card-price > * {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .tz-four-department-card-price {
+    padding-top: 0px;
+  }
   .tz-four-department-card-price > * {
     font-size: 24px;
   }
