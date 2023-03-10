@@ -37,6 +37,20 @@ $taaze-fs-nav: 14px;
   column-gap: 48px;
 }
 
+.offcanvas {
+  width: 230px;
+}
+
+.nav-link {
+  @include xs {
+    font-size: 16px;
+  }
+
+  @include md {
+    font-size: 20px;
+  }
+}
+
 .navbar-item-container {
   &*> {
     font-size: 14px;
@@ -311,31 +325,31 @@ $taaze-fs-nav: 14px;
 
   @include xs {
     &>div {
-      width: 20px;
-      height: 20px;
+      width: 22px;
+      height: 22px;
     }
   }
 
   @include xsm {
     &>div {
-      width: 28px;
-      height: 28px;
+      width: 34px;
+      height: 34px;
     }
   }
 
-  @include md {
-    &>div {
-      width: 24px;
-      height: 24px;
-    }
-  }
+  // @include md {
+  //   &>div {
+  //     width: 24px;
+  //     height: 24px;
+  //   }
+  // }
 
-  @include lg {
-    &>div {
-      width: 28px;
-      height: 28px;
-    }
-  }
+  // @include lg {
+  //   &>div {
+  //     width: 28px;
+  //     height: 28px;
+  //   }
+  // }
 }
 
 .tz-four-book-image-wrapper {
@@ -481,18 +495,14 @@ $taaze-fs-nav: 14px;
 
   @include xsm {
     padding-top: 0px;
-    
+
     &>* {
-      font-size: 18px;
+      font-size: 24px;
     }
   }
 
   @include md {
     padding-top: 6px;
-
-    &>* {
-      font-size: 18px;
-    }
   }
 
   @include lg {
@@ -994,6 +1004,7 @@ $taaze-fs-nav: 14px;
     }
 
     *>.tz-book-description-price-container {
+      padding-top: 6px;
       font-size: 16px;
     }
   }
@@ -1098,7 +1109,7 @@ $taaze-fs-nav: 14px;
       text-align: center;
     }
 
-    &>.tz-two-product-card-price-wrapper {
+    &>div>.tz-two-product-card-price-wrapper {
       font-size: 24px;
       margin: 0;
 
@@ -1183,6 +1194,51 @@ $taaze-fs-nav: 14px;
   @include md {
     @include tz-card-base($padding-x: 16px, $padding-y: 16px);
   }
+}
+
+.tz-two-product-card-shopping-cart {
+  align-items: center;
+
+  &>div {
+    &>svg {
+      width: 100%;
+      height: 100%;
+      color: $taaze-main-color !important;
+      // color: $taaze-grey2-color;
+
+      &:hover {
+        color: $taaze-main-color;
+      }
+    }
+  }
+
+  @include xs {
+    &>div {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  @include xsm {
+    &>div {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  // @include md {
+  //   &>div {
+  //     width: 24px;
+  //     height: 24px;
+  //   }
+  // }
+
+  // @include lg {
+  //   &>div {
+  //     width: 28px;
+  //     height: 28px;
+  //   }
+  // }
 }
 
 /***************************************

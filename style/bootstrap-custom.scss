@@ -30,6 +30,19 @@ $grid-breakpoints: $breakpoints;
   max-width: 1200px;
 }
 
+.btn-tz-login {
+  @include button-variant($taaze-grey1-color, $taaze-grey1-color, $taaze-main-color);
+  background-color: $taaze-grey1-color !important;
+  border-color: $taaze-grey1-color !important;
+  color: $taaze-white-color !important;
+  height: 38px;
+
+  &:hover {
+    background-color: $taaze-main-color !important;
+    border-color: $taaze-main-color !important;
+  }
+}
+
 .tz-more-button {
   @extend .d-flex;
   @extend .align-items-center;
