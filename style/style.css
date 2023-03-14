@@ -27,6 +27,12 @@
   }
 }
 
+.separator {
+  background-color: black;
+  height: 100%;
+  width: 1px;
+}
+
 /***************************************
   0_navbar STYLE
 **************************************/
