@@ -30,12 +30,6 @@ $taaze-fs-nav: 14px;
   }
 }
 
-.separator {
-  background-color: black;
-  height: 100%;
-  width: 1px;
-}
-
 /***************************************
   0_navbar STYLE
 **************************************/
@@ -94,34 +88,41 @@ $taaze-fs-nav: 14px;
 .tz-menu-container {
   justify-content: center;
   flex-wrap: nowrap;
-  gap: 24px;
 
-  &>p {
+  &>a {
+    @include hover-change-color($taaze-main-color);
     white-space: nowrap;
     color: $taaze-grey1-color;
     font-weight: $font-weight-bold;
+    text-decoration: none;
   }
 
   @include xs {
-    &>p {
+    gap: 10px;
+
+    &>a {
       font-size: 14px;
     }
   }
 
   @include xsm {
-    &>p {
+    &>a {
       font-size: 14px;
     }
   }
 
   @include sm {
-    &>p {
+    gap: 24px;
+
+    &>a {
       font-size: 18px;
     }
   }
 
   @include md {
-    &>p {
+    gap: 48px;
+
+    &>a {
       font-size: 26px;
     }
   }
