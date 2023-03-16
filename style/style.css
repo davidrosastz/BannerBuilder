@@ -129,12 +129,12 @@
 ***************************************/
 .tz-menu-image-container > .d-flex > div {
   transition: transform 1s ease;
-  background-image: url("https://s3-alpha-sig.figma.com/img/a373/352e/df6183d268b7bf66ef4120544c4f28a3?Expires=1677456000&Signature=L8nICWZ8FfyNNB7DkZI3tgsAfnK71mVuvLrYu9EkEHpkdKdi72C8OA~iUvcZeTruzMskrVEMH7NbbQXZr4LMhvV-nPgch46lSPmoULXFxZq5FejDwjPBzhjotU0d6cclkNnMXL6DCn25Oj2~iuetQBpOrBZ6xQwxd1OuK9tT4EI87ZfA3HQLPxa5l6wopkBPSh1G-VfiV4tLwGNqicJW2-iNLdvQTm16Bo7uLdelSZjAfqcQJVifgzDDe5CV1xcekEd7WYSuLYq4gki-Ikl~86YDnVMv3iUshKje~rgqekEuBZD~g7vRAIwd9bES0YyNPMKtas-rfYMm~4akpewEmQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+  background-image: url("https://s3-alpha-sig.figma.com/img/213c/1c43/ce8e3d9bc69f9a59c45729aa16da1cd6?Expires=1679875200&Signature=dMOa9xTvz2EzbQFyJ2FXdRs~ivmm~J6ARuzHbr4JOuCh3eSlUZ0SRh1o4oqN7~l-TPSkEypUlPr~NkYYBkvvOEZyfbVnp5FkOXrFrvj4nEhHhKcMEnbPq9dNuIheGUdfb7Gy35Gwp5HVXfXbBvqSRCvcOYIdfBYIin7FXsHskjVrCIv8vSYcIyZ0QZSH0lkH6Pxs3oCEsV5cbbBUkCImELnxxkjpWDdJ105v6gt9wMIl7xuFQOhehT~JBYTdrMR64qQgd0wR5lDUYp~ml72UqHRAWEc2VkJw4CSerqAIYVip7dCUGfDY7Ub~8IAvb8gJBBRbr1EgpLmt7mREqJ3uZQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
   width: 100%;
   background-size: cover;
 }
 .tz-menu-image-container > .d-flex > div:hover {
-  background-image: url("https://s3-alpha-sig.figma.com/img/95b2/7bb3/4f80972211ff589d45a65013d5e529cd?Expires=1677456000&Signature=CRjiqTe03nUsqPEuWxrTYOdPCWjmhSRAhk-kmYXrp4uxA5-YgWK9zMVOLdXEKkQucgFq9Fm9~GHzPZOQOFHj88QNgN5aHDC87RsCv~mhUbKp7pOyjLmkI7oe2TsPzJYantY4IgjtMJFwP3fL3Vkfz9RSgexwMtcrgkIrA6OD8ugyVMks7ubWOBU-HwzGUhKnwWM8rYDWGD8t4W6iKzpj6ING7MNfYTffx0TtIXIrb8zBf4tYLZOc1BKLVG~zzi5nf0Gb39NiA6O7eNxHGUKwhmltH~68VgILIcOVdlE80aaSUMGO07SawZ5~T68xdsG~55Iu6qDc5kUsysP-bFuI1Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+  background-image: url("https://s3-alpha-sig.figma.com/img/9759/a54d/64eca597f0382febe46a8d1555dee3bf?Expires=1679875200&Signature=oRT-AETrW7Mqq8VrEPG4W-ysTu6KvZGHogO7tKttPyXi1T0dQLv85Kvue-7XKsWLYUmUkADhVyATReDsRa~izgqybbZCPUnKDCFmS1j9YBSjzz6ALVCy1CTYmM3TGabnJyrvkOfDh4zoREU4ARcci5F2RZdi5z-MYs~zzn1BLRe9msNh2xVqcGqwRdlVU2gxfCo6H~wydephmTWMUPEBLDRMZQpV5IGOCOwYPTEPIkoZBCbCz9qqPQoRhnaYbro8ynD~PS1c8P7JZU7OMpTjrSyDHucfVxzdqf52HrSl8mgI6MPrfLxnCMdA~C7-SxylVMH48zy1xzYrwLIb84G8PA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
 }
 .tz-menu-image-container > .d-flex > div > a {
   padding: 12px;
@@ -654,7 +654,7 @@
   padding-left: 12px;
   width: 100%;
 }
-.tz-two-book-card > .tz-two-book-card-content-wrapper * {
+.tz-two-book-card > .tz-two-book-card-content-wrapper > * {
   font-family: "Noto Sans TC", sans-serif;
   color: #535353;
 }
@@ -671,16 +671,16 @@
   font-size: 18px;
   text-align: center;
 }
-.tz-two-book-card > .tz-two-book-card-content-wrapper > .tz-two-book-card-price-wrapper {
+.tz-two-book-card > .tz-two-book-card-content-wrapper > div > .tz-two-book-card-price-wrapper {
   font-size: 24px;
   margin: 0;
 }
-.tz-two-book-card > .tz-two-book-card-content-wrapper > .tz-two-book-card-price-wrapper > .tz-two-book-card-price-enabled {
+.tz-two-book-card > .tz-two-book-card-content-wrapper > div > .tz-two-book-card-price-wrapper > .tz-two-book-card-price-enabled {
   color: #FF057D;
   font-weight: bold;
   margin: 0;
 }
-.tz-two-book-card > .tz-two-book-card-content-wrapper > .tz-two-book-card-price-wrapper > .tz-two-book-card-price-disabled {
+.tz-two-book-card > .tz-two-book-card-content-wrapper > div > .tz-two-book-card-price-wrapper > .tz-two-book-card-price-disabled {
   text-decoration: line-through;
   color: #BDBDBD;
   margin: 0;
@@ -904,7 +904,7 @@
 /***************************************
   14_book_description_division STYLE
 ***************************************/
-.tz-book-description-wrapper * {
+.tz-book-description-wrapper > * {
   font-family: "Noto Sans TC", sans-serif;
   color: #535353;
 }
@@ -1002,6 +1002,30 @@
   }
 }
 
+.tz-book-description-card-shopping-cart {
+  align-items: center;
+}
+.tz-book-description-card-shopping-cart > div > svg {
+  width: 100%;
+  height: 100%;
+  color: #757575;
+}
+.tz-book-description-card-shopping-cart > div > svg:hover {
+  color: #FF057D;
+}
+@media (min-width: 0) {
+  .tz-book-description-card-shopping-cart > div {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (min-width: 414px) {
+  .tz-book-description-card-shopping-cart > div {
+    width: 34px;
+    height: 34px;
+  }
+}
+
 /***************************************
   15_two_product_cards_division STYLE
 ***************************************/
@@ -1030,7 +1054,7 @@
   padding-left: 12px;
   width: 100%;
 }
-.tz-two-product-card > .tz-two-product-card-content-wrapper * {
+.tz-two-product-card > .tz-two-product-card-content-wrapper > * {
   font-family: "Noto Sans TC", sans-serif;
   color: #535353;
 }
@@ -1154,7 +1178,7 @@
 .tz-two-product-card-shopping-cart > div > svg {
   width: 100%;
   height: 100%;
-  color: #FF057D !important;
+  color: #757575;
 }
 .tz-two-product-card-shopping-cart > div > svg:hover {
   color: #FF057D;
