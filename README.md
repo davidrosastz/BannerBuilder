@@ -1,3 +1,3 @@
 # BannerBuilder
 Banner Division Specifications<br/>
-https://www.figma.com/file/VnKOwPsWeKVqEUYARk42aL/UI-Template---%E5%B7%A5%E7%A8%8B%E5%B8%AB-%2F-Rinka?t=Wp6XQTYGGsI031AZ-0
+https://www.figma.com/file/Lqtn3VzFyo1MRVaOzq4eFu/UI-Template_%E4%BF%AE%E6%94%B9v2_0207?node-id=3%3A624&t=ZxJY1Bw78tBPZ13I-0
