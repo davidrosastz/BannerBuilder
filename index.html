@@ -1,86 +1,85 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style/bootstrap-custom.css">
-    <link rel="stylesheet" href="style/style.css">
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style/bootstrap-custom.css">
+      <link rel="stylesheet" href="style/style.css">
     <title>Banner</title>
-</head>
+    </head>
+    <body>
+      
+  <div class="container-1200 tz-navbar-container">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <div class="container-fluid p-0">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#"><img class='navbar-brand-pic' src="assets/taaze-logo.svg" /></a>
 
-<body>
+        <!-- Toggler for Medium Screens -->
+        <button class="navbar-toggler tz-navbar-toggler p-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="hamburger-toggler"><img src="assets/hamburger_toggler.svg" alt="" srcset=""></div>
+        </button>
 
-    <div class="container-1200 tz-container-padding py-0">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <!-- Logo -->
-                <a class="navbar-brand" href="#"><img class='navbar-brand-pic' src="assets/taaze-logo.svg" /></a>
-
-                <!-- Toggler for Medium Screens -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Navbar Links -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">中文書</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">二手書</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">電子書</a>
-                        </li>
-                        <li class="nav-item my-auto">
-                            <a class="btn btn-tz-login">註冊/登入</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Offcanvas for Medium Screens -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-body">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">中文書</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">二手書</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">電子書</a>
-                    </li>
-                </ul>
-                <hr>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">注目新書</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">小故事大啟示</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">滿級分的語文寫作</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">超值75折</a>
-                    </li>
-                </ul>
-                <hr>
-                <a class="btn btn-tz-login" style="margin-top: 8px;">註冊/登入</a>
-            </div>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav tz-navbar-list ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">中文書</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">二手書</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">電子書</a>
+            </li>
+            <li class="nav-item my-auto">
+              <a class="btn btn-tz-login">註冊/登入</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+
+    <!-- Offcanvas for Medium Screens -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-body tz-offcanvas-body">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link offcanvas-nav-link" href="#">中文書</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link offcanvas-nav-link" href="#">二手書</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link offcanvas-nav-link" href="#">電子書</a>
+          </li>
+        </ul>
+        <hr>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link offcanvas-nav-link" href="#">注目新書</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link offcanvas-nav-link" href="#">小故事大啟示</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link offcanvas-nav-link" href="#">滿級分的語文寫作</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link offcanvas-nav-link" href="#">超值75折</a>
+          </li>
+        </ul>
+        <hr>
+        <a class="btn btn-tz-login" style="margin-top: 16px;">註冊/登入</a>
+      </div>
     </div>
+  </div>
+  <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
-    <div class="container-1200 tz-container-padding py-0">
+    <div class="container-1200 tz-container-padding p-0">
         <div class="row g-0">
             <div class="col-auto">
                 <div class="tz-main-banner-image-wrapper">
@@ -91,6 +90,7 @@
         </div>
     </div>
 
+    <script src="bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <div class="container-1200 tz-container-padding">
@@ -132,6 +132,7 @@
         </div>
     </div>
 
+    <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <div class="container-1200 tz-container-padding">
@@ -182,8 +183,9 @@
             </div>
         </div>
     </div>
-
-
+    
+    <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
 
     <div style="background-color: rgb(233, 233, 233);">
         <!-- <div class="container-tz" style="background-image: url('https://www.taaze.tw/static_act/best_seller/images/2000800.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;"> -->
@@ -205,14 +207,13 @@
                             <p class="tz-four-book-card-author">Q-rais</p>
                             <div class="d-flex justify-content-between w-100">
                                 <div class="d-flex tz-four-book-card-price gap-1">
-                                    <p class="tz-four-book-card-price-disabled" style="padding: 0; margin: auto">$320
-                                    </p>
+                                    <p class="tz-four-book-card-price-disabled" style="padding: 0; margin: auto">$320</p>
                                     <p class="tz-four-book-card-price-enabled" style="padding: 0; margin: auto">$253</p>
                                 </div>
                                 <div class="d-flex tz-four-book-card-shopping_cart gap-1">
                                     <div>
                                         <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="0.5" y="0.5" width="21" height="21" rx="10.5" fill="white"
+                                            <rect  x="0.5" y="0.5" width="21" height="21" rx="10.5" fill="white"
                                                 stroke="currentcolor" />
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M16.1977 6.7606L11.4989 12.6134L8.35311 9.82712L9.25725 8.80632L11.3316 10.6436L15.1343 5.90692L16.1977 6.7606Z"
@@ -419,6 +420,7 @@
         </div>
     </div>
 
+    <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
@@ -656,6 +658,7 @@
             </div>
         </div>
     </div>
+    <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <div class="container-1200 tz-container-padding">
@@ -675,6 +678,7 @@
             </div>
         </div>
     </div>
+    <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <div style="background-color: rgb(228, 228, 222);">
@@ -694,6 +698,7 @@
             </div>
         </div>
     </div>
+    <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <div style="background-color: darkgrey;">
@@ -710,6 +715,7 @@
         </div>
     </div>
 
+    <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
@@ -790,6 +796,7 @@
         </div>
     </div>
 
+    <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <div class="container-1200 tz-container-padding">
@@ -805,223 +812,222 @@
         </div>
     </div>
 
+    <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
-    <div style="background :#F2F2F2">
-        <div class="container-1200 tz-container-padding">
-            <div class="row g-4">
-                <div class="col-6">
-                    <div class="tz-four-pic-grid-image-wrapper">
-                        <img
-                            src="https://s3-alpha-sig.figma.com/img/213c/1c43/ce8e3d9bc69f9a59c45729aa16da1cd6?Expires=1679875200&Signature=dMOa9xTvz2EzbQFyJ2FXdRs~ivmm~J6ARuzHbr4JOuCh3eSlUZ0SRh1o4oqN7~l-TPSkEypUlPr~NkYYBkvvOEZyfbVnp5FkOXrFrvj4nEhHhKcMEnbPq9dNuIheGUdfb7Gy35Gwp5HVXfXbBvqSRCvcOYIdfBYIin7FXsHskjVrCIv8vSYcIyZ0QZSH0lkH6Pxs3oCEsV5cbbBUkCImELnxxkjpWDdJ105v6gt9wMIl7xuFQOhehT~JBYTdrMR64qQgd0wR5lDUYp~ml72UqHRAWEc2VkJw4CSerqAIYVip7dCUGfDY7Ub~8IAvb8gJBBRbr1EgpLmt7mREqJ3uZQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="tz-four-pic-grid-image-wrapper">
-                        <img
-                            src="https://s3-alpha-sig.figma.com/img/95b2/7bb3/4f80972211ff589d45a65013d5e529cd?Expires=1679875200&Signature=RMpS8zEqWD0j2tStz6LbehFREv7S5ZWEtC2wcqQAL0bOGXPJwvP4iXvx5lZPIU2VqqhetzENAyzS0fJRtmB0QxoYRAxCpFzxu--51kdWaog9iWeNoczi71A3qqMQzooKSSo77Jr4ldsV~ZhZllRdvAEmeyF4Uw5nW-CLUwDPAFYtTW3cnXFVIesuVd5FIj3nerlkT3uQt8s3Qx6zyl2z~Veh0S~eLOQLPa3daOXUiCNJ-Ms2dakotFyO42Deqd2-BRhtWj6H8EjdKG4bFwKf5aJWiUqFh0hhEb5qPu6AMJjCakguuPl9e9DuFSkKe4~qoqTU8bYEUjkMxRu~HyyLUg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="tz-four-pic-grid-image-wrapper">
-                        <img
-                            src="https://s3-alpha-sig.figma.com/img/9ed3/d7e3/f9ce8198988466309a02302590537377?Expires=1679875200&Signature=ThdxqkfEM9PxoYTPR-xc0Tq2NPV~ovaMSKuwi5B8x5fNmsynd86hJfWshm8yiThEpMzK4P-E8UytM737Dxfsn8piKSZz4LWWipeqHsMW3DldiRkccEnH3SvYwswTc02L-G3sDRN99Tiqs6Q~ggssuBEcGhC2Jep0vz7YzPe09dTQISuXxsS7xXrBuC4vme3ibP3Gvu-Swd7-t6kyuoK5GISfeFdUx6WywqEgQSXHF4S~pgKn2ELqjKDwfTsRzx7vXERwkGtKjYpG7KfkR2EguE2o6RemWh3pUO23gR6DUtqJWp9WYVD7xuUU2Rwd6~8j2HgKzAmlRO56rx8zOEfL2w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="tz-four-pic-grid-image-wrapper">
-                        <img
-                            src="https://s3-alpha-sig.figma.com/img/7a8e/8455/382bd6f793186e1f7586353c6a5dbe03?Expires=1679875200&Signature=FwILTUPhLJp-eV2rn3pbyUsoK41pKF1h3GGxjgTW4vBxdd1YPD5QSeM6p2IZu2LZVoT-JEIVmy0ZX~5mrbg8PUk4AKXDgrDeIUrO0BxnHoU2VwPt638h~Q701nWOztqiCKds2PbAl6NFV5hDDaiSTjKvh4L1XfFDYerKJIhF0B7O9UYmKX7EX~dfS4JrHd-dnBKOX5vMmFlheOr1jo1jr7ePCRuQYav3QFncVkvs2h3vbVPc6OSpS~kEM6fxMqYQPrBKs7Gu2Gr-vWnjNB08GV0pdPLtUutTKpcvatXXEdK5Cg2K5vgvx4U7u-Tv1EuswPVbYx2SHv47GX1HX3gG0Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
-                    </div>
+  <div style="background :#F2F2F2">
+    <div class="container-1200 tz-container-padding">
+      <div class="row g-4">
+        <div class="col-6">
+          <div class="tz-four-pic-grid-image-wrapper">
+            <img src="https://s3-alpha-sig.figma.com/img/213c/1c43/ce8e3d9bc69f9a59c45729aa16da1cd6?Expires=1679875200&Signature=dMOa9xTvz2EzbQFyJ2FXdRs~ivmm~J6ARuzHbr4JOuCh3eSlUZ0SRh1o4oqN7~l-TPSkEypUlPr~NkYYBkvvOEZyfbVnp5FkOXrFrvj4nEhHhKcMEnbPq9dNuIheGUdfb7Gy35Gwp5HVXfXbBvqSRCvcOYIdfBYIin7FXsHskjVrCIv8vSYcIyZ0QZSH0lkH6Pxs3oCEsV5cbbBUkCImELnxxkjpWDdJ105v6gt9wMIl7xuFQOhehT~JBYTdrMR64qQgd0wR5lDUYp~ml72UqHRAWEc2VkJw4CSerqAIYVip7dCUGfDY7Ub~8IAvb8gJBBRbr1EgpLmt7mREqJ3uZQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="tz-four-pic-grid-image-wrapper">
+            <img src="https://s3-alpha-sig.figma.com/img/95b2/7bb3/4f80972211ff589d45a65013d5e529cd?Expires=1679875200&Signature=RMpS8zEqWD0j2tStz6LbehFREv7S5ZWEtC2wcqQAL0bOGXPJwvP4iXvx5lZPIU2VqqhetzENAyzS0fJRtmB0QxoYRAxCpFzxu--51kdWaog9iWeNoczi71A3qqMQzooKSSo77Jr4ldsV~ZhZllRdvAEmeyF4Uw5nW-CLUwDPAFYtTW3cnXFVIesuVd5FIj3nerlkT3uQt8s3Qx6zyl2z~Veh0S~eLOQLPa3daOXUiCNJ-Ms2dakotFyO42Deqd2-BRhtWj6H8EjdKG4bFwKf5aJWiUqFh0hhEb5qPu6AMJjCakguuPl9e9DuFSkKe4~qoqTU8bYEUjkMxRu~HyyLUg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="tz-four-pic-grid-image-wrapper">
+            <img src="https://s3-alpha-sig.figma.com/img/9ed3/d7e3/f9ce8198988466309a02302590537377?Expires=1679875200&Signature=ThdxqkfEM9PxoYTPR-xc0Tq2NPV~ovaMSKuwi5B8x5fNmsynd86hJfWshm8yiThEpMzK4P-E8UytM737Dxfsn8piKSZz4LWWipeqHsMW3DldiRkccEnH3SvYwswTc02L-G3sDRN99Tiqs6Q~ggssuBEcGhC2Jep0vz7YzPe09dTQISuXxsS7xXrBuC4vme3ibP3Gvu-Swd7-t6kyuoK5GISfeFdUx6WywqEgQSXHF4S~pgKn2ELqjKDwfTsRzx7vXERwkGtKjYpG7KfkR2EguE2o6RemWh3pUO23gR6DUtqJWp9WYVD7xuUU2Rwd6~8j2HgKzAmlRO56rx8zOEfL2w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="tz-four-pic-grid-image-wrapper">
+            <img src="https://s3-alpha-sig.figma.com/img/7a8e/8455/382bd6f793186e1f7586353c6a5dbe03?Expires=1679875200&Signature=FwILTUPhLJp-eV2rn3pbyUsoK41pKF1h3GGxjgTW4vBxdd1YPD5QSeM6p2IZu2LZVoT-JEIVmy0ZX~5mrbg8PUk4AKXDgrDeIUrO0BxnHoU2VwPt638h~Q701nWOztqiCKds2PbAl6NFV5hDDaiSTjKvh4L1XfFDYerKJIhF0B7O9UYmKX7EX~dfS4JrHd-dnBKOX5vMmFlheOr1jo1jr7ePCRuQYav3QFncVkvs2h3vbVPc6OSpS~kEM6fxMqYQPrBKs7Gu2Gr-vWnjNB08GV0pdPLtUutTKpcvatXXEdK5Cg2K5vgvx4U7u-Tv1EuswPVbYx2SHv47GX1HX3gG0Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <div class="container-1200 tz-container-padding">
+        <div class="row g-0">
+            <div class="col-auto">
+                <div class="tz-big-banner-image-wrapper">
+                    <img
+                        src="https://s3-alpha-sig.figma.com/img/431d/b2fc/0922846a8a2744a99e328d8e78da7da6?Expires=1677456000&Signature=YE0ituSuI6itTYgLNqQZl8RmwPWm6BVnFOMafU4IHmYDbFdcm95ePwFMpnnBvPB1qM4zcNxfoHLxWchnl9TJVY94ceCmcAYSq6vgs4jtIBIVgNqrArP0J8fssGUd6B96VbnAAuzPRiHVM01M0htFM2x6R6SHlS3Zy0S99URq7uebVdVQkexICHaRsgG37lg760tOEjlz-rHpqtmc02lZgOiUFPabXfmppUzi8K-xFudaWxO97YkdZdnLITY83uv3UbeyFCF4~bplcbHw5-TCZPDsyAJsIe58uZNHBGp4Q~rDjKR1hBFG8-qhVH5FyUMMd5HcNT8~~PFTsG-bDe4low__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
                 </div>
             </div>
         </div>
+    </div>
+
+    <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
-
+    <div>
         <div class="container-1200 tz-container-padding">
             <div class="row g-0">
-                <div class="col-auto">
-                    <div class="tz-big-banner-image-wrapper">
-                        <img
-                            src="https://s3-alpha-sig.figma.com/img/431d/b2fc/0922846a8a2744a99e328d8e78da7da6?Expires=1677456000&Signature=YE0ituSuI6itTYgLNqQZl8RmwPWm6BVnFOMafU4IHmYDbFdcm95ePwFMpnnBvPB1qM4zcNxfoHLxWchnl9TJVY94ceCmcAYSq6vgs4jtIBIVgNqrArP0J8fssGUd6B96VbnAAuzPRiHVM01M0htFM2x6R6SHlS3Zy0S99URq7uebVdVQkexICHaRsgG37lg760tOEjlz-rHpqtmc02lZgOiUFPabXfmppUzi8K-xFudaWxO97YkdZdnLITY83uv3UbeyFCF4~bplcbHw5-TCZPDsyAJsIe58uZNHBGp4Q~rDjKR1hBFG8-qhVH5FyUMMd5HcNT8~~PFTsG-bDe4low__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+                <div class="col">
+                    <div
+                        class="tz-book-description-wrapper d-flex flex-xsm-row flex-column justify-content-start align-items-center">
+                        <p class="tz-book-description-main-title">測試標題</p>
+                        <div class="tz-book-description-image-wrapper">
+                            <img src="https://s3-alpha-sig.figma.com/img/e9c3/d7a3/5bbe4db458b4fc6dc9b9038458dd11c9?Expires=1679875200&Signature=CbA7kIsRX3cDq9bs1TNAxGA03ftAnXyfEvkMRs3buxEFwk3UPPxgsNDWQnDbCM9pK7PrwRPO1~kk4M0yCCnSX2r3hV3B9~A48uTqaGSYdZkouphJbylknMXgu8c2jNlyILMB83SZd0moV3xNpTjjsX5FvkLyginorlvTW8OOtlBgncE8HoAjYkZh1NCX-3Hhdsbc8esGNW6Sqoyh7DNiwuarG1xf8StjqMWGo7pzBL3VHYpGDe-GsTgVw2jeho8xkwDFRI2hChxJ4iKKjE0TivH8U46OIjnYgdUyFZ0AqW4YnTbNybfrAhMYuwg7w9Yb~QG9GZmyuJYCsyQPhVc5kQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                alt="">
+                        </div>
+                        <div class="flex-fill">
+                            <p class="tz-book-description-second-title">擱淺在日子上的傷，不用急著好起來</p>
+                            <p class="tz-book-description-author">作者：蕭偉軒</p>
+                            <div class="d-flex justify-content-between w-100">
+                                <div class="tz-four-department-card-price d-flex align-items-center gap-1">
+                                    <div class="tz-four-department-card-price-disabled">$440</div>
+                                    <div class="tz-four-department-card-price-enabled">$405</div>
+                                </div>
+                                <div class="d-flex tz-book-description-card-shopping-cart gap-1">
+                                    <div>
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="21" height="21" rx="10.5" fill="white"
+                                                stroke="currentcolor" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.1977 6.7606L11.4989 12.6134L8.35311 9.82712L9.25725 8.80632L11.3316 10.6436L15.1343 5.90692L16.1977 6.7606Z"
+                                                fill="currentcolor" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M7.24978 6.22723C7.0615 6.22723 6.90887 6.37986 6.90887 6.56814V14.75C6.90887 14.9382 7.0615 15.0909 7.24978 15.0909H15.4316C15.6199 15.0909 15.7725 14.9382 15.7725 14.75V10.659H16.4543V14.75C16.4543 15.3148 15.9964 15.7727 15.4316 15.7727H7.24978C6.68494 15.7727 6.22705 15.3148 6.22705 14.75V6.56814C6.22705 6.0033 6.68494 5.54541 7.24978 5.54541H11.4697V6.22723H7.24978Z"
+                                                fill="currentcolor" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="33" height="33" rx="16.5" fill="white" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M8.34149 11.5H22.7192C24.0204 11.5 24.9751 12.7228 24.6595 13.9851L23.4095 18.9851C23.1869 19.8754 22.387 20.5 21.4692 20.5H14.2974C13.5557 20.5 12.8748 20.0895 12.5286 19.4335L8.34149 11.5ZM10 12.5L13.413 18.9668C13.5861 19.2947 13.9265 19.5 14.2974 19.5H21.4692C21.9281 19.5 22.3281 19.1877 22.4394 18.7425L23.6894 13.7425C23.8472 13.1114 23.3698 12.5 22.7192 12.5H10Z"
+                                                fill="currentcolor" />
+                                            <path
+                                                d="M7 11.5C7 10.9477 7.44772 10.5 8 10.5H11C11.5523 10.5 12 10.9477 12 11.5C12 12.0523 11.5523 12.5 11 12.5H8C7.44772 12.5 7 12.0523 7 11.5Z"
+                                                fill="currentcolor" />
+                                            <path
+                                                d="M16.2694 23.5119C16.2694 24.5834 15.4008 25.452 14.3293 25.452C13.2578 25.452 12.3892 24.5834 12.3892 23.5119C12.3892 22.4404 13.2578 21.5718 14.3293 21.5718C15.4008 21.5718 16.2694 22.4404 16.2694 23.5119Z"
+                                                fill="currentcolor" />
+                                            <path
+                                                d="M24.0298 23.5119C24.0298 24.5834 23.1612 25.452 22.0897 25.452C21.0182 25.452 20.1495 24.5834 20.1495 23.5119C20.1495 22.4404 21.0182 21.5718 22.0897 21.5718C23.1612 21.5718 24.0298 22.4404 24.0298 23.5119Z"
+                                                fill="currentcolor" />
+                                            <rect x="0.5" y="0.5" width="33" height="33" rx="16.5"
+                                                stroke="currentcolor" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="tz-book-description-description">▍新生代作詞人城旭遠——首部暖心散文集 ▍一本供你我安放傷口的療癒之書
+                                20個人生關鍵字，窺見20道躲在日常的傷痕，伴你度過一段段曾經遍體鱗傷的日子，看見一個個受傷後再次茁壯的靈魂。
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
-
-        <div>
-            <div class="container-1200 tz-container-padding">
-                <div class="row g-0">
-                    <div class="col">
+    <div style="background-color: #F2F2F2" ;>
+        <div class="container-1200 tz-container-padding">
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-md-6">
+                    <div class="tz-two-product-card d-flex">
+                        <div class="tz-two-product-card-image-wrapper">
+                            <div class="d-flex justify-content-center align-items-center">限量</div>
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/a1b4/110a/f56b94016eaedbf5c69e57a38df75000?Expires=1679875200&Signature=WWw88v7CbpWSUQ5UNPWz7bezlscPVadvhOHySojftl64Qah7rb2r2AtatXUn3xTYnHn1DDtwR1YzFCfv00ifg16eySiwPB3SFEqzJCM5XjFOFGpVDxc67MmuzAN~-Iux9eVvpaLf5ubJKgCS~DXohyLz6EM16a2g5~qcjmsURgmsd9lxjC2Af42jfyiKJg2kAYOa5nyv0KPh7M3OmcCxqc-PNAhWoDr5Rer-plMdzNzpn4x0ARmk-IIA8z6m3SwTPCamEiVyl4eGvpq5my43IQkP4UA59zqZD-TTCNEfUKzLVXLbfw52SMIVTAlWC0dFQutCzbmpRw0SvIi1L0mTrA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+                        </div>
                         <div
-                            class="tz-book-description-wrapper d-flex flex-xsm-row flex-column justify-content-start align-items-center">
-                            <p class="tz-book-description-main-title">測試標題</p>
-                            <div class="tz-book-description-image-wrapper">
-                                <img src="https://s3-alpha-sig.figma.com/img/e9c3/d7a3/5bbe4db458b4fc6dc9b9038458dd11c9?Expires=1679875200&Signature=CbA7kIsRX3cDq9bs1TNAxGA03ftAnXyfEvkMRs3buxEFwk3UPPxgsNDWQnDbCM9pK7PrwRPO1~kk4M0yCCnSX2r3hV3B9~A48uTqaGSYdZkouphJbylknMXgu8c2jNlyILMB83SZd0moV3xNpTjjsX5FvkLyginorlvTW8OOtlBgncE8HoAjYkZh1NCX-3Hhdsbc8esGNW6Sqoyh7DNiwuarG1xf8StjqMWGo7pzBL3VHYpGDe-GsTgVw2jeho8xkwDFRI2hChxJ4iKKjE0TivH8U46OIjnYgdUyFZ0AqW4YnTbNybfrAhMYuwg7w9Yb~QG9GZmyuJYCsyQPhVc5kQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                                    alt="">
-                            </div>
-                            <div class="flex-fill">
-                                <p class="tz-book-description-second-title">擱淺在日子上的傷，不用急著好起來</p>
-                                <p class="tz-book-description-author">作者：蕭偉軒</p>
-                                <div class="d-flex justify-content-between w-100">
-                                    <div class="tz-four-department-card-price d-flex align-items-center gap-1">
-                                        <div class="tz-four-department-card-price-disabled">$440</div>
-                                        <div class="tz-four-department-card-price-enabled">$405</div>
+                            class="tz-two-product-card-content-wrapper d-flex flex-column justify-content-center align-items-center">
+                            <p class="tz-two-product-card-title">日本 pocchiri 束口袋/ 檸檬/ 奶黃色</p>
+                            <div class="tz-two-product-card-subtitle d-flex justify-content-center">日本職人手工縫製</div>
+                            <div class="d-flex justify-content-between w-100">
+                                <div class="tz-two-product-card-price-wrapper d-flex align-items-center gap-1">
+                                    <p class="tz-two-product-card-price-disabled">$630</p>
+                                    <p class="tz-two-product-card-price-enabled">$473</p>
+                                </div>
+                                <div class="d-flex tz-two-product-card-shopping-cart gap-1">
+                                    <div>
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="21" height="21" rx="10.5" fill="white"
+                                                stroke="currentcolor" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.1977 6.7606L11.4989 12.6134L8.35311 9.82712L9.25725 8.80632L11.3316 10.6436L15.1343 5.90692L16.1977 6.7606Z"
+                                                fill="currentcolor" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M7.24978 6.22723C7.0615 6.22723 6.90887 6.37986 6.90887 6.56814V14.75C6.90887 14.9382 7.0615 15.0909 7.24978 15.0909H15.4316C15.6199 15.0909 15.7725 14.9382 15.7725 14.75V10.659H16.4543V14.75C16.4543 15.3148 15.9964 15.7727 15.4316 15.7727H7.24978C6.68494 15.7727 6.22705 15.3148 6.22705 14.75V6.56814C6.22705 6.0033 6.68494 5.54541 7.24978 5.54541H11.4697V6.22723H7.24978Z"
+                                                fill="currentcolor" />
+                                        </svg>
                                     </div>
-                                    <div class="d-flex tz-book-description-card-shopping-cart gap-1">
-                                        <div>
-                                            <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="0.5" y="0.5" width="21" height="21" rx="10.5" fill="white"
-                                                    stroke="currentcolor" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M16.1977 6.7606L11.4989 12.6134L8.35311 9.82712L9.25725 8.80632L11.3316 10.6436L15.1343 5.90692L16.1977 6.7606Z"
-                                                    fill="currentcolor" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M7.24978 6.22723C7.0615 6.22723 6.90887 6.37986 6.90887 6.56814V14.75C6.90887 14.9382 7.0615 15.0909 7.24978 15.0909H15.4316C15.6199 15.0909 15.7725 14.9382 15.7725 14.75V10.659H16.4543V14.75C16.4543 15.3148 15.9964 15.7727 15.4316 15.7727H7.24978C6.68494 15.7727 6.22705 15.3148 6.22705 14.75V6.56814C6.22705 6.0033 6.68494 5.54541 7.24978 5.54541H11.4697V6.22723H7.24978Z"
-                                                    fill="currentcolor" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="0.5" y="0.5" width="33" height="33" rx="16.5" fill="white" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8.34149 11.5H22.7192C24.0204 11.5 24.9751 12.7228 24.6595 13.9851L23.4095 18.9851C23.1869 19.8754 22.387 20.5 21.4692 20.5H14.2974C13.5557 20.5 12.8748 20.0895 12.5286 19.4335L8.34149 11.5ZM10 12.5L13.413 18.9668C13.5861 19.2947 13.9265 19.5 14.2974 19.5H21.4692C21.9281 19.5 22.3281 19.1877 22.4394 18.7425L23.6894 13.7425C23.8472 13.1114 23.3698 12.5 22.7192 12.5H10Z"
-                                                    fill="currentcolor" />
-                                                <path
-                                                    d="M7 11.5C7 10.9477 7.44772 10.5 8 10.5H11C11.5523 10.5 12 10.9477 12 11.5C12 12.0523 11.5523 12.5 11 12.5H8C7.44772 12.5 7 12.0523 7 11.5Z"
-                                                    fill="currentcolor" />
-                                                <path
-                                                    d="M16.2694 23.5119C16.2694 24.5834 15.4008 25.452 14.3293 25.452C13.2578 25.452 12.3892 24.5834 12.3892 23.5119C12.3892 22.4404 13.2578 21.5718 14.3293 21.5718C15.4008 21.5718 16.2694 22.4404 16.2694 23.5119Z"
-                                                    fill="currentcolor" />
-                                                <path
-                                                    d="M24.0298 23.5119C24.0298 24.5834 23.1612 25.452 22.0897 25.452C21.0182 25.452 20.1495 24.5834 20.1495 23.5119C20.1495 22.4404 21.0182 21.5718 22.0897 21.5718C23.1612 21.5718 24.0298 22.4404 24.0298 23.5119Z"
-                                                    fill="currentcolor" />
-                                                <rect x="0.5" y="0.5" width="33" height="33" rx="16.5"
-                                                    stroke="currentcolor" />
-                                            </svg>
-                                        </div>
+                                    <div>
+                                        <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="33" height="33" rx="16.5" fill="white" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M8.34149 11.5H22.7192C24.0204 11.5 24.9751 12.7228 24.6595 13.9851L23.4095 18.9851C23.1869 19.8754 22.387 20.5 21.4692 20.5H14.2974C13.5557 20.5 12.8748 20.0895 12.5286 19.4335L8.34149 11.5ZM10 12.5L13.413 18.9668C13.5861 19.2947 13.9265 19.5 14.2974 19.5H21.4692C21.9281 19.5 22.3281 19.1877 22.4394 18.7425L23.6894 13.7425C23.8472 13.1114 23.3698 12.5 22.7192 12.5H10Z"
+                                                fill="currentcolor" />
+                                            <path
+                                                d="M7 11.5C7 10.9477 7.44772 10.5 8 10.5H11C11.5523 10.5 12 10.9477 12 11.5C12 12.0523 11.5523 12.5 11 12.5H8C7.44772 12.5 7 12.0523 7 11.5Z"
+                                                fill="currentcolor" />
+                                            <path
+                                                d="M16.2694 23.5119C16.2694 24.5834 15.4008 25.452 14.3293 25.452C13.2578 25.452 12.3892 24.5834 12.3892 23.5119C12.3892 22.4404 13.2578 21.5718 14.3293 21.5718C15.4008 21.5718 16.2694 22.4404 16.2694 23.5119Z"
+                                                fill="currentcolor" />
+                                            <path
+                                                d="M24.0298 23.5119C24.0298 24.5834 23.1612 25.452 22.0897 25.452C21.0182 25.452 20.1495 24.5834 20.1495 23.5119C20.1495 22.4404 21.0182 21.5718 22.0897 21.5718C23.1612 21.5718 24.0298 22.4404 24.0298 23.5119Z"
+                                                fill="currentcolor" />
+                                            <rect x="0.5" y="0.5" width="33" height="33" rx="16.5"
+                                                stroke="currentcolor" />
+                                        </svg>
                                     </div>
                                 </div>
-                                <p class="tz-book-description-description">▍新生代作詞人城旭遠——首部暖心散文集 ▍一本供你我安放傷口的療癒之書
-                                    20個人生關鍵字，窺見20道躲在日常的傷痕，伴你度過一段段曾經遍體鱗傷的日子，看見一個個受傷後再次茁壯的靈魂。
-                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-
-
-        <div style="background-color: #F2F2F2" ;>
-            <div class="container-1200 tz-container-padding">
-                <div class="row justify-content-center g-4">
-                    <div class="col-12 col-md-6">
-                        <div class="tz-two-product-card d-flex">
-                            <div class="tz-two-product-card-image-wrapper">
-                                <div class="d-flex justify-content-center align-items-center">限量</div>
-                                <img
-                                    src="https://s3-alpha-sig.figma.com/img/a1b4/110a/f56b94016eaedbf5c69e57a38df75000?Expires=1679875200&Signature=WWw88v7CbpWSUQ5UNPWz7bezlscPVadvhOHySojftl64Qah7rb2r2AtatXUn3xTYnHn1DDtwR1YzFCfv00ifg16eySiwPB3SFEqzJCM5XjFOFGpVDxc67MmuzAN~-Iux9eVvpaLf5ubJKgCS~DXohyLz6EM16a2g5~qcjmsURgmsd9lxjC2Af42jfyiKJg2kAYOa5nyv0KPh7M3OmcCxqc-PNAhWoDr5Rer-plMdzNzpn4x0ARmk-IIA8z6m3SwTPCamEiVyl4eGvpq5my43IQkP4UA59zqZD-TTCNEfUKzLVXLbfw52SMIVTAlWC0dFQutCzbmpRw0SvIi1L0mTrA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
-                            </div>
-                            <div
-                                class="tz-two-product-card-content-wrapper d-flex flex-column justify-content-center align-items-center">
-                                <p class="tz-two-product-card-title">日本 pocchiri 束口袋/ 檸檬/ 奶黃色</p>
-                                <div class="tz-two-product-card-subtitle d-flex justify-content-center">日本職人手工縫製</div>
-                                <div class="d-flex justify-content-between w-100">
-                                    <div class="tz-two-product-card-price-wrapper d-flex align-items-center gap-1">
-                                        <p class="tz-two-product-card-price-disabled">$630</p>
-                                        <p class="tz-two-product-card-price-enabled">$473</p>
-                                    </div>
-                                    <div class="d-flex tz-two-product-card-shopping-cart gap-1">
-                                        <div>
-                                            <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="0.5" y="0.5" width="21" height="21" rx="10.5" fill="white"
-                                                    stroke="currentcolor" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M16.1977 6.7606L11.4989 12.6134L8.35311 9.82712L9.25725 8.80632L11.3316 10.6436L15.1343 5.90692L16.1977 6.7606Z"
-                                                    fill="currentcolor" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M7.24978 6.22723C7.0615 6.22723 6.90887 6.37986 6.90887 6.56814V14.75C6.90887 14.9382 7.0615 15.0909 7.24978 15.0909H15.4316C15.6199 15.0909 15.7725 14.9382 15.7725 14.75V10.659H16.4543V14.75C16.4543 15.3148 15.9964 15.7727 15.4316 15.7727H7.24978C6.68494 15.7727 6.22705 15.3148 6.22705 14.75V6.56814C6.22705 6.0033 6.68494 5.54541 7.24978 5.54541H11.4697V6.22723H7.24978Z"
-                                                    fill="currentcolor" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="0.5" y="0.5" width="33" height="33" rx="16.5" fill="white" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8.34149 11.5H22.7192C24.0204 11.5 24.9751 12.7228 24.6595 13.9851L23.4095 18.9851C23.1869 19.8754 22.387 20.5 21.4692 20.5H14.2974C13.5557 20.5 12.8748 20.0895 12.5286 19.4335L8.34149 11.5ZM10 12.5L13.413 18.9668C13.5861 19.2947 13.9265 19.5 14.2974 19.5H21.4692C21.9281 19.5 22.3281 19.1877 22.4394 18.7425L23.6894 13.7425C23.8472 13.1114 23.3698 12.5 22.7192 12.5H10Z"
-                                                    fill="currentcolor" />
-                                                <path
-                                                    d="M7 11.5C7 10.9477 7.44772 10.5 8 10.5H11C11.5523 10.5 12 10.9477 12 11.5C12 12.0523 11.5523 12.5 11 12.5H8C7.44772 12.5 7 12.0523 7 11.5Z"
-                                                    fill="currentcolor" />
-                                                <path
-                                                    d="M16.2694 23.5119C16.2694 24.5834 15.4008 25.452 14.3293 25.452C13.2578 25.452 12.3892 24.5834 12.3892 23.5119C12.3892 22.4404 13.2578 21.5718 14.3293 21.5718C15.4008 21.5718 16.2694 22.4404 16.2694 23.5119Z"
-                                                    fill="currentcolor" />
-                                                <path
-                                                    d="M24.0298 23.5119C24.0298 24.5834 23.1612 25.452 22.0897 25.452C21.0182 25.452 20.1495 24.5834 20.1495 23.5119C20.1495 22.4404 21.0182 21.5718 22.0897 21.5718C23.1612 21.5718 24.0298 22.4404 24.0298 23.5119Z"
-                                                    fill="currentcolor" />
-                                                <rect x="0.5" y="0.5" width="33" height="33" rx="16.5"
-                                                    stroke="currentcolor" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-12 col-md-6">
+                    <div class="tz-two-product-card d-flex">
+                        <div class="tz-two-product-card-image-wrapper">
+                            <div class="d-flex justify-content-center align-items-center">限量</div>
+                            <img
+                                src="https://s3-alpha-sig.figma.com/img/b350/4d4a/ed0fb639c7da3c797e561d36509bb375?Expires=1679875200&Signature=m5GfkUSxPKky1fCuc6j9NKO8Sm4Uz5Z0BBE7rvhJl~RO7UHf3SANJBjOY0IMw487K6MtkWdtJ-~iePO3ti5M7XKBHTdEwAJjBhSIAqNQPLR6lwPQOgZipk8NwN9KqpgHszC81IEEMEFpd8LdxI8lk5ttNMvR8REEzxBRbkRhKXCKOtPov87uQvZHjTir-KbZ8dJIuh--gIfdQTdp2nJhLHVOGWjJ1PiPgC05EALSH0kDAhPVZ4d2duR6LsXaiRx-jDEkT~3nk7Q~O39bRhmUwKgHOFd6ITzzWeSE8ePXLsAnr4cLZ2gd9G0aPrLvD9Yyt8--~XMH09kNiETcAVl8Ow__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
                         </div>
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                        <div class="tz-two-product-card d-flex">
-                            <div class="tz-two-product-card-image-wrapper">
-                                <div class="d-flex justify-content-center align-items-center">限量</div>
-                                <img
-                                    src="https://s3-alpha-sig.figma.com/img/b350/4d4a/ed0fb639c7da3c797e561d36509bb375?Expires=1679875200&Signature=m5GfkUSxPKky1fCuc6j9NKO8Sm4Uz5Z0BBE7rvhJl~RO7UHf3SANJBjOY0IMw487K6MtkWdtJ-~iePO3ti5M7XKBHTdEwAJjBhSIAqNQPLR6lwPQOgZipk8NwN9KqpgHszC81IEEMEFpd8LdxI8lk5ttNMvR8REEzxBRbkRhKXCKOtPov87uQvZHjTir-KbZ8dJIuh--gIfdQTdp2nJhLHVOGWjJ1PiPgC05EALSH0kDAhPVZ4d2duR6LsXaiRx-jDEkT~3nk7Q~O39bRhmUwKgHOFd6ITzzWeSE8ePXLsAnr4cLZ2gd9G0aPrLvD9Yyt8--~XMH09kNiETcAVl8Ow__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
-                            </div>
-                            <div
-                                class="tz-two-product-card-content-wrapper d-flex flex-column justify-content-center align-items-center">
-                                <p class="tz-two-product-card-title">Tombow Mono經典帆布雙拉鏈收納袋</p>
-                                <div class="tz-two-product-card-subtitle d-flex justify-content-center">經典好評 復刻回憶</div>
-                                <div class="d-flex justify-content-between w-100">
-                                    <div class="tz-two-product-card-price-wrapper d-flex align-items-center gap-1">
-                                        <p class="tz-two-product-card-price-disabled">$920</p>
-                                        <p class="tz-two-product-card-price-enabled">$874</p>
+                        <div
+                            class="tz-two-product-card-content-wrapper d-flex flex-column justify-content-center align-items-center">
+                            <p class="tz-two-product-card-title">Tombow Mono經典帆布雙拉鏈收納袋</p>
+                            <div class="tz-two-product-card-subtitle d-flex justify-content-center">經典好評 復刻回憶</div>
+                            <div class="d-flex justify-content-between w-100">
+                                <div class="tz-two-product-card-price-wrapper d-flex align-items-center gap-1">
+                                    <p class="tz-two-product-card-price-disabled">$920</p>
+                                    <p class="tz-two-product-card-price-enabled">$874</p>
+                                </div>
+                                <div class="d-flex tz-two-product-card-shopping-cart gap-1">
+                                    <div>
+                                        <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="21" height="21" rx="10.5" fill="white"
+                                                stroke="currentcolor" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M16.1977 6.7606L11.4989 12.6134L8.35311 9.82712L9.25725 8.80632L11.3316 10.6436L15.1343 5.90692L16.1977 6.7606Z"
+                                                fill="currentcolor" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M7.24978 6.22723C7.0615 6.22723 6.90887 6.37986 6.90887 6.56814V14.75C6.90887 14.9382 7.0615 15.0909 7.24978 15.0909H15.4316C15.6199 15.0909 15.7725 14.9382 15.7725 14.75V10.659H16.4543V14.75C16.4543 15.3148 15.9964 15.7727 15.4316 15.7727H7.24978C6.68494 15.7727 6.22705 15.3148 6.22705 14.75V6.56814C6.22705 6.0033 6.68494 5.54541 7.24978 5.54541H11.4697V6.22723H7.24978Z"
+                                                fill="currentcolor" />
+                                        </svg>
                                     </div>
-                                    <div class="d-flex tz-two-product-card-shopping-cart gap-1">
-                                        <div>
-                                            <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="0.5" y="0.5" width="21" height="21" rx="10.5" fill="white"
-                                                    stroke="currentcolor" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M16.1977 6.7606L11.4989 12.6134L8.35311 9.82712L9.25725 8.80632L11.3316 10.6436L15.1343 5.90692L16.1977 6.7606Z"
-                                                    fill="currentcolor" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M7.24978 6.22723C7.0615 6.22723 6.90887 6.37986 6.90887 6.56814V14.75C6.90887 14.9382 7.0615 15.0909 7.24978 15.0909H15.4316C15.6199 15.0909 15.7725 14.9382 15.7725 14.75V10.659H16.4543V14.75C16.4543 15.3148 15.9964 15.7727 15.4316 15.7727H7.24978C6.68494 15.7727 6.22705 15.3148 6.22705 14.75V6.56814C6.22705 6.0033 6.68494 5.54541 7.24978 5.54541H11.4697V6.22723H7.24978Z"
-                                                    fill="currentcolor" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="0.5" y="0.5" width="33" height="33" rx="16.5" fill="white" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M8.34149 11.5H22.7192C24.0204 11.5 24.9751 12.7228 24.6595 13.9851L23.4095 18.9851C23.1869 19.8754 22.387 20.5 21.4692 20.5H14.2974C13.5557 20.5 12.8748 20.0895 12.5286 19.4335L8.34149 11.5ZM10 12.5L13.413 18.9668C13.5861 19.2947 13.9265 19.5 14.2974 19.5H21.4692C21.9281 19.5 22.3281 19.1877 22.4394 18.7425L23.6894 13.7425C23.8472 13.1114 23.3698 12.5 22.7192 12.5H10Z"
-                                                    fill="currentcolor" />
-                                                <path
-                                                    d="M7 11.5C7 10.9477 7.44772 10.5 8 10.5H11C11.5523 10.5 12 10.9477 12 11.5C12 12.0523 11.5523 12.5 11 12.5H8C7.44772 12.5 7 12.0523 7 11.5Z"
-                                                    fill="currentcolor" />
-                                                <path
-                                                    d="M16.2694 23.5119C16.2694 24.5834 15.4008 25.452 14.3293 25.452C13.2578 25.452 12.3892 24.5834 12.3892 23.5119C12.3892 22.4404 13.2578 21.5718 14.3293 21.5718C15.4008 21.5718 16.2694 22.4404 16.2694 23.5119Z"
-                                                    fill="currentcolor" />
-                                                <path
-                                                    d="M24.0298 23.5119C24.0298 24.5834 23.1612 25.452 22.0897 25.452C21.0182 25.452 20.1495 24.5834 20.1495 23.5119C20.1495 22.4404 21.0182 21.5718 22.0897 21.5718C23.1612 21.5718 24.0298 22.4404 24.0298 23.5119Z"
-                                                    fill="currentcolor" />
-                                                <rect x="0.5" y="0.5" width="33" height="33" rx="16.5"
-                                                    stroke="currentcolor" />
-                                            </svg>
-                                        </div>
+                                    <div>
+                                        <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="0.5" y="0.5" width="33" height="33" rx="16.5" fill="white" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M8.34149 11.5H22.7192C24.0204 11.5 24.9751 12.7228 24.6595 13.9851L23.4095 18.9851C23.1869 19.8754 22.387 20.5 21.4692 20.5H14.2974C13.5557 20.5 12.8748 20.0895 12.5286 19.4335L8.34149 11.5ZM10 12.5L13.413 18.9668C13.5861 19.2947 13.9265 19.5 14.2974 19.5H21.4692C21.9281 19.5 22.3281 19.1877 22.4394 18.7425L23.6894 13.7425C23.8472 13.1114 23.3698 12.5 22.7192 12.5H10Z"
+                                                fill="currentcolor" />
+                                            <path
+                                                d="M7 11.5C7 10.9477 7.44772 10.5 8 10.5H11C11.5523 10.5 12 10.9477 12 11.5C12 12.0523 11.5523 12.5 11 12.5H8C7.44772 12.5 7 12.0523 7 11.5Z"
+                                                fill="currentcolor" />
+                                            <path
+                                                d="M16.2694 23.5119C16.2694 24.5834 15.4008 25.452 14.3293 25.452C13.2578 25.452 12.3892 24.5834 12.3892 23.5119C12.3892 22.4404 13.2578 21.5718 14.3293 21.5718C15.4008 21.5718 16.2694 22.4404 16.2694 23.5119Z"
+                                                fill="currentcolor" />
+                                            <path
+                                                d="M24.0298 23.5119C24.0298 24.5834 23.1612 25.452 22.0897 25.452C21.0182 25.452 20.1495 24.5834 20.1495 23.5119C20.1495 22.4404 21.0182 21.5718 22.0897 21.5718C23.1612 21.5718 24.0298 22.4404 24.0298 23.5119Z"
+                                                fill="currentcolor" />
+                                            <rect x="0.5" y="0.5" width="33" height="33" rx="16.5"
+                                                stroke="currentcolor" />
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
@@ -1030,70 +1036,71 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
-
-        <div style="background-color: #F2F2F2" ;>
-            <div class="container-1200 tz-container-padding">
-                <div class="row g-4">
-                    <div class="col-md-6 col-12 align-self-center">
+    <div style="background-color: #F2F2F2" ;>
+        <div class="container-1200 tz-container-padding">
+            <div class="row g-4">
+                <div class="col-md-6 col-12 align-self-center">
+                    <div class="tz-three-picture-image-wrapper">
+                        <img style="width: 100%; height: auto;"
+                            src="https://s3-alpha-sig.figma.com/img/29f3/d88c/3fcdd2017ea65a5cbb7ae84f92e47317?Expires=1679875200&Signature=Iq2W00Z90eSzR8WjPlREDN8cwAFM4X980l4hGSLSslBfSHSVQtM3u-51GbhDCpMK6DOywW3F7Hj3hDviVksYX9d9gWpVnACKmPL3J4yUI~Y-UZwZ~e6lg1zA22ApH7-JV6ps7vVT~y24E4wwy8mGwp8Bb-RMrakTzPZX8SeEoBb-bOo70uQRoRU3XhJYTMPHYEj1Vl41usJOlXXC6vGzqjAfY36MCWH7fyKcgNE6dxfGyQkCdNY-SqQ7P1Chq7D4i~YHNPGAlg4GMqlQ~ggkW7dI67svhvyqZF46nMcYkDMM3~~fQKzD6WtO6Jtg0dF4xRpoerrCgN5xYMPoL5OJIw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                            alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="d-flex flex-column gap-4">
                         <div class="tz-three-picture-image-wrapper">
                             <img style="width: 100%; height: auto;"
-                                src="https://s3-alpha-sig.figma.com/img/29f3/d88c/3fcdd2017ea65a5cbb7ae84f92e47317?Expires=1679875200&Signature=Iq2W00Z90eSzR8WjPlREDN8cwAFM4X980l4hGSLSslBfSHSVQtM3u-51GbhDCpMK6DOywW3F7Hj3hDviVksYX9d9gWpVnACKmPL3J4yUI~Y-UZwZ~e6lg1zA22ApH7-JV6ps7vVT~y24E4wwy8mGwp8Bb-RMrakTzPZX8SeEoBb-bOo70uQRoRU3XhJYTMPHYEj1Vl41usJOlXXC6vGzqjAfY36MCWH7fyKcgNE6dxfGyQkCdNY-SqQ7P1Chq7D4i~YHNPGAlg4GMqlQ~ggkW7dI67svhvyqZF46nMcYkDMM3~~fQKzD6WtO6Jtg0dF4xRpoerrCgN5xYMPoL5OJIw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                src="https://s3-alpha-sig.figma.com/img/a373/352e/df6183d268b7bf66ef4120544c4f28a3?Expires=1679875200&Signature=VKILB4z6l2K16xJggpl5t1AfDK6Z-k52nfvn3rqFAzvetwsHudKPvPU7WRk3LLzvr2Jw2cOm2VPAlAIhpd-MN9IuxfYoTa6bmCwjc8F-SoVzYqf1Ld3igweu0vCvRRyEjCxfwQY7le6ScOfNcHd8aZuNDb7mn79MB18rQ13N7AVX36jS42SLYwZKuBQemA2cAhAnk1ugSSq5eZdgf100GJgW3J9CPT~~STPbmekHsnvHfiTfR07MONv8lYkQWm04xoTNt8-n~CfmyTCGh-JmIbU-YYjUtlLa~BRb41Me0cBjDgPm8wUxAIPIHdeyxcdi0-VC7jl0xBJzrDKh3nfUiA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                alt="">
+                        </div>
+                        <div class="tz-three-picture-image-wrapper">
+                            <img style="width: 100%; height: auto;"
+                                src="https://s3-alpha-sig.figma.com/img/fb8a/c165/5923baa486bbf2b3d76326060a59e397?Expires=1679875200&Signature=F~CdfxE9NpLNVi05x8V2qEAdX~dmA19a01kpBHa-dHgRCbnxCWfZU-PjDFhzl8SmJCyLxpnmwLJ7VBGvGu1ek8OcX2TElV4b3GG9diTV3Fy88Hv9f8xHpTtPkKfsX1o14EM4bgUyBrvmd21YTxCWvu0m~5PpLymnfnlhV4cXigjWeZsgSjwTHBH1nKIt0ovGjoofPrV6GMOYe~Uhx1HOKODTRzEkyCItJvZgZmjl0YmVHWKz6E30AX8VkpYWn28W95ISkK7LVuEqpmTuZnhAjez4GTNIrlzgh0WqLN9QT6qRfLA4s~IMe1YpHb3k5XqPRA7GTegadFRFDcO4aUWuKA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                                 alt="">
                         </div>
                     </div>
-                    <div class="col-md-6 col-12">
-                        <div class="d-flex flex-column gap-4">
-                            <div class="tz-three-picture-image-wrapper">
-                                <img style="width: 100%; height: auto;"
-                                    src="https://s3-alpha-sig.figma.com/img/a373/352e/df6183d268b7bf66ef4120544c4f28a3?Expires=1679875200&Signature=VKILB4z6l2K16xJggpl5t1AfDK6Z-k52nfvn3rqFAzvetwsHudKPvPU7WRk3LLzvr2Jw2cOm2VPAlAIhpd-MN9IuxfYoTa6bmCwjc8F-SoVzYqf1Ld3igweu0vCvRRyEjCxfwQY7le6ScOfNcHd8aZuNDb7mn79MB18rQ13N7AVX36jS42SLYwZKuBQemA2cAhAnk1ugSSq5eZdgf100GJgW3J9CPT~~STPbmekHsnvHfiTfR07MONv8lYkQWm04xoTNt8-n~CfmyTCGh-JmIbU-YYjUtlLa~BRb41Me0cBjDgPm8wUxAIPIHdeyxcdi0-VC7jl0xBJzrDKh3nfUiA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                                    alt="">
-                            </div>
-                            <div class="tz-three-picture-image-wrapper">
-                                <img style="width: 100%; height: auto;"
-                                    src="https://s3-alpha-sig.figma.com/img/fb8a/c165/5923baa486bbf2b3d76326060a59e397?Expires=1679875200&Signature=F~CdfxE9NpLNVi05x8V2qEAdX~dmA19a01kpBHa-dHgRCbnxCWfZU-PjDFhzl8SmJCyLxpnmwLJ7VBGvGu1ek8OcX2TElV4b3GG9diTV3Fy88Hv9f8xHpTtPkKfsX1o14EM4bgUyBrvmd21YTxCWvu0m~5PpLymnfnlhV4cXigjWeZsgSjwTHBH1nKIt0ovGjoofPrV6GMOYe~Uhx1HOKODTRzEkyCItJvZgZmjl0YmVHWKz6E30AX8VkpYWn28W95ISkK7LVuEqpmTuZnhAjez4GTNIrlzgh0WqLN9QT6qRfLA4s~IMe1YpHb3k5XqPRA7GTegadFRFDcO4aUWuKA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                                    alt="">
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
-
-        <div style="background-color: white;">
-            <div class="container-1200 tz-container-padding">
-                <div class="row tz-footer-logo-container g-0">
-                    <div class="col">
-                        <div class="d-flex gap-2">
-                            <a class="navbar-brand me-2" href="https://taaze.tw" target="_blank"><img
-                                    src="assets/taaze-logo.svg" /></a>
-                            <img src=" assets/ig-logo.svg" alt="Instagram" width="28" />
-                            <img class="me-2" src="assets/fb-logo.svg" alt="Facebook" width="28" />
-                        </div>
-                    </div>
-                </div>
-                <div class="row tz-footer-links-container justify-content-start gy-0 gx-3">
-                    <div class="d-flex gap-3">
-                        <a class="tz-footer-link" href="#">關於我們</a>
-                        <a class="tz-footer-link" href="#">隱私權政策</a>
-                        <a class="tz-footer-link" href="#">合作計畫</a>
-                        <a class="tz-footer-link" href="#">工作機會</a>
-                        <a class="tz-footer-link" href="#">客服信箱</a>
-                    </div>
-                </div>
-                <div class="row justify-content-start mb-2">
-                    <div class="d-flex gap-3">
-                        <a class="tz-footer-link" href="#">學思行數位行銷股份有限公司統一編號：24342999</a>
-                        <a class="tz-footer-link" href="#">台北市中山區長安東路一段23號三樓之2</a>
-                    </div>
-                </div>
-            </div>
+  <div style="background-color: white;">
+    <div class="container-1200 tz-container-padding">
+      <div class="row tz-footer-logo-container g-0">
+        <div class="col">
+          <div class="d-flex gap-2">
+            <a class="navbar-brand me-2" href="https://taaze.tw" target="_blank"><img src="assets/taaze-logo.svg" /></a>
+            <img src=" assets/ig-logo.svg" alt="Instagram" width="28" />
+            <img class="me-2" src="assets/fb-logo.svg" alt="Facebook" width="28" />
+          </div>
         </div>
-        <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      </div>
+      <div class="row tz-footer-links-container justify-content-start gy-0 gx-3">
+        <div class="d-flex gap-3">
+          <a class="tz-footer-link" href="#">關於我們</a>
+          <a class="tz-footer-link" href="#">隱私權政策</a>
+          <a class="tz-footer-link" href="#">合作計畫</a>
+          <a class="tz-footer-link" href="#">工作機會</a>
+          <a class="tz-footer-link" href="#">客服信箱</a>
+        </div>
+      </div>
+      <div class="row justify-content-start mb-2">
+        <div class="d-flex gap-3">
+          <a class="tz-footer-link" href="#">學思行數位行銷股份有限公司統一編號：24342999</a>
+          <a class="tz-footer-link" href="#">台北市中山區長安東路一段23號三樓之2</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
-
-</html>
+    </body>
+  </html>
