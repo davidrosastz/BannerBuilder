@@ -33,12 +33,54 @@ $taaze-fs-nav: 14px;
 /***************************************
   0_navbar STYLE
 **************************************/
-.navbar-nav {
-  column-gap: 48px;
+.tz-navbar-container {
+  @include xs {
+    padding: 16px;
+  }
+
+  @include md {
+    padding: 24px;
+  }
+}
+
+.tz-navbar-list {
+  column-gap: 40px;
+}
+
+.tz-navbar-toggler {
+  border-style: none;
+  border-color: transparent;
+}
+
+.hamburger-toggler {
+  &>img {
+    width: 100%;
+  }
+
+  @include xsm {
+    width: 22px;
+  }
+
+  @include md {
+    width: 30px;
+  }
 }
 
 .offcanvas {
-  width: 230px;
+  width: 25vw;
+}
+
+.offcanvas-nav-link {
+  padding: 0px;
+
+  @include xs {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.tz-offcanvas-body {
+  padding: 24px;
 }
 
 .nav-link {

@@ -14,21 +14,21 @@
 </head>
 
 <body>
-  <div class="container-1200 tz-container-padding py-0">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
+  <div class="container-1200 tz-navbar-container">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <div class="container-fluid p-0">
         <!-- Logo -->
         <a class="navbar-brand" href="#"><img class='navbar-brand-pic' src="assets/taaze-logo.svg" /></a>
 
         <!-- Toggler for Medium Screens -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        <button class="navbar-toggler tz-navbar-toggler p-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <div class="hamburger-toggler"><img src="assets/hamburger_toggler.svg" alt="" srcset=""></div>
         </button>
 
         <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav tz-navbar-list ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="#">中文書</a>
             </li>
@@ -48,35 +48,35 @@
 
     <!-- Offcanvas for Medium Screens -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-body">
+      <div class="offcanvas-body tz-offcanvas-body">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">中文書</a>
+            <a class="nav-link offcanvas-nav-link" href="#">中文書</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">二手書</a>
+            <a class="nav-link offcanvas-nav-link" href="#">二手書</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">電子書</a>
+            <a class="nav-link offcanvas-nav-link" href="#">電子書</a>
           </li>
         </ul>
         <hr>
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">注目新書</a>
+            <a class="nav-link offcanvas-nav-link" href="#">注目新書</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">小故事大啟示</a>
+            <a class="nav-link offcanvas-nav-link" href="#">小故事大啟示</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">滿級分的語文寫作</a>
+            <a class="nav-link offcanvas-nav-link" href="#">滿級分的語文寫作</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">超值75折</a>
+            <a class="nav-link offcanvas-nav-link" href="#">超值75折</a>
           </li>
         </ul>
         <hr>
-        <a class="btn btn-tz-login" style="margin-top: 8px;">註冊/登入</a>
+        <a class="btn btn-tz-login" style="margin-top: 16px;">註冊/登入</a>
       </div>
     </div>
   </div>

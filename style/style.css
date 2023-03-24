@@ -30,13 +30,57 @@
 /***************************************
   0_navbar STYLE
 **************************************/
-.navbar-nav {
-  -moz-column-gap: 48px;
-       column-gap: 48px;
+@media (min-width: 0) {
+  .tz-navbar-container {
+    padding: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .tz-navbar-container {
+    padding: 24px;
+  }
+}
+
+.tz-navbar-list {
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+
+.tz-navbar-toggler {
+  border-style: none;
+  border-color: transparent;
+}
+
+.hamburger-toggler > img {
+  width: 100%;
+}
+@media (min-width: 414px) {
+  .hamburger-toggler {
+    width: 22px;
+  }
+}
+@media (min-width: 768px) {
+  .hamburger-toggler {
+    width: 30px;
+  }
 }
 
 .offcanvas {
-  width: 230px;
+  width: 25vw;
+}
+
+.offcanvas-nav-link {
+  padding: 0px;
+}
+@media (min-width: 0) {
+  .offcanvas-nav-link {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.tz-offcanvas-body {
+  padding: 24px;
 }
 
 .nav-link {
