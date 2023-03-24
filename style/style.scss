@@ -1317,21 +1317,21 @@ $taaze-fs-nav: 14px;
 ***************************************/
 .tz-footer-logo-container {
   @include xs {
-    margin-bottom: 22px;
+    margin-bottom: 16px;
   }
 
-  @include xsm {
-    margin-bottom: 26px;
+  @include md {
+    margin-bottom: 20px;
+  }
+
+  @include xl {
+    margin-bottom: 24px;
   }
 }
 
 .tz-footer-links-container {
   @include xs {
-    margin-bottom: 22px;
-  }
-
-  @include xsm {
-    margin-bottom: 26px;
+    margin-bottom: 6px;
   }
 }
 

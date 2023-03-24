@@ -1274,23 +1274,23 @@
 ***************************************/
 @media (min-width: 0) {
   .tz-footer-logo-container {
-    margin-bottom: 22px;
+    margin-bottom: 16px;
   }
 }
-@media (min-width: 414px) {
+@media (min-width: 768px) {
   .tz-footer-logo-container {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .tz-footer-logo-container {
+    margin-bottom: 24px;
   }
 }
 
 @media (min-width: 0) {
   .tz-footer-links-container {
-    margin-bottom: 22px;
-  }
-}
-@media (min-width: 414px) {
-  .tz-footer-links-container {
-    margin-bottom: 26px;
+    margin-bottom: 6px;
   }
 }
 
