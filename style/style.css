@@ -1288,9 +1288,23 @@
   }
 }
 
+.tz-footer-link-container-one {
+  gap: 14px;
+}
+
+@media (min-width: 0) {
+  .tz-footer-link-container-two {
+    gap: 0px;
+  }
+}
+@media (min-width: 414px) {
+  .tz-footer-link-container-two {
+    gap: 14px;
+  }
+}
+
 .tz-footer-link {
   margin-bottom: 6px;
-  margin-right: 14px;
 }
 
 .tz-footer-link {

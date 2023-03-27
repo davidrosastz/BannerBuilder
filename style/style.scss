@@ -1329,9 +1329,22 @@ $taaze-fs-nav: 14px;
   }
 }
 
+.tz-footer-link-container-one {
+  gap: 14px;
+}
+
+.tz-footer-link-container-two {
+  @include xs {
+    gap: 0px;
+  }
+
+  @include xsm {
+    gap: 14px;
+  }
+}
+
 .tz-footer-link {
   margin-bottom: 6px;
-  margin-right: 14px;
 }
 
 .tz-footer-link {
