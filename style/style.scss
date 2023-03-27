@@ -1329,10 +1329,9 @@ $taaze-fs-nav: 14px;
   }
 }
 
-.tz-footer-links-container {
-  @include xs {
-    margin-bottom: 6px;
-  }
+.tz-footer-link {
+  margin-bottom: 6px;
+  margin-right: 14px;
 }
 
 .tz-footer-link {
