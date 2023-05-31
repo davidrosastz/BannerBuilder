@@ -14,17 +14,17 @@ $taaze-fs-nav: 14px;
   padding-top: 32px;
   padding-bottom: 32px;
 
-  @include xs {
+  @include tz-xs {
     padding-left: 24px;
     padding-right: 24px;
   }
 
-  @include sm {
+  @include tz-sm {
     padding-left: 48px;
     padding-right: 48px;
   }
 
-  @include md {
+  @include tz-md {
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -34,11 +34,11 @@ $taaze-fs-nav: 14px;
   0_navbar STYLE
 **************************************/
 .tz-navbar-container {
-  @include xs {
+  @include tz-xs {
     padding: 16px;
   }
 
-  @include md {
+  @include tz-md {
     padding: 24px;
   }
 }
@@ -57,11 +57,11 @@ $taaze-fs-nav: 14px;
     width: 100%;
   }
 
-  @include xsm {
+  @include tz-sm {
     width: 22px;
   }
 
-  @include md {
+  @include tz-md {
     width: 30px;
   }
 }
@@ -73,7 +73,7 @@ $taaze-fs-nav: 14px;
 .offcanvas-nav-link {
   padding: 0px;
 
-  @include xs {
+  @include tz-xs {
     margin-top: 16px;
     margin-bottom: 16px;
   }
@@ -92,11 +92,11 @@ $taaze-fs-nav: 14px;
     color: $taaze-main-color !important;
   }
 
-  @include xs {
+  @include tz-xs {
     font-size: 14px;
   }
 
-  @include md {
+  @include tz-md {
     font-size: 16px;
   }
 }
@@ -138,7 +138,7 @@ $taaze-fs-nav: 14px;
     text-decoration: none;
   }
 
-  @include xs {
+  @include tz-xs {
     gap: 10px;
 
     &>a {
@@ -146,13 +146,13 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xsm {
+  @include tz-sm {
     &>a {
       font-size: 14px;
     }
   }
 
-  @include sm {
+  @include tz-sm {
     gap: 24px;
 
     &>a {
@@ -160,7 +160,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include md {
+  @include tz-md {
     gap: 48px;
 
     &>a {
@@ -189,7 +189,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xs {
+  @include tz-xs {
     gap: 12px;
 
     &>.d-flex {
@@ -201,7 +201,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include md {
+  @include tz-md {
     gap: 24px;
 
     &>.d-flex {
@@ -221,25 +221,23 @@ $taaze-fs-nav: 14px;
   @include hover-shrink();
   border-radius: 12px;
   background-color: $taaze-white-color;
-  margin: auto;
+  // margin: auto;
   height: 100%;
 
-  @include xs {
-    max-width: 177px;
+  @include tz-xs {
+    max-width: 180px;
   }
 
-  @include xsm {
-    max-width: 324px;
+  @include tz-sm {
+    max-width: 330px;
   }
 
-  @include lg {
+  @include tz-md {
     max-width: 282px;
   }
 }
 
 .tz-four-book-card-text {
-  padding: 12px;
-
   &>* {
     font-family: $default-font-family;
   }
@@ -252,11 +250,15 @@ $taaze-fs-nav: 14px;
     color: $taaze-grey2-color;
   }
 
-  @include xs {
-    margin-top: 12px;
+  @include tz-xs {
+    padding: 12px;
 
     &>* {
-      margin-bottom: 8px;
+      margin-bottom: 6px;
+    }
+
+    &>.d-flex {
+      gap: 0px;
     }
 
     &>.tz-four-book-card-title {
@@ -268,9 +270,15 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xsm {
+  @include tz-sm {
+    padding: 20px;
+
     &>* {
       margin-bottom: 12px;
+    }
+
+    &>.d-flex {
+      gap: 8px;
     }
 
     &>.tz-four-book-card-title {
@@ -282,8 +290,13 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include md {
+  @include tz-md {
     margin-top: 11px;
+
+    &>.d-flex {
+      gap: 12px;
+    }
+
   }
 }
 
@@ -304,37 +317,31 @@ $taaze-fs-nav: 14px;
     color: $taaze-grey3-color;
   }
 
-  @include xs {
-    padding-top: 8px;
-
+  @include tz-xs {
     &>* {
       font-size: 16px;
     }
   }
 
-  @include xsm {
-    padding-top: 0;
-
+  @include tz-sm {
     &>* {
       font-size: 18px;
     }
   }
 
-  @include sm {
+  @include tz-sm {
     &>* {
       font-size: 24px;
     }
   }
 
-  @include md {
-    padding-top: 6px;
-
+  @include tz-md {
     &>* {
       font-size: 18px;
     }
   }
 
-  @include lg {
+  @include tz-xl {
     padding-top: 0;
 
     &>* {
@@ -358,14 +365,14 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xs {
+  @include tz-xs {
     &>div {
       width: 22px;
       height: 22px;
     }
   }
 
-  @include xsm {
+  @include tz-sm {
     &>div {
       width: 34px;
       height: 34px;
@@ -387,20 +394,30 @@ $taaze-fs-nav: 14px;
     background-color: $taaze-main-color;
     color: $taaze-white-color;
 
-    @include xs {
-      width: 37px;
-      height: 24px;
+    @include tz-xs {
+      font-size: 12px;
+      width: 36px;
+      height: 22px;
     }
 
-    @include sm {
-      height: 34px;
-      width: 57px;
+    @include tz-sm {
+      font-size: 16px;
+      height: 28px;
+      width: 48px;
     }
 
-    @include lg {
+    @include tz-md {
       height: 30px;
-      width: 53px;
+      width: 52px;
     }
+  }
+
+  @include tz-sm {
+    padding: 20px;
+  }
+
+  @include tz-md {
+    padding: 16px;
   }
 }
 
@@ -414,15 +431,15 @@ $taaze-fs-nav: 14px;
   margin: auto;
   height: 100%;
 
-  @include xs {
+  @include tz-xs {
     max-width: 177px;
   }
 
-  @include xsm {
+  @include tz-sm {
     max-width: 324px;
   }
 
-  @include lg {
+  @include tz-xl {
     max-width: 282px;
   }
 }
@@ -450,7 +467,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xs {
+  @include tz-xs {
     &>* {
       margin-bottom: 12px;
     }
@@ -466,7 +483,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xsm {
+  @include tz-sm {
     &>* {
       margin-bottom: 16px;
     }
@@ -482,7 +499,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include md {
+  @include tz-md {
     &>* {
       margin-bottom: 12px;
     }
@@ -506,7 +523,7 @@ $taaze-fs-nav: 14px;
     color: $taaze-grey3-color;
   }
 
-  @include xs {
+  @include tz-xs {
     padding-top: 8px;
 
     &>* {
@@ -514,7 +531,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xsm {
+  @include tz-sm {
     padding-top: 0px;
 
     &>* {
@@ -522,11 +539,11 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include md {
+  @include tz-md {
     padding-top: 6px;
   }
 
-  @include lg {
+  @include tz-xl {
     padding-top: 0px;
 
     &>* {
@@ -551,15 +568,15 @@ $taaze-fs-nav: 14px;
     padding-left: 5px;
     padding-right: 5px;
 
-    @include xs {
+    @include tz-xs {
       height: 24px;
     }
 
-    @include sm {
+    @include tz-sm {
       height: 34px;
     }
 
-    @include lg {
+    @include tz-xl {
       height: 30px;
     }
   }
@@ -579,7 +596,7 @@ $taaze-fs-nav: 14px;
     margin-bottom: 36px;
   }
 
-  @include xs {
+  @include tz-xs {
     margin-left: 0px;
 
     &>.tz-free-description-title {
@@ -591,7 +608,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xsm {
+  @include tz-sm {
     &>.tz-free-description-title {
       font-size: 26px;
     }
@@ -601,7 +618,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include md {
+  @include tz-md {
     margin-left: 30px;
   }
 }
@@ -615,12 +632,12 @@ $taaze-fs-nav: 14px;
 
   @include hover-shrink();
 
-  @include xs {
+  @include tz-xs {
     min-width: 100%;
     max-width: 100%;
   }
 
-  @include md {
+  @include tz-md {
     max-width: 440px;
     min-width: 440px;
   }
@@ -636,11 +653,11 @@ $taaze-fs-nav: 14px;
   font-weight: $font-weight-bold;
   margin: auto;
 
-  @include xs {
+  @include tz-xs {
     font-size: 26px;
   }
 
-  @include xsm {
+  @include tz-sm {
     font-size: 32px;
   }
 }
@@ -650,21 +667,21 @@ $taaze-fs-nav: 14px;
   color: $taaze-text-grey-color;
   margin: auto;
 
-  @include xs {
+  @include tz-xs {
     font-size: 18px;
   }
 
-  @include xsm {
+  @include tz-sm {
     font-size: 20px;
   }
 }
 
 .tz-title-briefing-spacing {
-  @include xs {
+  @include tz-xs {
     margin-bottom: 16px;
   }
 
-  @include xsm {
+  @include tz-sm {
     margin-bottom: 24px;
   }
 }
@@ -681,11 +698,11 @@ $taaze-fs-nav: 14px;
     height: auto;
   }
 
-  @include xs {
+  @include tz-xs {
     max-width: 366px;
   }
 
-  @include xsm {
+  @include tz-sm {
     max-width: 672px;
   }
 }
@@ -755,7 +772,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xs {
+  @include tz-xs {
     @include tz-card-base($padding-y: 16px);
 
     &>.tz-two-book-card-image-wrapper {
@@ -784,7 +801,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xsm {
+  @include tz-sm {
     @include tz-card-base($padding-x: 16px, $padding-y: 24px);
 
     &>.tz-two-book-card-image-wrapper {
@@ -817,7 +834,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include md {
+  @include tz-md {
     @include tz-card-base($padding-x: 16px, $padding-y: 16px);
   }
 }
@@ -831,12 +848,12 @@ $taaze-fs-nav: 14px;
   font-weight: $font-weight-bold;
   color: $taaze-grey1-color;
 
-  @include xs {
+  @include tz-xs {
     font-size: 22px;
     margin-bottom: 16px;
   }
 
-  @include md {
+  @include tz-md {
     font-size: 26px;
     margin-bottom: 30px;
   }
@@ -846,11 +863,11 @@ $taaze-fs-nav: 14px;
   font-family: $default-font-family;
   color: $taaze-grey1-color;
 
-  @include xs {
+  @include tz-xs {
     font-size: 16px;
   }
 
-  @include md {
+  @include tz-md {
     font-size: 18px;
   }
 }
@@ -867,11 +884,11 @@ $taaze-fs-nav: 14px;
     height: auto;
   }
 
-  @include xs {
+  @include tz-xs {
     max-width: 366px;
   }
 
-  @include xsm {
+  @include tz-sm {
     max-width: 672px;
   }
 }
@@ -893,7 +910,7 @@ $taaze-fs-nav: 14px;
     font-size: 18px;
   }
 
-  @include xs {
+  @include tz-xs {
     margin-left: 0px;
 
     &>.tz-banner-description-title {
@@ -907,7 +924,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xsm {
+  @include tz-sm {
     margin-left: 30px;
   }
 }
@@ -920,17 +937,17 @@ $taaze-fs-nav: 14px;
     height: auto;
   }
 
-  @include xs {
+  @include tz-xs {
     max-width: 100%;
     margin-bottom: 30px;
   }
 
-  @include xsm {
+  @include tz-sm {
     max-width: 310px;
     margin-bottom: 0;
   }
 
-  @include md {
+  @include tz-md {
     max-width: 440px;
   }
 }
@@ -998,7 +1015,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xs {
+  @include tz-xs {
     &>.tz-book-description-image-wrapper {
       margin-left: 0px;
       margin-right: 0px;
@@ -1029,7 +1046,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xsm {
+  @include tz-sm {
     &>.tz-book-description-image-wrapper {
       margin-left: 30px;
       margin-right: 30px;
@@ -1048,7 +1065,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include md {
+  @include tz-md {
     &>.tz-book-description-main-title {
       @include vertical-text();
       margin: 0;
@@ -1083,14 +1100,14 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xs {
+  @include tz-xs {
     &>div {
       width: 22px;
       height: 22px;
     }
   }
 
-  @include xsm {
+  @include tz-sm {
     &>div {
       width: 34px;
       height: 34px;
@@ -1174,7 +1191,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xs {
+  @include tz-xs {
     @include tz-card-base($padding-y: 16px);
 
     &>.tz-two-product-card-image-wrapper {
@@ -1205,7 +1222,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xsm {
+  @include tz-sm {
     @include tz-card-base($padding-x: 16px, $padding-y: 24px);
 
     &>.tz-two-product-card-image-wrapper {
@@ -1238,7 +1255,7 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include md {
+  @include tz-md {
     @include tz-card-base($padding-x: 16px, $padding-y: 16px);
   }
 }
@@ -1258,28 +1275,28 @@ $taaze-fs-nav: 14px;
     }
   }
 
-  @include xs {
+  @include tz-xs {
     &>div {
       width: 22px;
       height: 22px;
     }
   }
 
-  @include xsm {
+  @include tz-sm {
     &>div {
       width: 34px;
       height: 34px;
     }
   }
 
-  // @include md {
+  // @include tz-md {
   //   &>div {
   //     width: 24px;
   //     height: 24px;
   //   }
   // }
 
-  // @include lg {
+  // @include tz-xl {
   //   &>div {
   //     width: 28px;
   //     height: 28px;
@@ -1298,15 +1315,15 @@ $taaze-fs-nav: 14px;
     width: auto;
   }
 
-  @include xs {
+  @include tz-xs {
     max-width: 366px;
   }
 
-  @include xsm {
+  @include tz-sm {
     max-width: 672px;
   }
 
-  @include md {
+  @include tz-md {
     max-width: 588px;
   }
 }
@@ -1315,15 +1332,15 @@ $taaze-fs-nav: 14px;
   16_footer STYLE
 ***************************************/
 .tz-footer-logo-container {
-  @include xs {
+  @include tz-xs {
     margin-bottom: 16px;
   }
 
-  @include md {
+  @include tz-md {
     margin-bottom: 20px;
   }
 
-  @include xl {
+  @include tz-xl {
     margin-bottom: 24px;
   }
 }
@@ -1333,11 +1350,11 @@ $taaze-fs-nav: 14px;
 }
 
 .tz-footer-link-container-two {
-  @include xs {
+  @include tz-xs {
     gap: 0px;
   }
 
-  @include xsm {
+  @include tz-sm {
     gap: 14px;
   }
 }
@@ -1352,11 +1369,11 @@ $taaze-fs-nav: 14px;
   color: $taaze-grey1-color;
   text-decoration: none;
 
-  @include xs {
+  @include tz-xs {
     font-size: 12px;
   }
 
-  @include xsm {
+  @include tz-sm {
     font-size: 14px;
   }
 }
